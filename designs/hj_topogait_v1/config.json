@@ -1,0 +1,19 @@
+{
+  "dataset_path": "/data/silhouette-C.zip",
+  "cache_dir": "/data/processed/casia_c_hj",
+  "dataset_name": "casia_c",
+  "epochs": 40,
+  "generative_warmup_epochs": 4,
+  "early_stopping_patience": 8,
+  "early_stopping_min_delta": 0.002,
+  "visual_every_n_epochs": 5,
+  "identities_per_batch": 8,
+  "sequences_per_identity": 4,
+  "num_workers": 2,
+  "hidden_dim": 128,
+  "embedding_dim": 256,
+  "projection_dim": 128,
+  "mask_ratio": 0.4,
+  "learning_rate": 0.0003,
+  "amp": true
+}
