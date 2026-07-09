@@ -1,0 +1,79 @@
+{
+  "dataset_summary": {
+    "dataset": "casia_b_skeleton_silhouette_fusion",
+    "sequences": 2964,
+    "subjects": 124,
+    "height": 64,
+    "width": 64,
+    "sequence_length": 30,
+    "representation": "silhouette+hamilton_skeleton+structure_blur+temporal_motion",
+    "missing_pairs": 0
+  },
+  "checkpoint": "runs/fusion_rank1_002/best_rank1_model.pt",
+  "device": "cpu",
+  "test_sequences": 1197,
+  "test_subjects": 50,
+  "retrieval": {
+    "gallery_per_subject": 3,
+    "probes": 1047,
+    "gallery_subjects": 50,
+    "rank1": 0.6198662846227316,
+    "rank3": 0.8261700095510984,
+    "rank5": 0.8939828080229226,
+    "rank10": 0.9512893982808023,
+    "median_rank": 1.0,
+    "mean_rank": 2.7956064947468957,
+    "rank1_clothing": 0.3466666666666667,
+    "rank5_clothing": 0.7166666666666667,
+    "probes_clothing": 300,
+    "rank1_normal": 0.7295850066934404,
+    "rank5_normal": 0.965194109772423,
+    "probes_normal": 747
+  },
+  "verification": {
+    "same_distance": 0.31577974557876587,
+    "different_distance": 0.8748493790626526,
+    "distance_gap": 0.5590696334838867,
+    "verification_auc": 0.9025295303307413,
+    "eer_estimate": 0.17432702914184794,
+    "best_threshold": 0.5407260537147522,
+    "best_threshold_accuracy": 0.8322715931411584,
+    "best_threshold_balanced_accuracy": 0.8261758417491409,
+    "best_threshold_precision": 0.0873763048624316,
+    "best_threshold_recall": 0.8198368773667346,
+    "best_threshold_specificity": 0.8325148061315474,
+    "best_threshold_f1": 0.1579216844231538,
+    "same_pairs": 13732,
+    "different_pairs": 702074
+  },
+  "cmc": {
+    "1": 0.6198662846227316,
+    "2": 0.7564469914040115,
+    "3": 0.8261700095510984,
+    "5": 0.8939828080229226,
+    "10": 0.9512893982808023,
+    "20": 0.9837631327602674,
+    "30": 0.9933142311365807,
+    "50": 1.0
+  },
+  "condition_breakdown": [
+    {
+      "condition_family": "clothing",
+      "probes": 300,
+      "rank1": 0.3466666666666667,
+      "rank3": 0.5766666666666667,
+      "rank5": 0.7166666666666667,
+      "rank10": 0.8466666666666667,
+      "median_rank": 3.0
+    },
+    {
+      "condition_family": "normal",
+      "probes": 747,
+      "rank1": 0.7295850066934404,
+      "rank3": 0.9263721552878179,
+      "rank5": 0.965194109772423,
+      "rank10": 0.9933065595716198,
+      "median_rank": 1.0
+    }
+  ]
+}

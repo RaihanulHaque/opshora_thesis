@@ -1,0 +1,35 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='980' height='560' viewBox='0 0 980 560'>
+<rect width='100%' height='100%' fill='white'/>
+<text x='490.0' y='28' text-anchor='middle' font-size='20' font-family='Arial'>Learning-rate schedule</text>
+<line x1='82' y1='48' x2='82' y2='482' stroke='#333'/>
+<line x1='82' y1='482' x2='950' y2='482' stroke='#333'/>
+<line x1='82.0' y1='48' x2='82.0' y2='482' stroke='#ddd'/>
+<line x1='82' y1='48.0' x2='950' y2='48.0' stroke='#ddd'/>
+<text x='82.0' y='504' text-anchor='middle' font-size='11' font-family='Arial'>1</text>
+<text x='72' y='52.0' text-anchor='end' font-size='11' font-family='Arial'>0.000301</text>
+<line x1='255.6' y1='48' x2='255.6' y2='482' stroke='#ddd'/>
+<line x1='82' y1='134.8' x2='950' y2='134.8' stroke='#ddd'/>
+<text x='255.6' y='504' text-anchor='middle' font-size='11' font-family='Arial'>18</text>
+<text x='72' y='138.8' text-anchor='end' font-size='11' font-family='Arial'>0.00024</text>
+<line x1='429.2' y1='48' x2='429.2' y2='482' stroke='#ddd'/>
+<line x1='82' y1='221.6' x2='950' y2='221.6' stroke='#ddd'/>
+<text x='429.2' y='504' text-anchor='middle' font-size='11' font-family='Arial'>36</text>
+<text x='72' y='225.6' text-anchor='end' font-size='11' font-family='Arial'>0.00018</text>
+<line x1='602.8' y1='48' x2='602.8' y2='482' stroke='#ddd'/>
+<line x1='82' y1='308.4' x2='950' y2='308.4' stroke='#ddd'/>
+<text x='602.8' y='504' text-anchor='middle' font-size='11' font-family='Arial'>53</text>
+<text x='72' y='312.4' text-anchor='end' font-size='11' font-family='Arial'>0.000119</text>
+<line x1='776.4' y1='48' x2='776.4' y2='482' stroke='#ddd'/>
+<line x1='82' y1='395.2' x2='950' y2='395.2' stroke='#ddd'/>
+<text x='776.4' y='504' text-anchor='middle' font-size='11' font-family='Arial'>71</text>
+<text x='72' y='399.2' text-anchor='end' font-size='11' font-family='Arial'>5.91e-05</text>
+<line x1='950.0' y1='48' x2='950.0' y2='482' stroke='#ddd'/>
+<line x1='82' y1='482.0' x2='950' y2='482.0' stroke='#ddd'/>
+<text x='950.0' y='504' text-anchor='middle' font-size='11' font-family='Arial'>88</text>
+<text x='72' y='486.0' text-anchor='end' font-size='11' font-family='Arial'>-1.36e-06</text>
+<text x='516.0' y='536' text-anchor='middle' font-size='14' font-family='Arial'>Epoch</text>
+<text transform='translate(22 265.0) rotate(-90)' text-anchor='middle' font-size='14' font-family='Arial'>Learning rate</text>
+<polyline fill='none' stroke='#1f77b4' stroke-width='2.5' points='82.00,77.93 91.98,78.22 101.95,78.70 111.93,79.36 121.91,80.22 131.89,81.27 141.86,82.51 151.84,83.93 161.82,85.54 171.79,87.33 181.77,89.30 191.75,91.45 201.72,93.78 211.70,96.29 221.68,98.97 231.66,101.82 241.63,104.84 251.61,108.02 261.59,111.37 271.56,114.87 281.54,118.53 291.52,122.34 301.49,126.30 311.47,130.40 321.45,134.63 331.43,139.01 341.40,143.52 351.38,148.15 361.36,152.90 371.33,157.77 381.31,162.76 391.29,167.85 401.26,173.04 411.24,178.34 421.22,183.72 431.20,189.19 441.17,194.74 451.15,200.37 461.13,206.07 471.10,211.83 481.08,217.66 491.06,223.53 501.03,229.46 511.01,235.42 520.99,241.42 530.97,247.46 540.94,253.51 550.92,259.58 560.90,265.67 570.87,271.76 580.85,277.85 590.83,283.94 600.80,290.01 610.78,296.07 620.76,302.10 630.74,308.10 640.71,314.06 650.69,319.99 660.67,325.86 670.64,331.69 680.62,337.45 690.60,343.15 700.57,348.78 710.55,354.33 720.53,359.80 730.51,365.19 740.48,370.48 750.46,375.67 760.44,380.76 770.41,385.75 780.39,390.62 790.37,395.37 800.34,400.01 810.32,404.51 820.30,408.89 830.28,413.13 840.25,417.23 850.23,421.18 860.21,424.99 870.18,428.65 880.16,432.15 890.14,435.50 900.11,438.68 910.09,441.70 920.07,444.55 930.05,447.23 940.02,449.74 950.00,452.07'/>
+<line x1='720' y1='58' x2='748' y2='58' stroke='#1f77b4' stroke-width='3'/>
+<text x='756' y='62' font-size='12' font-family='Arial'>learning_rate</text>
+</svg>

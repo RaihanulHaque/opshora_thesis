@@ -240,15 +240,27 @@ def iter_archive_sequences(source: str | Path) -> Iterator[RawSequence]:
         raise FileNotFoundError(f"Dataset archive not found: {source}")
     if source.is_dir():
         has_images = any(path.is_file() and _looks_like_frame(path.name) for path in source.rglob("*"))
+        yielded = False
         if has_images:
-            yield from _sequences_from_directory(source)
+            for sequence in _sequences_from_directory(source):
+                yielded = True
+                yield sequence
+        nested_archives = sorted(
+            [
+                path
+                for path in source.rglob("*")
+                if path.is_file() and path.name.lower().endswith((".zip", ".tar", ".tar.gz", ".tgz"))
+            ],
+            key=lambda item: _numeric_sort_key(item.as_posix()),
+        )
+        if nested_archives:
+            for nested in nested_archives:
+                for sequence in iter_archive_sequences(nested):
+                    yielded = True
+                    yield sequence
+        if yielded:
             return
-        nested_zips = sorted(source.rglob("*.zip"), key=lambda item: _numeric_sort_key(item.as_posix()))
-        if nested_zips:
-            for nested in nested_zips:
-                yield from iter_archive_sequences(nested)
-            return
-        raise RuntimeError(f"No image sequences or ZIP archives found in {source}")
+        raise RuntimeError(f"No image sequences or nested archives found in {source}")
     if source.name.endswith((".tar", ".tar.gz", ".tgz")):
         yield from _sequences_from_tar(source)
         return

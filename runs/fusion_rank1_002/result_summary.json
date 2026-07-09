@@ -1,0 +1,8 @@
+{
+  "status": "early_stopped",
+  "epochs_completed": 88,
+  "monitor_metric": "verification_auc",
+  "best_verification_auc": 0.907596424410137,
+  "best_rank1": 0.6198662846227316,
+  "output_dir": "/data/experiments/skeleton_silhouette_fusion_v6/fusion_rank1_002"
+}
