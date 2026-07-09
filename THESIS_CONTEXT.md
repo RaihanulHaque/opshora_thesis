@@ -1,148 +1,349 @@
-# Thesis Context & Engine Specification: Cross-Domain Gait Recognition
-**System Intent:** Deep Learning Architecture Context for Coding Agents
-**Target Framework:** PyTorch + Modal.com (Serverless GPU Deployment)
+# Opshora Thesis Context
 
----
+This is the single current context file for the thesis project. Older notes about V1/V2/V3 were useful during exploration, but the current main working system is the V6 skeleton-silhouette fusion model.
 
-## 1. Project Overview & Core Objectives
-The objective of this thesis is to construct a robust cross-domain gait recognition framework capable of identifying human subjects via walking dynamics across severe environmental transitions.
+## 1. Thesis focus
 
-## 1. Formal Academic Objectives
-Any code architecture, evaluation script, or dataset pipeline generated must explicitly fulfill and map back to these three core objectives:
+The project studies gait recognition using a custom topological skeleton representation derived from silhouettes. The central idea is:
 
-1.  **Objective 1:** To construct a cross-domain gait dataset covering indoor-outdoor settings under varying day-night illumination & clothing conditions.
-2.  **Objective 2:** To design a generative and contrastive paradigm framework for robust representation accuracy.
-3.  **Objective 3:** To evaluate the performance of our dataset and model based on Existing work.
+> Use Hamilton/Hamilton-Jacobi-style medial-axis skeleton maps to represent body topology and motion, then learn a generative + contrastive embedding where same-person gait sequences are close and different-person gait sequences are far apart.
 
-### Core Targets
-*   **Cross-Domain Transitions:** Seamless transition modeling between Indoor/Outdoor, Day/Night illumination, and baseline vs. heavy clothing variations.
-*   **Angle Invariance:** Robust feature identification across specific viewing camera angles: $0^\circ$, $90^\circ$, and $180^\circ$.
-*   **Primary Benchmarks:** CASIA-B (Indoor, Daylight, Multi-Clothing) and CASIA-C (Outdoor, Night Vision).
-*   **Target Domain Evaluation:** Validation on a newly curated 20-subject custom dataset covering edge combinations missing from legacy datasets.
+The current implementation is not a closed-set ID classifier at test time. It is a distance-based verification/retrieval system.
 
----
+## 2. Thesis objectives and current status
 
-## 2. Preprocessing & The Mathematical Novelty
-Most contemporary architectures rely heavily on joint-based skeletons (e.g., OpenPose, HRNet). These pipelines break down catastrophically when tracking subjects wearing heavy clothing (e.g., winter coats distorting torso/limb keypoints) or under low-light night-vision noise where joint visibility drops to zero.
+| Objective | Current status | Evidence |
+|---|---|---|
+| Construct/use a gait dataset with meaningful condition variation | Partially fulfilled | CASIA-B paired silhouette + Hamilton skeleton data is working. A future custom Opshora dataset is still needed for true indoor/outdoor day/night cross-domain claims. |
+| Design a generative + contrastive learning framework | Fulfilled as a working prototype | V6 uses masked reconstruction plus supervised contrastive/triplet metric learning on a shared encoder. |
+| Evaluate the model with suitable metrics and comparison evidence | Partially fulfilled | V6 has Rank-k, ROC-AUC, distance gap, EER, condition-wise evaluation, plots, and local checkpoint evaluation. Formal comparison to external papers/baselines is still future work. |
 
-### The Innovation: Hamilton Medial Axis Skeleton
-To solve this, a custom preprocessing pipeline was developed based on geometric topology principles:
-1.  **Input:** Raw binary walking silhouettes extracted from video frames.
-2.  **Transformation:** Application of a continuous distance field calculation where every interior point maps its distance to the closest silhouette boundary point:
-    $$D(p) = \min_{b \in \partial \Omega} \|p - b\|_2$$
-3.  **Axis Extraction:** The Medial Axis (Hamilton Skeleton) is defined mathematically as the set of all interior points that possess two or more distinct closest points on the silhouette boundary ($\partial \Omega$):
-    $$M = \{p \in \Omega \mid \exists b_1, b_2 \in \partial \Omega, b_1 \neq b_2 \text{ s.t. } \|p - b_1\|_2 = \|p - b_2\|_2 = D(p)\}$$
+Safe thesis claim:
 
-
+```text
+A working generative-contrastive Hamilton skeleton and silhouette fusion gait framework was implemented and evaluated on unseen CASIA-B subjects. The learned embedding separates same-subject and different-subject gait sequences with strong verification AUC.
 ```
 
-[Raw Silhouette] ──> [Euclidean Distance Map] ──> [Medial Axis Extraction]
-(Noisy)              (Continuous Field)             (Pure Topology)
+Do not claim yet:
 
+```text
+The system is state-of-the-art.
+The full custom cross-domain dataset is complete.
+The model is fully robust to all indoor/outdoor, day/night, and clothing changes.
 ```
 
-### Why this is the "Novelty" Pitch:
-*   **Shape Over Joint Stability:** Unlike structural joints, the Medial Axis extracts a sparse, continuous topological skeleton representing the *pure geometric symmetry* of the walking entity.
-*   **Robustness:** Even if a heavy coat expands the body silhouette or night-shadows blur fine details, the medial axis smoothly shifts to find the updated continuous center of mass, filtering out structural noise.
+## 3. Current best model: V6
 
----
+Main design:
 
-## 3. Current Architecture Engineering Bottlenecks
-The model has been breaking down and crashing local systems and Kaggle instances due to structural memory leaks in the training graph.
-
-### The Advisor's Constraint
-The architecture must tightly couple a **Generative Paradigm** and a **Contrastive Paradigm** simultaneously. 
-
-### Why the Code is Crashing (Memory Heap Leak):
-The training loop is currently passing full temporal video frame tensor sequences into a generative encoder-decoder step, calculating a generative/adversarial loss, and passing those high-dimensional internal hidden state graphs directly into a contrastive clustering step. 
-
-Because both backpropagation graphs are alive in GPU VRAM simultaneously, memory usage spikes exponentially, throwing `CUDA Out of Memory (OOM)` errors or triggering hardware engine crashes.
-
----
-
-## 4. Proposed Architectural Solution for Coding Agents
-The implementation must build a joint framework that dynamically splits or sequentially detaches graphs to optimize execution.
-
-
+```text
+designs/skeleton_silhouette_fusion_v6/
 ```
 
-```
-   [Skeletal Motion Dynamics Sequence]
-                   │
-                   ▼
-     [Feature Extraction Encoder]
-                   │
-     ┌─────────────┴─────────────┐
-     ▼ (Generative Track)         ▼ (Contrastive Track)
+Architecture documentation:
 
+```text
+designs/skeleton_silhouette_fusion_v6/MODEL_ARCHITECTURE_AND_FLOW.md
 ```
 
-[Reconstruction G]           [Projection Head]
-│                            │
-Compute: L_gen               Compute: L_contrastive
-└─────────────┬──────────────┘
-▼
-Joint Loss Optimizations
+Current best downloaded run:
 
+```text
+runs/fusion_rank1_002/
 ```
 
-### Dual-Paradigm Logic
-1.  **Generative Track (Self-Supervised):** An Encoder-Generator-Discriminator sub-network trains on the skeletal motion sequence to reconstruct frame posture dynamics, forcing the encoder to learn detailed spatial-temporal patterns of a human walking cycle.
-2.  **Contrastive Track (Subject Separation):** A projection head maps the encoder’s features into a lower-dimensional embedding space. It applies a Contrastive Loss (e.g., InfoNCE or SupCon) to pull embeddings from the same person close together (even if angle/clothing changes) and push embeddings from different subjects far apart.
-3.  **The Optimization Objective:**
-    $$\mathcal{L}_{\text{Total}} = \alpha \mathcal{L}_{\text{Gen}} + \beta \mathcal{L}_{\text{Contrastive}}$$
-    *Agent instruction: Implement graph detaching or sequential backpropagation (`loss.backward()` with distinct optimizer steps) to prevent VRAM aggregation.*
+Checkpoint used for local Rank-1 evaluation:
 
----
-
-## 5. Modal.com Cloud Infrastructure Specification
-To run massive coordinate grids safely and unlock high-throughput scaling, the solution must run via `modal.com` serverless environments.
-
-### Target Deployment Script Design
-Use the configuration pattern below to define the remote execution runtime for this architecture:
-
-```python
-import modal
-
-app = modal.App("gait-recognition-engine")
-
-# Image Definition with required deep learning packages
-gait_image = (
-    modal.Image.debian_slim()
-    .pip_install(
-        "torch",
-        "torchvision",
-        "numpy",
-        "pandas",
-        "scikit-learn",
-        "opencv-python-headless"
-    )
-)
-
-# Remote Volume for persistent dataset storage (CASIA-B, CASIA-C, and Custom Dataset)
-volume = modal.Volume.from_name("gait-datasets-store", create_if_missing=True)
-
-@app.function(
-    image=gait_image,
-    gpu="A10G", # Scalable high-performance VRAM instance to handle dual loss tracking
-    volumes={"/data": volume},
-    timeout=7200
-)
-def train_gait_model():
-    # Agent: Implement memory-efficient training loops here
-    print("Initializing Generative-Contrastive Joint Pipeline...")
-    pass
-
+```text
+runs/fusion_rank1_002/best_rank1_model.pt
 ```
 
----
+## 4. V6 input representation
 
-## 6. Prompt Engineering Directives for AI Agents
+V6 uses paired CASIA-B data:
 
-When generating code or debugging using this context file, adhere to these strict constraints:
-
-* **Memory Management:** Always break the joint backpropagation loop into decoupled gradient paths or use explicit tracking parameters (`with torch.no_grad():` where applicable) to guarantee execution under 12GB/24GB VRAM.
-* **Input Assumption:** Assume inputs are tensor structures derived from the mathematical Hamilton Medial Axis calculations, not raw pixel imagery or traditional skeleton coordinate formats.
-* **Deliverables Needed:** A clean dataset loader parsing split zipped sequences, a dual-objective model architecture, and a streamlined serverless orchestrator script ready for running via Modal.
-
+```text
+datasets/CASIA_B_Hamilton_Skeleton/
+datasets/GaitDatasetB-silh/
 ```
+
+The preprocessing pairs sequences by:
+
+```text
+subject + condition + view
+```
+
+Each sequence is converted into 30 frames at 64x64 resolution with four channels:
+
+| Channel | Meaning |
+|---|---|
+| 0 | cleaned silhouette |
+| 1 | binary Hamilton skeleton |
+| 2 | blurred skeleton structure |
+| 3 | temporal skeleton motion |
+
+The model receives:
+
+```text
+silhouette = channel 0
+topology   = channels 1, 2, 3
+```
+
+## 5. V6 architecture summary
+
+```mermaid
+flowchart TD
+    A["Silhouette sequence"] --> C["Silhouette CNN stream"]
+    B["Hamilton skeleton + structure + motion"] --> D["Skeleton/topology CNN stream"]
+    C --> E["Learned gated fusion"]
+    D --> E
+    E --> F["Temporal CNN + Bi-GRU"]
+    F --> G["Generative branch\nmasked skeleton/motion reconstruction"]
+    F --> H["Contrastive branch\nembedding + projection"]
+    G --> I["Generative loss"]
+    H --> J["SupCon + triplet + small CE loss"]
+    I --> K["Backprop to shared encoder"]
+    J --> K
+    H --> L["Final 256-D gait embedding"]
+    L --> M["Distance-based verification/retrieval"]
+```
+
+Important implementation details:
+
+- two spatial streams: silhouette stream and skeleton/topology stream;
+- learned gate decides how much to use each stream per frame;
+- temporal CNN captures local walking transitions;
+- Bi-GRU captures sequence-level gait dynamics;
+- decoder reconstructs masked skeleton and motion frames;
+- contrastive projection learns same/different subject separation;
+- test-time output is a 256-dimensional embedding.
+
+## 6. Loss design
+
+Generative/self-supervised loss:
+
+```text
+weighted skeleton BCE + Dice loss + SmoothL1 motion loss
+```
+
+Recognition/metric loss:
+
+```text
+supervised contrastive loss + batch-hard triplet loss + small auxiliary CE loss
+```
+
+The CE classifier is training-only. Final testing uses embedding distances, not predicted subject IDs.
+
+Closed-loop requirement:
+
+```text
+generative loss -> shared encoder
+contrastive/triplet loss -> shared encoder
+```
+
+So the architecture satisfies the advisor’s requested dual-stage feedback mechanism while avoiding unstable full GAN training.
+
+## 7. Current dataset/evaluation protocol
+
+Prepared fused dataset:
+
+```text
+Total subjects:   124
+Total sequences:  2964
+Missing pairs:    0
+Sequence length:  30 frames
+Resolution:       64 x 64
+```
+
+Subject-disjoint split:
+
+```text
+Train subjects: 001-074
+Test subjects:  075-124
+```
+
+Counts:
+
+```text
+Train subjects:  74
+Test subjects:   50
+Train sequences: 1767
+Test sequences:  1197
+```
+
+Current limitation:
+
+```text
+There is no separate validation split in this completed run. Early stopping also monitored the unseen evaluation split.
+```
+
+For a stricter final thesis protocol, use subject-disjoint train/validation/test splits.
+
+## 8. Current best metrics
+
+From local evaluation of:
+
+```text
+runs/fusion_rank1_002/best_rank1_model.pt
+```
+
+Main results:
+
+```text
+3-gallery Rank-1:                61.99%
+Rank-5:                          89.40%
+Rank-10:                         95.13%
+Verification AUC:                90.25%
+Balanced verification accuracy:  82.62%
+EER estimate:                    17.43%
+same_distance:                   0.3158
+different_distance:              0.8748
+distance_gap:                    0.5591
+```
+
+Condition-wise retrieval:
+
+| Condition | Probes | Rank-1 | Rank-5 | Rank-10 |
+|---|---:|---:|---:|---:|
+| Normal walking | 747 | 72.96% | 96.52% | 99.33% |
+| Clothing change | 300 | 34.67% | 71.67% | 84.67% |
+
+Interpretation:
+
+The model works well for normal walking and verification, but clothing-change sequences remain much harder. This is a good limitation/future-work discussion point.
+
+## 9. Generated evidence files
+
+Main post-training report:
+
+```text
+runs/fusion_rank1_002/post_training_analysis/POST_TRAINING_REPORT.md
+```
+
+Important figures:
+
+```text
+runs/fusion_rank1_002/post_training_analysis/01_losses.png
+runs/fusion_rank1_002/post_training_analysis/02_retrieval_rank.png
+runs/fusion_rank1_002/post_training_analysis/03_verification.png
+runs/fusion_rank1_002/post_training_analysis/04_distances.png
+runs/fusion_rank1_002/post_training_analysis/07_distance_histogram.png
+runs/fusion_rank1_002/post_training_analysis/08_roc_curve.png
+runs/fusion_rank1_002/post_training_analysis/09_cmc_curve.png
+runs/fusion_rank1_002/post_training_analysis/10_embedding_pca_subjects.png
+```
+
+## 10. Modal workflow
+
+Deploy after code/config changes:
+
+```bash
+modal deploy modal_app.py
+```
+
+Run the current best design:
+
+```bash
+python submit_modal.py run --design skeleton_silhouette_fusion_v6 --run fusion_rank1_003
+```
+
+Downloaded Modal artifacts should be placed under:
+
+```text
+runs/<run_name>/
+```
+
+## 11. Local post-training evaluation
+
+Use the conda `ML` environment:
+
+```bash
+/Users/rahi/miniconda3/envs/ML/bin/python tools/post_training_analysis.py \
+  --run-dir runs/fusion_rank1_002 \
+  --checkpoint runs/fusion_rank1_002/best_rank1_model.pt \
+  --skeleton-dataset datasets/CASIA_B_Hamilton_Skeleton \
+  --silhouette-dataset datasets/GaitDatasetB-silh \
+  --cache-dir runs/fusion_rank1_002/local_processed_cache_full \
+  --gallery-per-subject 3
+```
+
+The preprocessing reader supports subject `.tar.gz` archives inside the silhouette dataset folder, so every subject archive does not need to be manually extracted.
+
+Device selection in the script:
+
+```text
+CUDA -> MPS -> CPU
+```
+
+In the latest local run, MPS was built but not available, so evaluation used CPU.
+
+## 12. Future custom dataset pipeline
+
+For Opshora’s own dataset:
+
+```mermaid
+flowchart TD
+    A["Raw walking videos"] --> B["Frame extraction"]
+    B --> C["YOLO/person segmentation"]
+    C --> D["Binary silhouettes"]
+    D --> E["Silhouette QC"]
+    E --> F["Hamilton skeleton extraction"]
+    F --> G["Skeleton QC"]
+    D --> H["Organized silhouette dataset"]
+    G --> I["Organized skeleton dataset"]
+    H --> J["Pair by subject + condition + view"]
+    I --> J
+    J --> K["V6 preprocessing and training"]
+```
+
+Recommended folder structure:
+
+```text
+datasets/OpshoraSilhouettes/
+  001/nm-01/090/frame_000001.png
+  001/nm-02/090/frame_000001.png
+
+datasets/OpshoraHamiltonSkeleton/
+  001/nm-01/090/frame_000001_skeleton.png
+  001/nm-02/090/frame_000001_skeleton.png
+```
+
+Rules:
+
+- use three-digit subject IDs: `001`, `002`, ...
+- use condition names such as `nm-01`, `cl-01`, `bg-01`;
+- use view folders such as `000`, `090`, `180`;
+- save binary silhouettes and skeletons as PNG;
+- keep subject/condition/view identical between silhouette and skeleton folders;
+- aim for at least 30 good frames per sequence.
+
+Minimum prototype:
+
+```text
+5 subjects, 2 sequences each, 1 view, normal walking only
+```
+
+Better thesis dataset:
+
+```text
+30+ subjects, 4-6 sequences per subject, normal + clothing/condition variation
+```
+
+Best final cross-domain dataset:
+
+```text
+50+ subjects with indoor/outdoor, day/night, clothing variation, and multiple views
+```
+
+## 13. Remaining work
+
+Most useful next steps:
+
+1. Add exact training-time logging.
+2. Add exact GPU peak memory logging on Modal.
+3. Run a silhouette-only baseline.
+4. Run a skeleton-only/no-generative ablation.
+5. Create a separate validation split for final thesis protocol.
+6. Test on Opshora’s custom dataset when available.
+7. Report comparison table against baselines/existing work.
+
