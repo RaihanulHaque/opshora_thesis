@@ -4,3 +4,5 @@ datasets/
 runs/fusion_rank1_002/local_processed_cache_full/
 runs/fusion_rank1_002/local_processed_cache/
 **/latest.pt
+.vscode/
+yolo26m-seg.pt

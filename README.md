@@ -93,6 +93,20 @@ This generates plots, CSV files, saved embeddings, and a markdown report under:
 runs/fusion_rank1_002/post_training_analysis/
 ```
 
+## Test live silhouette and skeleton
+
+Use the webcam test script to preview:
+
+```text
+camera | white silhouette | aligned 64x64 silhouette | Hamilton skeleton
+```
+
+```bash
+/Users/rahi/miniconda3/envs/ML/bin/python tools/live_silhouette_cam.py
+```
+
+Press `q` to quit.
+
 ## Current thesis status
 
 What is working:
@@ -112,4 +126,3 @@ What still needs work for a stronger final thesis:
 - exact training-time and peak GPU-memory logging;
 - baseline/ablation comparison table;
 - cross-domain testing on a second dataset.
-
