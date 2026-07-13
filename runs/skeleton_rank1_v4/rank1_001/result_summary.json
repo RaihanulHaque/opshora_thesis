@@ -1,0 +1,7 @@
+{
+  "status": "early_stopped",
+  "epochs_completed": 64,
+  "monitor_metric": "rank1",
+  "best_rank1": 0.3095030514385353,
+  "output_dir": "/data/experiments/skeleton_rank1_v4/rank1_001"
+}

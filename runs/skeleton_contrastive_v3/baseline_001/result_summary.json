@@ -1,0 +1,6 @@
+{
+  "status": "early_stopped",
+  "epochs_completed": 29,
+  "best_rank1": 0.45510026155187444,
+  "output_dir": "/data/experiments/skeleton_contrastive_v3/baseline_001"
+}

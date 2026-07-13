@@ -115,6 +115,41 @@ def test_skeleton_v3_shapes() -> None:
     assert torch.isfinite(loss)
 
 
+def test_fusion_baseline_designs_shapes() -> None:
+    import importlib
+
+    config = ExperimentConfig(
+        dataset_format="skeleton_silhouette_fusion",
+        height=64,
+        width=64,
+        sequence_length=30,
+        hidden_dim=32,
+        embedding_dim=64,
+        projection_dim=32,
+        lambda_ce=1.0,
+    )
+    silhouette = torch.rand(2, 30, 1, 64, 64)
+    topology = torch.rand(2, 30, 3, 64, 64)
+
+    for design in (
+        "skeleton_silhouette_lstm_v1",
+        "skeleton_silhouette_tcn_v1",
+        "skeleton_silhouette_transformer_v1",
+    ):
+        module = importlib.import_module(f"designs.{design}.model")
+        model = module.build_model(config, num_classes=5)
+        model.eval()
+        with torch.no_grad():
+            output = model(silhouette, topology, reconstruct=True, mask_ratio=0.3)
+        assert output["embedding"].shape == (2, 64)
+        assert output["projection"].shape == (2, 32)
+        assert output["logits"].shape == (2, 5)
+        assert output["reconstruction"].shape == (2, 30, 2, 64, 64)
+        target = module.build_reconstruction_target(silhouette, topology)
+        loss = module.compute_reconstruction_loss(output["reconstruction"], target, output["mask"], config)
+        assert torch.isfinite(loss)
+
+
 def test_reconstruction_preview(tmp_path: Path) -> None:
     silhouette = torch.rand(1, 3, 1, 64, 44)
     topology = torch.rand(1, 3, 3, 64, 44)

@@ -1,0 +1,7 @@
+{
+  "status": "early_stopped",
+  "epochs_completed": 52,
+  "monitor_metric": "verification_auc",
+  "best_verification_auc": 0.8894261316632683,
+  "output_dir": "/data/experiments/skeleton_contrastive_v3/auc_monitor_001"
+}

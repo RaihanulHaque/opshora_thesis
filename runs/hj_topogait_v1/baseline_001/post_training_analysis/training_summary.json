@@ -1,0 +1,24 @@
+{
+  "epochs_recorded": 62,
+  "best_rank1": {
+    "epoch": 54,
+    "value": 0.6121593291404612
+  },
+  "best_rank5": {
+    "epoch": 42,
+    "value": 0.9014675052410901
+  },
+  "best_verification_auc": null,
+  "best_verification_accuracy": null,
+  "best_distance_gap": null,
+  "final_epoch": {
+    "epoch": 61,
+    "generative": 2.158231943845749,
+    "recognition": 20.47497582435608,
+    "steps": 31,
+    "rank1": 0.5786163522012578,
+    "rank5": 0.8805031446540881,
+    "best_rank1": 0.6121593291404612
+  },
+  "note": "verification_auc/verification_accuracy/distance_gap are absent from this run's metrics.jsonl -- it predates those fields being added to gait/train.py's evaluate()."
+}

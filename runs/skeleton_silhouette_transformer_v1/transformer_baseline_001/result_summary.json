@@ -1,0 +1,8 @@
+{
+  "status": "early_stopped",
+  "epochs_completed": 61,
+  "monitor_metric": "verification_auc",
+  "best_verification_auc": 0.8405315117972618,
+  "best_rank1": 0.34097421203438394,
+  "output_dir": "/data/experiments/skeleton_silhouette_transformer_v1/transformer_baseline_001"
+}

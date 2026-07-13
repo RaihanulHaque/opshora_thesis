@@ -1,0 +1,6 @@
+{
+  "status": "early_stopped",
+  "epochs_completed": 31,
+  "best_rank1": 0.6687631027253669,
+  "output_dir": "/data/experiments/hj_topogait_v2/baseline_001"
+}

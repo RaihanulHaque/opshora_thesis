@@ -1,0 +1,8 @@
+{
+  "status": "early_stopped",
+  "epochs_completed": 100,
+  "monitor_metric": "verification_auc",
+  "best_verification_auc": 0.8393594217885232,
+  "best_rank1": 0.36103151862464183,
+  "output_dir": "/data/experiments/skeleton_silhouette_tcn_v1/tcn_baseline_001"
+}

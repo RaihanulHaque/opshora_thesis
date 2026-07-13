@@ -31,6 +31,14 @@ Main local evaluation report:
 runs/fusion_rank1_002/post_training_analysis/POST_TRAINING_REPORT.md
 ```
 
+Comparison across every model actually trained so far (V1-V6 plus the
+LSTM/TCN/Transformer architecture-comparison baselines), all from real
+training runs:
+
+```text
+runs/MODEL_COMPARISON.md
+```
+
 Main result:
 
 ```text
@@ -124,5 +132,7 @@ What still needs work for a stronger final thesis:
 - custom Opshora cross-domain dataset;
 - separate validation split;
 - exact training-time and peak GPU-memory logging;
-- baseline/ablation comparison table;
-- cross-domain testing on a second dataset.
+- cross-domain testing on a second dataset;
+- re-sync corrupted checkpoints for the LSTM/TCN/Transformer baselines and
+  the empty `hj_topogait_v1` run (see `runs/MODEL_COMPARISON.md`) so their
+  full local checkpoint evaluation (CMC/ROC/PCA) can be generated too.
