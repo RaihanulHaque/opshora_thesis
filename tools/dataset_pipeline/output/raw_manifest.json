@@ -3,3600 +3,1200 @@
     "subject": "001",
     "condition": "cl-01-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Lc1_01_ID/Lc1_01_ID_0/Lc1_01_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Lc1_01_ID/Lc1_01_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Lc1_01_ID/Lc1_01_ID_0/Lc1_01_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Lc1_01_ID/Lc1_01_ID_0",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "cl-01-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Lc1_01_ID/Lc1_01_ID_90/Lc1_01_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Lc1_01_ID/Lc1_01_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Lc1_01_ID/Lc1_01_ID_90/Lc1_01_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Lc1_01_ID/Lc1_01_ID_90",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "cl-01-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Lc1_01_ID/Lc1_01_ID_180/Lc1_01_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Lc1_01_ID/Lc1_01_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "001",
-    "condition": "cl-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Lc1_01_OD/Lc1_01_OD_0/2026-07-08 12-35-09.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Lc1_01_OD/Lc1_01_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "001",
-    "condition": "cl-01-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Lc1_01_OD/Lc1_01_OD_90/2026-07-08 10-53-48.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Lc1_01_OD/Lc1_01_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "001",
-    "condition": "cl-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Lc1_01_OD/Lc1_01_OD_180/2026-07-08 12-35-21.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Lc1_01_OD/Lc1_01_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Lc1_01_ID/Lc1_01_ID_180/Lc1_01_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Lc1_01_ID/Lc1_01_ID_180",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "cl-01-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Lc1_01_ON/Lc1_01_ON_0/Lc1_01_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Lc1_01_ON/Lc1_01_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Lc1_01_ON/Lc1_01_ON_0/Lc1_01_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Lc1_01_ON/Lc1_01_ON_0",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "cl-01-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Lc1_01_ON/Lc1_01_ON_90/Lc1_01_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Lc1_01_ON/Lc1_01_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Lc1_01_ON/Lc1_01_ON_90/Lc1_01_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Lc1_01_ON/Lc1_01_ON_90",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "cl-01-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Lc1_01_ON/Lc1_01_ON_180/Lc1_01_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Lc1_01_ON/Lc1_01_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Lc1_01_ON/Lc1_01_ON_180/Lc1_01_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Lc1_01_ON/Lc1_01_ON_180",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "cl-02-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Lc2_01_ID/Lc2_01_ID_0/Lc2_01_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Lc2_01_ID/Lc2_01_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Lc2_01_ID/Lc2_01_ID_0/Lc2_01_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Lc2_01_ID/Lc2_01_ID_0",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "cl-02-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Lc2_01_ID/Lc2_01_ID_90/Lc2_01_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Lc2_01_ID/Lc2_01_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Lc2_01_ID/Lc2_01_ID_90/Lc2_01_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Lc2_01_ID/Lc2_01_ID_90",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "cl-02-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Lc2_01_ID/Lc2_01_ID_180/Lc2_01_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Lc2_01_ID/Lc2_01_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "001",
-    "condition": "cl-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Lc2_01_OD/Lc2_01_OD_0/Lc2_01_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Lc2_01_OD/Lc2_01_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "001",
-    "condition": "cl-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Lc2_01_OD/Lc2_01_OD_90/Lc2_01_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Lc2_01_OD/Lc2_01_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "001",
-    "condition": "cl-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Lc2_01_OD/Lc2_01_OD_180/Lc2_01_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Lc2_01_OD/Lc2_01_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Lc2_01_ID/Lc2_01_ID_180/Lc2_01_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Lc2_01_ID/Lc2_01_ID_180",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "cl-02-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Lc2_01_ON/Lc2_01_ON_0/Lc2_01_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Lc2_01_ON/Lc2_01_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Lc2_01_ON/Lc2_01_ON_0/Lc2_01_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Lc2_01_ON/Lc2_01_ON_0",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "cl-02-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Lc2_01_ON/Lc2_01_ON_90/Lc2_01_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Lc2_01_ON/Lc2_01_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Lc2_01_ON/Lc2_01_ON_90/Lc2_01_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Lc2_01_ON/Lc2_01_ON_90",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "cl-02-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Lc2_01_ON/Lc2_01_ON_180/Lc2_01_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Lc2_01_ON/Lc2_01_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Lc2_01_ON/Lc2_01_ON_180/Lc2_01_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Lc2_01_ON/Lc2_01_ON_180",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "nm-01-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Nm1_01_ID/Nm1_01_ID_0/Nm1_01_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Nm1_01_ID/Nm1_01_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Nm1_01_ID/Nm1_01_ID_0/Nm1_01_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Nm1_01_ID/Nm1_01_ID_0",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "nm-01-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Nm1_01_ID/Nm1_01_ID_90/Nm1_01_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Nm1_01_ID/Nm1_01_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Nm1_01_ID/Nm1_01_ID_90/Nm1_01_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Nm1_01_ID/Nm1_01_ID_90",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "nm-01-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Nm1_01_ID/Nm1_01_ID_180/Nm1_01_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Nm1_01_ID/Nm1_01_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "001",
-    "condition": "nm-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Nm1_01_OD/Nm1_01_OD_0/Nm1_01_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Nm1_01_OD/Nm1_01_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "001",
-    "condition": "nm-01-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Nm1_01_OD/Nm1_01_OD_90/Nm1_01_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Nm1_01_OD/Nm1_01_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "001",
-    "condition": "nm-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Nm1_01_OD/Nm1_01_OD_180/Nm1_01_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Nm1_01_OD/Nm1_01_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Nm1_01_ID/Nm1_01_ID_180/Nm1_01_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Nm1_01_ID/Nm1_01_ID_180",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "nm-01-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Nm1_01_ON/Nm1_01_ON_0/Nm1_01_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Nm1_01_ON/Nm1_01_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Nm1_01_ON/Nm1_01_ON_0/Nm1_01_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Nm1_01_ON/Nm1_01_ON_0",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "nm-01-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Nm1_01_ON/Nm1_01_ON_90/Nm1_01_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Nm1_01_ON/Nm1_01_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Nm1_01_ON/Nm1_01_ON_90/Nm1_01_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Nm1_01_ON/Nm1_01_ON_90",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "nm-01-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Nm1_01_ON/Nm1_01_ON_180/Nm1_01_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Nm1_01_ON/Nm1_01_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Nm1_01_ON/Nm1_01_ON_180/Nm1_01_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Nm1_01_ON/Nm1_01_ON_180",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "nm-02-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Nm2_01_ID/Nm2_01_ID_0/Nm2_01_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Nm2_01_ID/Nm2_01_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Nm2_01_ID/Nm2_01_ID_0/Nm2_01_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Nm2_01_ID/Nm2_01_ID_0",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "nm-02-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Nm2_01_ID/Nm2_01_ID_90/Nm2_01_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Nm2_01_ID/Nm2_01_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Nm2_01_ID/Nm2_01_ID_90/Nm2_01_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Nm2_01_ID/Nm2_01_ID_90",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "nm-02-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Nm2_01_ID/Nm2_01_ID_180/Nm2_01_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Nm2_01_ID/Nm2_01_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "001",
-    "condition": "nm-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Nm2_01_OD/Nm2_01_OD_0/2026-07-08 12-31-50.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Nm2_01_OD/Nm2_01_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "001",
-    "condition": "nm-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Nm2_01_OD/Nm2_01_OD_90/Nm2_01_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Nm2_01_OD/Nm2_01_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "001",
-    "condition": "nm-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Nm2_01_OD/Nm2_01_OD_180/Nm2_01_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Nm2_01_OD/Nm2_01_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Nm2_01_ID/Nm2_01_ID_180/Nm2_01_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Nm2_01_ID/Nm2_01_ID_180",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "nm-02-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Nm2_01_ON/Nm2_01_ON_0/Nm2_01_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Nm2_01_ON/Nm2_01_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Nm2_01_ON/Nm2_01_ON_0/Nm2_01_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Nm2_01_ON/Nm2_01_ON_0",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "nm-02-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Nm2_01_ON/Nm2_01_ON_90/Nm2_01_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Nm2_01_ON/Nm2_01_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Nm2_01_ON/Nm2_01_ON_90/Nm2_01_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Nm2_01_ON/Nm2_01_ON_90",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "nm-02-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Nm2_01_ON/Nm2_01_ON_180/Nm2_01_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Nm2_01_ON/Nm2_01_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Nm2_01_ON/Nm2_01_ON_180/Nm2_01_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Nm2_01_ON/Nm2_01_ON_180",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "nm-03-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Nm3_01_ID/Nm3_01_ID_0/Nm3_01_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Nm3_01_ID/Nm3_01_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Nm3_01_ID/Nm3_01_ID_0/Nm3_01_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Nm3_01_ID/Nm3_01_ID_0",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "nm-03-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Nm3_01_ID/Nm3_01_ID_90/Nm3_01_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Nm3_01_ID/Nm3_01_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Nm3_01_ID/Nm3_01_ID_90/Nm3_01_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Nm3_01_ID/Nm3_01_ID_90",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "nm-03-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Nm3_01_ID/Nm3_01_ID_180/Nm3_01_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub01_ID/Nm3_01_ID/Nm3_01_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "001",
-    "condition": "nm-03-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Nm3_01_OD/Nm3_01_OD_0/Nm3_01_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Nm3_01_OD/Nm3_01_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "001",
-    "condition": "nm-03-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Nm3_01_OD/Nm3_01_OD_90/Nm3_01_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Nm3_01_OD/Nm3_01_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "001",
-    "condition": "nm-03-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Nm3_01_OD/Nm3_01_OD_180/Nm3_01_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub01_OD/Nm3_01_OD/Nm3_01_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Nm3_01_ID/Nm3_01_ID_180/Nm3_01_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub01_ID/Nm3_01_ID/Nm3_01_ID_180",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "nm-03-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Nm3_01_ON/Nm3_01_ON_0/Nm3_01_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Nm3_01_ON/Nm3_01_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Nm3_01_ON/Nm3_01_ON_0/Nm3_01_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Nm3_01_ON/Nm3_01_ON_0",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "nm-03-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Nm3_01_ON/Nm3_01_ON_90/Nm3_01_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Nm3_01_ON/Nm3_01_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Nm3_01_ON/Nm3_01_ON_90/Nm3_01_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Nm3_01_ON/Nm3_01_ON_90",
     "status": "ok"
   },
   {
     "subject": "001",
     "condition": "nm-03-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Nm3_01_ON/Nm3_01_ON_180/Nm3_01_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub01_ON/Nm3_01_ON/Nm3_01_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Nm3_01_ON/Nm3_01_ON_180/Nm3_01_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub01_ON/Nm3_01_ON/Nm3_01_ON_180",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "cl-01-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Lc1_02_ID/Lc1_02_ID_0/Lc1_02_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Lc1_02_ID/Lc1_02_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Lc1_02_ID/Lc1_02_ID_0/Lc1_02_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Lc1_02_ID/Lc1_02_ID_0",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "cl-01-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Lc1_02_ID/Lc1_02_ID_90/Lc1_02_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Lc1_02_ID/Lc1_02_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Lc1_02_ID/Lc1_02_ID_90/Lc1_02_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Lc1_02_ID/Lc1_02_ID_90",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "cl-01-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Lc1_02_ID/Lc1_02_ID_180/Lc1_02_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Lc1_02_ID/Lc1_02_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "002",
-    "condition": "cl-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Lc1_02_OD/Lc1_02_OD_0/2026-07-08 12-26-29.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Lc1_02_OD/Lc1_02_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "002",
-    "condition": "cl-01-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Lc1_02_OD/Lc1_02_OD_90/Lc1_02_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Lc1_02_OD/Lc1_02_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "002",
-    "condition": "cl-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Lc1_02_OD/Lc1_02_OD_180/Lc1_02_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Lc1_02_OD/Lc1_02_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Lc1_02_ID/Lc1_02_ID_180/Lc1_02_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Lc1_02_ID/Lc1_02_ID_180",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "cl-01-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Lc1_02_ON/Lc1_02_ON_0/Lc1_02_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Lc1_02_ON/Lc1_02_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Lc1_02_ON/Lc1_02_ON_0/Lc1_02_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Lc1_02_ON/Lc1_02_ON_0",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "cl-01-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Lc1_02_ON/Lc1_02_ON_90/Lc1_02_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Lc1_02_ON/Lc1_02_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Lc1_02_ON/Lc1_02_ON_90/Lc1_02_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Lc1_02_ON/Lc1_02_ON_90",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "cl-01-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Lc1_02_ON/Lc1_02_ON_180/Lc1_02_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Lc1_02_ON/Lc1_02_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Lc1_02_ON/Lc1_02_ON_180/Lc1_02_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Lc1_02_ON/Lc1_02_ON_180",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "cl-02-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Lc2_02_ID/Lc2_02_ID_0/Lc2_02_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Lc2_02_ID/Lc2_02_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Lc2_02_ID/Lc2_02_ID_0/Lc2_02_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Lc2_02_ID/Lc2_02_ID_0",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "cl-02-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Lc2_02_ID/Lc2_02_ID_90/Lc2_02_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Lc2_02_ID/Lc2_02_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Lc2_02_ID/Lc2_02_ID_90/Lc2_02_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Lc2_02_ID/Lc2_02_ID_90",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "cl-02-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Lc2_02_ID/Lc2_02_ID_180/Lc2_02_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Lc2_02_ID/Lc2_02_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "002",
-    "condition": "cl-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Lc2_02_OD/Lc2_02_OD_0/Lc2_02_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Lc2_02_OD/Lc2_02_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "002",
-    "condition": "cl-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Lc2_02_OD/Lc2_02_OD_90/Lc2_02_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Lc2_02_OD/Lc2_02_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "002",
-    "condition": "cl-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Lc2_02_OD/Lc2_02_OD_180/Lc2_02_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Lc2_02_OD/Lc2_02_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Lc2_02_ID/Lc2_02_ID_180/Lc2_02_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Lc2_02_ID/Lc2_02_ID_180",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "cl-02-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Lc2_02_ON/Lc2_02_ON_0/Lc2_02_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Lc2_02_ON/Lc2_02_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Lc2_02_ON/Lc2_02_ON_0/Lc2_02_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Lc2_02_ON/Lc2_02_ON_0",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "cl-02-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Lc2_02_ON/Lc2_02_ON_90/Lc2_02_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Lc2_02_ON/Lc2_02_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Lc2_02_ON/Lc2_02_ON_90/Lc2_02_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Lc2_02_ON/Lc2_02_ON_90",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "cl-02-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Lc2_02_ON/Lc2_02_ON_180/Lc2_02_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Lc2_02_ON/Lc2_02_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Lc2_02_ON/Lc2_02_ON_180/Lc2_02_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Lc2_02_ON/Lc2_02_ON_180",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "nm-01-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Nm1_02_ID/Nm1_02_ID_0/Nm1_02_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Nm1_02_ID/Nm1_02_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Nm1_02_ID/Nm1_02_ID_0/Nm1_02_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Nm1_02_ID/Nm1_02_ID_0",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "nm-01-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Nm1_02_ID/Nm1_02_ID_90/Nm1_02_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Nm1_02_ID/Nm1_02_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Nm1_02_ID/Nm1_02_ID_90/Nm1_02_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Nm1_02_ID/Nm1_02_ID_90",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "nm-01-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Nm1_02_ID/Nm1_02_ID_180/Nm1_02_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Nm1_02_ID/Nm1_02_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "002",
-    "condition": "nm-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Nm1_02_OD/Nm1_02_OD_0/Nm1_02_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Nm1_02_OD/Nm1_02_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "002",
-    "condition": "nm-01-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Nm1_02_OD/Nm1_02_OD_90/2026-07-08 10-54-31.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Nm1_02_OD/Nm1_02_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "002",
-    "condition": "nm-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Nm1_02_OD/Nm1_02_OD_180/Nm1_02_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Nm1_02_OD/Nm1_02_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Nm1_02_ID/Nm1_02_ID_180/Nm1_02_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Nm1_02_ID/Nm1_02_ID_180",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "nm-01-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Nm1_02_ON/Nm1_02_ON_0/Nm1_02_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Nm1_02_ON/Nm1_02_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Nm1_02_ON/Nm1_02_ON_0/Nm1_02_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Nm1_02_ON/Nm1_02_ON_0",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "nm-01-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Nm1_02_ON/Nm1_02_ON_90/Nm1_02_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Nm1_02_ON/Nm1_02_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Nm1_02_ON/Nm1_02_ON_90/Nm1_02_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Nm1_02_ON/Nm1_02_ON_90",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "nm-01-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Nm1_02_ON/Nm1_02_ON_180/Nm1_02_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Nm1_02_ON/Nm1_02_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Nm1_02_ON/Nm1_02_ON_180/Nm1_02_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Nm1_02_ON/Nm1_02_ON_180",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "nm-02-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Nm2_02_ID/Nm2_02_ID_0/Nm2_02_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Nm2_02_ID/Nm2_02_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Nm2_02_ID/Nm2_02_ID_0/Nm2_02_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Nm2_02_ID/Nm2_02_ID_0",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "nm-02-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Nm2_02_ID/Nm2_02_ID_90/Nm2_02_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Nm2_02_ID/Nm2_02_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Nm2_02_ID/Nm2_02_ID_90/Nm2_02_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Nm2_02_ID/Nm2_02_ID_90",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "nm-02-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Nm2_02_ID/Nm2_02_ID_180/Nm2_02_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Nm2_02_ID/Nm2_02_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "002",
-    "condition": "nm-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Nm2_02_OD/Nm2_02_OD_0/Nm2_02_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Nm2_02_OD/Nm2_02_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "002",
-    "condition": "nm-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Nm2_02_OD/Nm2_02_OD_90/Nm2_02_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Nm2_02_OD/Nm2_02_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "002",
-    "condition": "nm-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Nm2_02_OD/Nm2_02_OD_180/Nm2_02_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Nm2_02_OD/Nm2_02_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Nm2_02_ID/Nm2_02_ID_180/Nm2_02_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Nm2_02_ID/Nm2_02_ID_180",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "nm-02-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Nm2_02_ON/Nm2_02_ON_0/Nm2_02_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Nm2_02_ON/Nm2_02_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Nm2_02_ON/Nm2_02_ON_0/Nm2_02_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Nm2_02_ON/Nm2_02_ON_0",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "nm-02-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Nm2_02_ON/Nm2_02_ON_90/Nm2_02_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Nm2_02_ON/Nm2_02_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Nm2_02_ON/Nm2_02_ON_90/Nm2_02_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Nm2_02_ON/Nm2_02_ON_90",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "nm-02-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Nm2_02_ON/Nm2_02_ON_180/Nm2_02_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Nm2_02_ON/Nm2_02_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Nm2_02_ON/Nm2_02_ON_180/Nm2_02_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Nm2_02_ON/Nm2_02_ON_180",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "nm-03-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Nm3_02_ID/Nm3_02_ID_0/Nm3_02_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Nm3_02_ID/Nm3_02_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Nm3_02_ID/Nm3_02_ID_0/Nm3_02_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Nm3_02_ID/Nm3_02_ID_0",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "nm-03-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Nm3_02_ID/Nm3_02_ID_90/Nm3_02_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Nm3_02_ID/Nm3_02_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Nm3_02_ID/Nm3_02_ID_90/Nm3_02_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Nm3_02_ID/Nm3_02_ID_90",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "nm-03-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Nm3_02_ID/Nm3_02_ID_180/Nm3_02_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub02_ID/Nm3_02_ID/Nm3_02_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "002",
-    "condition": "nm-03-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Nm3_02_OD/Nm3_02_OD_0/Nm3_02_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Nm3_02_OD/Nm3_02_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "002",
-    "condition": "nm-03-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Nm3_02_OD/Nm3_02_OD_90/Nm3_02_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Nm3_02_OD/Nm3_02_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "002",
-    "condition": "nm-03-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Nm3_02_OD/Nm3_02_OD_180/Nm3_02_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub02_OD/Nm3_02_OD/Nm3_02_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Nm3_02_ID/Nm3_02_ID_180/Nm3_02_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub02_ID/Nm3_02_ID/Nm3_02_ID_180",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "nm-03-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Nm3_02_ON/Nm3_02_ON_0/Nm3_02_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Nm3_02_ON/Nm3_02_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Nm3_02_ON/Nm3_02_ON_0/Nm3_02_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Nm3_02_ON/Nm3_02_ON_0",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "nm-03-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Nm3_02_ON/Nm3_02_ON_90/Nm3_02_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Nm3_02_ON/Nm3_02_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Nm3_02_ON/Nm3_02_ON_90/Nm3_02_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Nm3_02_ON/Nm3_02_ON_90",
     "status": "ok"
   },
   {
     "subject": "002",
     "condition": "nm-03-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Nm3_02_ON/Nm3_02_ON_180/Nm3_02_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub02_ON/Nm3_02_ON/Nm3_02_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Nm3_02_ON/Nm3_02_ON_180/Nm3_02_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub02_ON/Nm3_02_ON/Nm3_02_ON_180",
     "status": "ok"
   },
   {
     "subject": "003",
     "condition": "cl-01-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Lc1_03_ID/Lc1_03_ID_0/Lc1_03_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Lc1_03_ID/Lc1_03_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Lc1_03_ID/Lc1_03_ID_0/Lc1_03_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Lc1_03_ID/Lc1_03_ID_0",
     "status": "ok"
   },
   {
     "subject": "003",
     "condition": "cl-01-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Lc1_03_ID/Lc1_03_ID_90/Lc1_03_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Lc1_03_ID/Lc1_03_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Lc1_03_ID/Lc1_03_ID_90/Lc1_03_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Lc1_03_ID/Lc1_03_ID_90",
     "status": "ok"
   },
   {
     "subject": "003",
     "condition": "cl-01-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Lc1_03_ID/Lc1_03_ID_180/Lc1_03_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Lc1_03_ID/Lc1_03_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "cl-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Lc1_03_OD/Lc1_03_OD_0/Lc1_03_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Lc1_03_OD/Lc1_03_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "cl-01-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Lc1_03_OD/Lc1_03_OD_90/Lc1_03_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Lc1_03_OD/Lc1_03_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "cl-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Lc1_03_OD/Lc1_03_OD_180/2026-07-08 12-05-32.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Lc1_03_OD/Lc1_03_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Lc1_03_ID/Lc1_03_ID_180/Lc1_03_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Lc1_03_ID/Lc1_03_ID_180",
     "status": "ok"
   },
   {
     "subject": "003",
     "condition": "cl-01-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Lc1_03_ON/Lc1_03_ON_0/Lc1_03_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Lc1_03_ON/Lc1_03_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Lc1_03_ON/Lc1_03_ON_0/Lc1_03_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Lc1_03_ON/Lc1_03_ON_0",
     "status": "ok"
   },
   {
     "subject": "003",
     "condition": "cl-01-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Lc1_03_ON/Lc1_03_ON_90/Lc1_03_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Lc1_03_ON/Lc1_03_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Lc1_03_ON/Lc1_03_ON_90/Lc1_03_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Lc1_03_ON/Lc1_03_ON_90",
     "status": "ok"
   },
   {
     "subject": "003",
     "condition": "cl-01-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Lc1_03_ON/Lc1_03_ON_180/Lc1_03_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Lc1_03_ON/Lc1_03_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Lc1_03_ON/Lc1_03_ON_180/Lc1_03_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Lc1_03_ON/Lc1_03_ON_180",
     "status": "ok"
   },
   {
     "subject": "003",
     "condition": "cl-02-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Lc2_03_ID/Lc2_03_ID_0/Lc2_03_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Lc2_03_ID/Lc2_03_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Lc2_03_ID/Lc2_03_ID_0/Lc2_03_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Lc2_03_ID/Lc2_03_ID_0",
     "status": "ok"
   },
   {
     "subject": "003",
     "condition": "cl-02-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Lc2_03_ID/Lc2_03_ID_90/Lc2_03_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Lc2_03_ID/Lc2_03_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Lc2_03_ID/Lc2_03_ID_90/Lc2_03_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Lc2_03_ID/Lc2_03_ID_90",
     "status": "ok"
   },
   {
     "subject": "003",
     "condition": "cl-02-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Lc2_03_ID/Lc2_03_ID_180/Lc2_03_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Lc2_03_ID/Lc2_03_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "cl-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Lc2_03_OD/Lc2_03_OD_0/2026-07-08 12-05-42.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Lc2_03_OD/Lc2_03_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "cl-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Lc2_03_OD/Lc2_03_OD_90/Lc2_03_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Lc2_03_OD/Lc2_03_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "cl-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Lc2_03_OD/Lc2_03_OD_180/Lc2_03_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Lc2_03_OD/Lc2_03_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Lc2_03_ID/Lc2_03_ID_180/Lc2_03_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Lc2_03_ID/Lc2_03_ID_180",
     "status": "ok"
   },
   {
     "subject": "003",
     "condition": "cl-02-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Lc2_03_ON/Lc2_03_ON_0/Lc2_03_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Lc2_03_ON/Lc2_03_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Lc2_03_ON/Lc2_03_ON_0/Lc2_03_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Lc2_03_ON/Lc2_03_ON_0",
     "status": "ok"
   },
   {
     "subject": "003",
     "condition": "cl-02-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Lc2_03_ON/Lc2_03_ON_90/Lc2_03_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Lc2_03_ON/Lc2_03_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Lc2_03_ON/Lc2_03_ON_90/Lc2_03_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Lc2_03_ON/Lc2_03_ON_90",
     "status": "ok"
   },
   {
     "subject": "003",
     "condition": "cl-02-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Lc2_03_ON/Lc2_03_ON_180/Lc2_03_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Lc2_03_ON/Lc2_03_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Lc2_03_ON/Lc2_03_ON_180/Lc2_03_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Lc2_03_ON/Lc2_03_ON_180",
     "status": "ok"
   },
   {
     "subject": "003",
     "condition": "nm-01-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Nm1_03_ID/Nm1_03_ID_0/Nm1_03_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Nm1_03_ID/Nm1_03_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Nm1_03_ID/Nm1_03_ID_0/Nm1_03_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Nm1_03_ID/Nm1_03_ID_0",
     "status": "ok"
   },
   {
     "subject": "003",
     "condition": "nm-01-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Nm1_03_ID/Nm1_03_ID_90/Nm1_03_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Nm1_03_ID/Nm1_03_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Nm1_03_ID/Nm1_03_ID_90/Nm1_03_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Nm1_03_ID/Nm1_03_ID_90",
     "status": "ok"
   },
   {
     "subject": "003",
     "condition": "nm-01-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Nm1_03_ID/Nm1_03_ID_180/Nm1_03_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Nm1_03_ID/Nm1_03_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Nm1_03_OD/Nm1_03_OD_0/2026-07-08 12-02-35.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Nm1_03_OD/Nm1_03_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-01-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Nm1_03_OD/Nm1_03_OD_90/Nm1_03_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Nm1_03_OD/Nm1_03_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Nm1_03_OD/Nm1_03_OD_180/Nm1_03_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Nm1_03_OD/Nm1_03_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Nm1_03_ID/Nm1_03_ID_180/Nm1_03_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Nm1_03_ID/Nm1_03_ID_180",
     "status": "ok"
   },
   {
     "subject": "003",
     "condition": "nm-01-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Nm1_03_ON/Nm1_03_ON_0/Nm1_03_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Nm1_03_ON/Nm1_03_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Nm1_03_ON/Nm1_03_ON_0/Nm1_03_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Nm1_03_ON/Nm1_03_ON_0",
     "status": "ok"
   },
   {
     "subject": "003",
     "condition": "nm-01-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Nm1_03_ON/Nm1_03_ON_90/Nm1_03_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Nm1_03_ON/Nm1_03_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-01-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Nm1_03_ON/Nm1_03_ON_180/Nm1_03_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Nm1_03_ON/Nm1_03_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-02-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Nm2_03_ID/Nm2_03_ID_0/Nm2_03_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Nm2_03_ID/Nm2_03_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-02-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Nm2_03_ID/Nm2_03_ID_90/Nm2_03_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Nm2_03_ID/Nm2_03_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-02-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Nm2_03_ID/Nm2_03_ID_180/Nm2_03_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Nm2_03_ID/Nm2_03_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Nm2_03_OD/Nm2_03_OD_0/Nm2_03_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Nm2_03_OD/Nm2_03_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Nm2_03_OD/Nm2_03_OD_90/Nm2_03_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Nm2_03_OD/Nm2_03_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Nm2_03_OD/Nm2_03_OD_180/Nm2_03_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Nm2_03_OD/Nm2_03_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-02-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Nm2_03_ON/Nm2_03_ON_0/Nm2_03_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Nm2_03_ON/Nm2_03_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-02-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Nm2_03_ON/Nm2_03_ON_90/Nm2_03_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Nm2_03_ON/Nm2_03_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-02-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Nm2_03_ON/Nm2_03_ON_180/Nm2_03_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Nm2_03_ON/Nm2_03_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-03-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Nm3_03_ID/Nm3_03_ID_0/Nm3_03_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Nm3_03_ID/Nm3_03_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-03-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Nm3_03_ID/Nm3_03_ID_90/Nm3_03_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Nm3_03_ID/Nm3_03_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-03-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Nm3_03_ID/Nm3_03_ID_180/Nm3_03_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub03_ID/Nm3_03_ID/Nm3_03_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-03-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Nm3_03_OD/Nm3_03_OD_0/Nm3_03_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Nm3_03_OD/Nm3_03_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-03-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Nm3_03_OD/Nm3_03_OD_90/Nm3_03_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Nm3_03_OD/Nm3_03_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-03-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Nm3_03_OD/Nm3_03_OD_180/Nm3_03_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub03_OD/Nm3_03_OD/Nm3_03_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-03-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Nm3_03_ON/Nm3_03_ON_0/Nm3_03_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Nm3_03_ON/Nm3_03_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-03-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Nm3_03_ON/Nm3_03_ON_90/Nm3_03_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Nm3_03_ON/Nm3_03_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "003",
-    "condition": "nm-03-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Nm3_03_ON/Nm3_03_ON_180/Nm3_03_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub03_ON/Nm3_03_ON/Nm3_03_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "004",
-    "condition": "cl-01-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Lc1_04_ID/Lc1_04_ID_0/Lc1_04_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Lc1_04_ID/Lc1_04_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "004",
-    "condition": "cl-01-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Lc1_04_ID/Lc1_04_ID_90/Lc1_04_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Lc1_04_ID/Lc1_04_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "004",
-    "condition": "cl-01-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Lc1_04_ID/Lc1_04_ID_180/Lc1_04_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Lc1_04_ID/Lc1_04_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "004",
-    "condition": "cl-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Lc1_04_OD/Lc1_04_OD_0/2026-07-08 12-11-31.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Lc1_04_OD/Lc1_04_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "004",
-    "condition": "cl-01-od",
     "view": "090",
     "video_path": null,
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Lc1_04_OD/Lc1_04_OD_90",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Nm1_03_ON/Nm1_03_ON_90",
+    "status": "missing"
+  },
+  {
+    "subject": "003",
+    "condition": "nm-01-on",
+    "view": "180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Nm1_03_ON/Nm1_03_ON_180/Nm1_03_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Nm1_03_ON/Nm1_03_ON_180",
+    "status": "ok"
+  },
+  {
+    "subject": "003",
+    "condition": "nm-02-id",
+    "view": "000",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Nm2_03_ID/Nm2_03_ID_0/Nm2_03_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Nm2_03_ID/Nm2_03_ID_0",
+    "status": "ok"
+  },
+  {
+    "subject": "003",
+    "condition": "nm-02-id",
+    "view": "090",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Nm2_03_ID/Nm2_03_ID_90/Nm2_03_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Nm2_03_ID/Nm2_03_ID_90",
+    "status": "ok"
+  },
+  {
+    "subject": "003",
+    "condition": "nm-02-id",
+    "view": "180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Nm2_03_ID/Nm2_03_ID_180/Nm2_03_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Nm2_03_ID/Nm2_03_ID_180",
+    "status": "ok"
+  },
+  {
+    "subject": "003",
+    "condition": "nm-02-on",
+    "view": "000",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Nm2_03_ON/Nm2_03_ON_0/Nm2_03_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Nm2_03_ON/Nm2_03_ON_0",
+    "status": "ok"
+  },
+  {
+    "subject": "003",
+    "condition": "nm-02-on",
+    "view": "090",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Nm2_03_ON/Nm2_03_ON_90/Nm2_03_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Nm2_03_ON/Nm2_03_ON_90",
+    "status": "ok"
+  },
+  {
+    "subject": "003",
+    "condition": "nm-02-on",
+    "view": "180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Nm2_03_ON/Nm2_03_ON_180/Nm2_03_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Nm2_03_ON/Nm2_03_ON_180",
+    "status": "ok"
+  },
+  {
+    "subject": "003",
+    "condition": "nm-03-id",
+    "view": "000",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Nm3_03_ID/Nm3_03_ID_0/Nm3_03_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Nm3_03_ID/Nm3_03_ID_0",
+    "status": "ok"
+  },
+  {
+    "subject": "003",
+    "condition": "nm-03-id",
+    "view": "090",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Nm3_03_ID/Nm3_03_ID_90/Nm3_03_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Nm3_03_ID/Nm3_03_ID_90",
+    "status": "ok"
+  },
+  {
+    "subject": "003",
+    "condition": "nm-03-id",
+    "view": "180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Nm3_03_ID/Nm3_03_ID_180/Nm3_03_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub03_ID/Nm3_03_ID/Nm3_03_ID_180",
+    "status": "ok"
+  },
+  {
+    "subject": "003",
+    "condition": "nm-03-on",
+    "view": "000",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Nm3_03_ON/Nm3_03_ON_0/Nm3_03_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Nm3_03_ON/Nm3_03_ON_0",
+    "status": "ok"
+  },
+  {
+    "subject": "003",
+    "condition": "nm-03-on",
+    "view": "090",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Nm3_03_ON/Nm3_03_ON_90/Nm3_03_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Nm3_03_ON/Nm3_03_ON_90",
+    "status": "ok"
+  },
+  {
+    "subject": "003",
+    "condition": "nm-03-on",
+    "view": "180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Nm3_03_ON/Nm3_03_ON_180/Nm3_03_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Nm3_03_ON/Nm3_03_ON_180",
+    "status": "ok"
+  },
+  {
+    "subject": "004",
+    "condition": "cl-01-id",
+    "view": "000",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Lc1_04_ID/Lc1_04_ID_0/Lc1_04_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Lc1_04_ID/Lc1_04_ID_0",
+    "status": "ok"
+  },
+  {
+    "subject": "004",
+    "condition": "cl-01-id",
+    "view": "090",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Lc1_04_ID/Lc1_04_ID_90/Lc1_04_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Lc1_04_ID/Lc1_04_ID_90",
+    "status": "ok"
+  },
+  {
+    "subject": "004",
+    "condition": "cl-01-id",
+    "view": "180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Lc1_04_ID/Lc1_04_ID_180/Lc1_04_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Lc1_04_ID/Lc1_04_ID_180",
+    "status": "ok"
+  },
+  {
+    "subject": "004",
+    "condition": "cl-01-on",
+    "view": "000",
+    "video_path": null,
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Lc1_04_ON/Lc1_04_ON_0",
     "status": "missing"
   },
   {
     "subject": "004",
-    "condition": "cl-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Lc1_04_OD/Lc1_04_OD_180/Lc1_04_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Lc1_04_OD/Lc1_04_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "004",
-    "condition": "cl-01-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Lc1_04_ON/Lc1_04_ON_0/Lc1_04_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Lc1_04_ON/Lc1_04_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "004",
     "condition": "cl-01-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Lc1_04_ON/Lc1_04_ON_90/Lc1_04_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Lc1_04_ON/Lc1_04_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Lc1_04_ON/Lc1_04_ON_90/Lc1_04_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Lc1_04_ON/Lc1_04_ON_90",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "cl-01-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Lc1_04_ON/Lc1_04_ON_180/Lc1_04_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Lc1_04_ON/Lc1_04_ON_180",
-    "status": "ok"
+    "video_path": null,
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Lc1_04_ON/Lc1_04_ON_180",
+    "status": "missing"
   },
   {
     "subject": "004",
     "condition": "cl-02-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Lc2_04_ID/Lc2_04_ID_0/Lc2_04_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Lc2_04_ID/Lc2_04_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Lc2_04_ID/Lc2_04_ID_0/Lc2_04_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Lc2_04_ID/Lc2_04_ID_0",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "cl-02-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Lc2_04_ID/Lc2_04_ID_90/Lc2_04_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Lc2_04_ID/Lc2_04_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Lc2_04_ID/Lc2_04_ID_90/Lc2_04_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Lc2_04_ID/Lc2_04_ID_90",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "cl-02-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Lc2_04_ID/Lc2_04_ID_180/Lc2_04_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Lc2_04_ID/Lc2_04_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "004",
-    "condition": "cl-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Lc2_04_OD/Lc2_04_OD_0/Lc2_04_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Lc2_04_OD/Lc2_04_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "004",
-    "condition": "cl-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Lc2_04_OD/Lc2_04_OD_90/Lc2_04_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Lc2_04_OD/Lc2_04_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "004",
-    "condition": "cl-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Lc2_04_OD/Lc2_04_OD_180/Lc2_04_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Lc2_04_OD/Lc2_04_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Lc2_04_ID/Lc2_04_ID_180/Lc2_04_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Lc2_04_ID/Lc2_04_ID_180",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "cl-02-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Lc2_04_ON/Lc2_04_ON_0/Lc2_04_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Lc2_04_ON/Lc2_04_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Lc2_04_ON/Lc2_04_ON_0/Lc2_04_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Lc2_04_ON/Lc2_04_ON_0",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "cl-02-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Lc2_04_ON/Lc2_04_ON_90/Lc2_04_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Lc2_04_ON/Lc2_04_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Lc2_04_ON/Lc2_04_ON_90/Lc2_04_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Lc2_04_ON/Lc2_04_ON_90",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "cl-02-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Lc2_04_ON/Lc2_04_ON_180/Lc2_04_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Lc2_04_ON/Lc2_04_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Lc2_04_ON/Lc2_04_ON_180/Lc2_04_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Lc2_04_ON/Lc2_04_ON_180",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "nm-01-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Nm1_04_ID/Nm1_04_ID_0/Nm1_04_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Nm1_04_ID/Nm1_04_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Nm1_04_ID/Nm1_04_ID_0/Nm1_04_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Nm1_04_ID/Nm1_04_ID_0",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "nm-01-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Nm1_04_ID/Nm1_04_ID_90/Nm1_04_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Nm1_04_ID/Nm1_04_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Nm1_04_ID/Nm1_04_ID_90/Nm1_04_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Nm1_04_ID/Nm1_04_ID_90",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "nm-01-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Nm1_04_ID/Nm1_04_ID_180/Nm1_04_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Nm1_04_ID/Nm1_04_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "004",
-    "condition": "nm-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Nm1_04_OD/Nm1_04_OD_0/Nm1_04_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Nm1_04_OD/Nm1_04_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "004",
-    "condition": "nm-01-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Nm1_04_OD/Nm1_04_OD_90/2026-07-08 11-51-51.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Nm1_04_OD/Nm1_04_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "004",
-    "condition": "nm-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Nm1_04_OD/Nm1_04_OD_180/Nm1_04_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Nm1_04_OD/Nm1_04_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Nm1_04_ID/Nm1_04_ID_180/Nm1_04_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Nm1_04_ID/Nm1_04_ID_180",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "nm-01-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Nm1_04_ON/Nm1_04_ON_0/Nm1_04_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Nm1_04_ON/Nm1_04_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Nm1_04_ON/Nm1_04_ON_0/Nm1_04_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Nm1_04_ON/Nm1_04_ON_0",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "nm-01-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Nm1_04_ON/Nm1_04_ON_90/Nm1_04_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Nm1_04_ON/Nm1_04_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Nm1_04_ON/Nm1_04_ON_90/Nm1_03_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Nm1_04_ON/Nm1_04_ON_90",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "nm-01-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Nm1_04_ON/Nm1_04_ON_180/Nm1_04_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Nm1_04_ON/Nm1_04_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Nm1_04_ON/Nm1_04_ON_180/Nm1_04_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Nm1_04_ON/Nm1_04_ON_180",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "nm-02-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Nm2_04_ID/Nm2_04_ID_0/Nm2_04_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Nm2_04_ID/Nm2_04_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Nm2_04_ID/Nm2_04_ID_0/Nm2_04_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Nm2_04_ID/Nm2_04_ID_0",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "nm-02-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Nm2_04_ID/Nm2_04_ID_90/Nm2_04_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Nm2_04_ID/Nm2_04_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Nm2_04_ID/Nm2_04_ID_90/Nm2_04_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Nm2_04_ID/Nm2_04_ID_90",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "nm-02-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Nm2_04_ID/Nm2_04_ID_180/Nm2_04_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Nm2_04_ID/Nm2_04_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "004",
-    "condition": "nm-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Nm2_04_OD/Nm2_04_OD_0/Nm2_04_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Nm2_04_OD/Nm2_04_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "004",
-    "condition": "nm-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Nm2_04_OD/Nm2_04_OD_90/Nm2_04_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Nm2_04_OD/Nm2_04_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "004",
-    "condition": "nm-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Nm2_04_OD/Nm2_04_OD_180/Nm2_04_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Nm2_04_OD/Nm2_04_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Nm2_04_ID/Nm2_04_ID_180/Nm2_04_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Nm2_04_ID/Nm2_04_ID_180",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "nm-02-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Nm2_04_ON/Nm2_04_ON_0/Nm2_04_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Nm2_04_ON/Nm2_04_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Nm2_04_ON/Nm2_04_ON_0/Nm2_04_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Nm2_04_ON/Nm2_04_ON_0",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "nm-02-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Nm2_04_ON/Nm2_04_ON_90/Nm2_04_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Nm2_04_ON/Nm2_04_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Nm2_04_ON/Nm2_04_ON_90/Nm2_04_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Nm2_04_ON/Nm2_04_ON_90",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "nm-02-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Nm2_04_ON/Nm2_04_ON_180/Nm2_04_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Nm2_04_ON/Nm2_04_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Nm2_04_ON/Nm2_04_ON_180/Nm2_04_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Nm2_04_ON/Nm2_04_ON_180",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "nm-03-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Nm3_04_ID/Nm3_04_ID_0/Nm3_04_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Nm3_04_ID/Nm3_04_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Nm3_04_ID/Nm3_04_ID_0/Nm3_04_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Nm3_04_ID/Nm3_04_ID_0",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "nm-03-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Nm3_04_ID/Nm3_04_ID_90/Nm3_04_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Nm3_04_ID/Nm3_04_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Nm3_04_ID/Nm3_04_ID_90/Nm3_04_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Nm3_04_ID/Nm3_04_ID_90",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "nm-03-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Nm3_04_ID/Nm3_04_ID_180/Nm3_04_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub04_ID/Nm3_04_ID/Nm3_04_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "004",
-    "condition": "nm-03-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Nm3_04_OD/Nm3_04_OD_0/Nm3_04_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Nm3_04_OD/Nm3_04_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "004",
-    "condition": "nm-03-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Nm3_04_OD/Nm3_04_OD_90/Nm3_04_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Nm3_04_OD/Nm3_04_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "004",
-    "condition": "nm-03-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Nm3_04_OD/Nm3_04_OD_180/Nm3_04_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub04_OD/Nm3_04_OD/Nm3_04_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Nm3_04_ID/Nm3_04_ID_180/Nm3_04_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub04_ID/Nm3_04_ID/Nm3_04_ID_180",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "nm-03-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Nm3_04_ON/Nm3_04_ON_0/Nm3_04_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Nm3_04_ON/Nm3_04_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Nm3_04_ON/Nm3_04_ON_0/Nm3_04_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Nm3_04_ON/Nm3_04_ON_0",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "nm-03-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Nm3_04_ON/Nm3_04_ON_90/Nm3_04_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Nm3_04_ON/Nm3_04_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Nm3_04_ON/Nm3_04_ON_90/Nm3_04_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Nm3_04_ON/Nm3_04_ON_90",
     "status": "ok"
   },
   {
     "subject": "004",
     "condition": "nm-03-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Nm3_04_ON/Nm3_04_ON_180/Nm3_04_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub04_ON/Nm3_04_ON/Nm3_04_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Nm3_04_ON/Nm3_04_ON_180/Nm3_04_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Nm3_04_ON/Nm3_04_ON_180",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "cl-01-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Lc1_05_ID/Lc1_05_ID_0/Lc1_05_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Lc1_05_ID/Lc1_05_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Lc1_05_ID/Lc1_05_ID_0/Lc1_05_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Lc1_05_ID/Lc1_05_ID_0",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "cl-01-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Lc1_05_ID/Lc1_05_ID_90/Lc1_05_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Lc1_05_ID/Lc1_05_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Lc1_05_ID/Lc1_05_ID_90/Lc1_05_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Lc1_05_ID/Lc1_05_ID_90",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "cl-01-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Lc1_05_ID/Lc1_05_ID_180/Lc1_05_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Lc1_05_ID/Lc1_05_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "005",
-    "condition": "cl-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Lc1_05_OD/Lc1_05_OD_0/Lc1_05_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Lc1_05_OD/Lc1_05_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "005",
-    "condition": "cl-01-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Lc1_05_OD/Lc1_05_OD_90/Lc1_05_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Lc1_05_OD/Lc1_05_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "005",
-    "condition": "cl-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Lc1_05_OD/Lc1_05_OD_180/Lc1_05_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Lc1_05_OD/Lc1_05_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Lc1_05_ID/Lc1_05_ID_180/Lc1_05_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Lc1_05_ID/Lc1_05_ID_180",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "cl-01-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Lc1_05_ON/Lc1_05_ON_0/Lc1_05_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Lc1_05_ON/Lc1_05_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Lc1_05_ON/Lc1_05_ON_0/Lc1_05_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Lc1_05_ON/Lc1_05_ON_0",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "cl-01-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Lc1_05_ON/Lc1_05_ON_90/Lc1_05_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Lc1_05_ON/Lc1_05_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Lc1_05_ON/Lc1_05_ON_90/Lc1_05_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Lc1_05_ON/Lc1_05_ON_90",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "cl-01-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Lc1_05_ON/Lc1_05_ON_180/Lc1_05_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Lc1_05_ON/Lc1_05_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Lc1_05_ON/Lc1_05_ON_180/Lc1_05_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Lc1_05_ON/Lc1_05_ON_180",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "cl-02-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Lc2_05_ID/Lc2_05_ID_0/Lc2_05_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Lc2_05_ID/Lc2_05_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Lc2_05_ID/Lc2_05_ID_0/Lc2_05_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Lc2_05_ID/Lc2_05_ID_0",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "cl-02-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Lc2_05_ID/Lc2_05_ID_90/Lc2_05_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Lc2_05_ID/Lc2_05_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Lc2_05_ID/Lc2_05_ID_90/Lc2_05_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Lc2_05_ID/Lc2_05_ID_90",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "cl-02-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Lc2_05_ID/Lc2_05_ID_180/Lc2_05_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Lc2_05_ID/Lc2_05_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "005",
-    "condition": "cl-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Lc2_05_OD/Lc2_05_OD_0/Lc2_05_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Lc2_05_OD/Lc2_05_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "005",
-    "condition": "cl-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Lc2_05_OD/Lc2_05_OD_90/Lc2_05_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Lc2_05_OD/Lc2_05_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "005",
-    "condition": "cl-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Lc2_05_OD/Lc2_05_OD_180/Lc2_05_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Lc2_05_OD/Lc2_05_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Lc2_05_ID/Lc2_05_ID_180/Lc2_05_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Lc2_05_ID/Lc2_05_ID_180",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "cl-02-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Lc2_05_ON/Lc2_05_ON_0/Lc2_05_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Lc2_05_ON/Lc2_05_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Lc2_05_ON/Lc2_05_ON_0/Lc2_05_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Lc2_05_ON/Lc2_05_ON_0",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "cl-02-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Lc2_05_ON/Lc2_05_ON_90/Lc2_05_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Lc2_05_ON/Lc2_05_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Lc2_05_ON/Lc2_05_ON_90/Lc2_05_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Lc2_05_ON/Lc2_05_ON_90",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "cl-02-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Lc2_05_ON/Lc2_05_ON_180/Lc2_05_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Lc2_05_ON/Lc2_05_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Lc2_05_ON/Lc2_05_ON_180/Lc2_05_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Lc2_05_ON/Lc2_05_ON_180",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "nm-01-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Nm1_05_ID/Nm1_05_ID_0/Nm1_05_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Nm1_05_ID/Nm1_05_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Nm1_05_ID/Nm1_05_ID_0/Nm1_05_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Nm1_05_ID/Nm1_05_ID_0",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "nm-01-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Nm1_05_ID/Nm1_05_ID_90/Nm1_05_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Nm1_05_ID/Nm1_05_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Nm1_05_ID/Nm1_05_ID_90/Nm1_05_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Nm1_05_ID/Nm1_05_ID_90",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "nm-01-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Nm1_05_ID/Nm1_05_ID_180/Nm1_05_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Nm1_05_ID/Nm1_05_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "005",
-    "condition": "nm-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Nm1_05_OD/Nm1_05_OD_0/Nm1_05_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Nm1_05_OD/Nm1_05_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "005",
-    "condition": "nm-01-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Nm1_05_OD/Nm1_05_OD_90/Nm1_05_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Nm1_05_OD/Nm1_05_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "005",
-    "condition": "nm-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Nm1_05_OD/Nm1_05_OD_180/Nm1_05_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Nm1_05_OD/Nm1_05_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Nm1_05_ID/Nm1_05_ID_180/Nm1_05_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Nm1_05_ID/Nm1_05_ID_180",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "nm-01-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Nm1_05_ON/Nm1_05_ON_0/Nm1_05_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Nm1_05_ON/Nm1_05_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Nm1_05_ON/Nm1_05_ON_0/Nm1_05_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Nm1_05_ON/Nm1_05_ON_0",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "nm-01-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Nm1_05_ON/Nm1_05_ON_90/Nm1_05_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Nm1_05_ON/Nm1_05_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Nm1_05_ON/Nm1_05_ON_90/Nm1_05_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Nm1_05_ON/Nm1_05_ON_90",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "nm-01-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Nm1_05_ON/Nm1_05_ON_180/Nm1_05_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Nm1_05_ON/Nm1_05_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Nm1_05_ON/Nm1_05_ON_180/Nm1_05_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Nm1_05_ON/Nm1_05_ON_180",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "nm-02-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Nm2_05_ID/Nm2_05_ID_0/Nm2_05_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Nm2_05_ID/Nm2_05_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Nm2_05_ID/Nm2_05_ID_0/Nm2_05_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Nm2_05_ID/Nm2_05_ID_0",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "nm-02-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Nm2_05_ID/Nm2_05_ID_90/Nm2_05_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Nm2_05_ID/Nm2_05_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Nm2_05_ID/Nm2_05_ID_90/Nm2_05_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Nm2_05_ID/Nm2_05_ID_90",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "nm-02-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Nm2_05_ID/Nm2_05_ID_180/Nm2_05_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Nm2_05_ID/Nm2_05_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "005",
-    "condition": "nm-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Nm2_05_OD/Nm2_05_OD_0/2026-07-08 12-18-04.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Nm2_05_OD/Nm2_05_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "005",
-    "condition": "nm-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Nm2_05_OD/Nm2_05_OD_90/Nm2_05_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Nm2_05_OD/Nm2_05_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "005",
-    "condition": "nm-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Nm2_05_OD/Nm2_05_OD_180/Nm2_05_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Nm2_05_OD/Nm2_05_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Nm2_05_ID/Nm2_05_ID_180/Nm2_05_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Nm2_05_ID/Nm2_05_ID_180",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "nm-02-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Nm2_05_ON/Nm2_05_ON_0/Nm2_05_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Nm2_05_ON/Nm2_05_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Nm2_05_ON/Nm2_05_ON_0/Nm2_05_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Nm2_05_ON/Nm2_05_ON_0",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "nm-02-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Nm2_05_ON/Nm2_05_ON_90/Nm2_05_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Nm2_05_ON/Nm2_05_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Nm2_05_ON/Nm2_05_ON_90/Nm2_05_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Nm2_05_ON/Nm2_05_ON_90",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "nm-02-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Nm2_05_ON/Nm2_05_ON_180/Nm2_05_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Nm2_05_ON/Nm2_05_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Nm2_05_ON/Nm2_05_ON_180/Nm2_05_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Nm2_05_ON/Nm2_05_ON_180",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "nm-03-id",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Nm3_05_ID/Nm3_05_ID_0/Nm3_05_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Nm3_05_ID/Nm3_05_ID_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Nm3_05_ID/Nm3_05_ID_0/Nm3_05_ID_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Nm3_05_ID/Nm3_05_ID_0",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "nm-03-id",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Nm3_05_ID/Nm3_05_ID_90/Nm3_05_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Nm3_05_ID/Nm3_05_ID_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Nm3_05_ID/Nm3_05_ID_90/Nm3_05_ID_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Nm3_05_ID/Nm3_05_ID_90",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "nm-03-id",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Nm3_05_ID/Nm3_05_ID_180/Nm3_05_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub05_ID/Nm3_05_ID/Nm3_05_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "005",
-    "condition": "nm-03-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Nm3_05_OD/Nm3_05_OD_0/Nm3_05_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Nm3_05_OD/Nm3_05_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "005",
-    "condition": "nm-03-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Nm3_05_OD/Nm3_05_OD_90/Nm3_05_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Nm3_05_OD/Nm3_05_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "005",
-    "condition": "nm-03-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Nm3_05_OD/Nm3_05_OD_180/Nm3_05_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub05_OD/Nm3_05_OD/Nm3_05_OD_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Nm3_05_ID/Nm3_05_ID_180/Nm3_05_ID_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/INDOOR/Sub05_ID/Nm3_05_ID/Nm3_05_ID_180",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "nm-03-on",
     "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Nm3_05_ON/Nm3_05_ON_0/Nm3_05_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Nm3_05_ON/Nm3_05_ON_0",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Nm3_05_ON/Nm3_05_ON_0/Nm3_05_ON_0.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Nm3_05_ON/Nm3_05_ON_0",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "nm-03-on",
     "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Nm3_05_ON/Nm3_05_ON_90/Nm3_05_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Nm3_05_ON/Nm3_05_ON_90",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Nm3_05_ON/Nm3_05_ON_90/Nm3_05_ON_90.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Nm3_05_ON/Nm3_05_ON_90",
     "status": "ok"
   },
   {
     "subject": "005",
     "condition": "nm-03-on",
     "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Nm3_05_ON/Nm3_05_ON_180/Nm3_05_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub05_ON/Nm3_05_ON/Nm3_05_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "cl-01-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Lc1_06_ID/Lc1_06_ID_0/Lc1_06_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Lc1_06_ID/Lc1_06_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "cl-01-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Lc1_06_ID/Lc1_06_ID_90/Lc1_06_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Lc1_06_ID/Lc1_06_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "cl-01-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Lc1_06_ID/Lc1_06_ID_180/Lc1_06_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Lc1_06_ID/Lc1_06_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "cl-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Lc1_06_OD/Lc1_06_OD_0/Lc1_06_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Lc1_06_OD/Lc1_06_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "cl-01-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Lc1_06_OD/Lc1_06_OD_90/Lc1_06_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Lc1_06_OD/Lc1_06_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "cl-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Lc1_06_OD/Lc1_06_OD_180/Lc1_06_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Lc1_06_OD/Lc1_06_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "cl-01-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Lc1_06_ON/Lc1_06_ON_0/Lc1_06_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Lc1_06_ON/Lc1_06_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "cl-01-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Lc1_06_ON/Lc1_06_ON_90/Lc1_06_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Lc1_06_ON/Lc1_06_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "cl-01-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Lc1_06_ON/Lc1_06_ON_180/Lc1_06_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Lc1_06_ON/Lc1_06_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "cl-02-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Lc2_06_ID/Lc2_06_ID_0/Lc2_06_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Lc2_06_ID/Lc2_06_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "cl-02-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Lc2_06_ID/Lc2_06_ID_90/Lc2_06_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Lc2_06_ID/Lc2_06_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "cl-02-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Lc2_06_ID/Lc2_06_ID_180/Lc2_06_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Lc2_06_ID/Lc2_06_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "cl-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Lc2_06_OD/Lc2_06_OD_0/Lc2_06_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Lc2_06_OD/Lc2_06_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "cl-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Lc2_06_OD/Lc2_06_OD_90/Lc2_06_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Lc2_06_OD/Lc2_06_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "cl-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Lc2_06_OD/Lc2_06_OD_180/Lc2_06_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Lc2_06_OD/Lc2_06_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "cl-02-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Lc2_06_ON/Lc2_06_ON_0/Lc2_06_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Lc2_06_ON/Lc2_06_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "cl-02-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Lc2_06_ON/Lc2_06_ON_90/Lc2_06_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Lc2_06_ON/Lc2_06_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "cl-02-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Lc2_06_ON/Lc2_06_ON_180/Lc2_06_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Lc2_06_ON/Lc2_06_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-01-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Nm1_06_ID/Nm1_06_ID_0/Nm1_06_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Nm1_06_ID/Nm1_06_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-01-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Nm1_06_ID/Nm1_06_ID_90/Nm1_06_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Nm1_06_ID/Nm1_06_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-01-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Nm1_06_ID/Nm1_06_ID_180/Nm1_06_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Nm1_06_ID/Nm1_06_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Nm1_06_OD/Nm1_06_OD_0/2026-07-08 12-27-32.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Nm1_06_OD/Nm1_06_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-01-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Nm1_06_OD/Nm1_06_OD_90/Nm1_06_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Nm1_06_OD/Nm1_06_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Nm1_06_OD/Nm1_06_OD_180/Nm1_06_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Nm1_06_OD/Nm1_06_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-01-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Nm1_06_ON/Nm1_06_ON_0/Nm1_06_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Nm1_06_ON/Nm1_06_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-01-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Nm1_06_ON/Nm1_06_ON_90/Nm1_06_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Nm1_06_ON/Nm1_06_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-01-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Nm1_06_ON/Nm1_06_ON_180/Nm1_06_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Nm1_06_ON/Nm1_06_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-02-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Nm2_06_ID/Nm2_06_ID_0/Nm2_06_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Nm2_06_ID/Nm2_06_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-02-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Nm2_06_ID/Nm2_06_ID_90/Nm2_06_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Nm2_06_ID/Nm2_06_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-02-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Nm2_06_ID/Nm2_06_ID_180/Nm2_06_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Nm2_06_ID/Nm2_06_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Nm2_06_OD/Nm2_06_OD_0/Nm2_06_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Nm2_06_OD/Nm2_06_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Nm2_06_OD/Nm2_06_OD_90/Nm2_06_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Nm2_06_OD/Nm2_06_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Nm2_06_OD/Nm2_06_OD_180/Nm2_06_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Nm2_06_OD/Nm2_06_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-02-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Nm2_06_ON/Nm2_06_ON_0/Nm2_06_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Nm2_06_ON/Nm2_06_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-02-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Nm2_06_ON/Nm2_06_ON_90/Nm2_06_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Nm2_06_ON/Nm2_06_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-02-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Nm2_06_ON/Nm2_06_ON_180/Nm2_06_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Nm2_06_ON/Nm2_06_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-03-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Nm3_06_ID/Nm3_06_ID_0/Nm3_06_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Nm3_06_ID/Nm3_06_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-03-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Nm3_06_ID/Nm3_06_ID_90/Nm3_06_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Nm3_06_ID/Nm3_06_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-03-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Nm3_06_ID/Nm3_06_ID_180/Nm3_06_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub06_ID/Nm3_06_ID/Nm3_06_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-03-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Nm3_06_OD/Nm3_06_OD_0/Nm3_06_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Nm3_06_OD/Nm3_06_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-03-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Nm3_06_OD/Nm3_06_OD_90/Nm3_06_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Nm3_06_OD/Nm3_06_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-03-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Nm3_06_OD/Nm3_06_OD_180/Nm3_06_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub06_OD/Nm3_06_OD/Nm3_06_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-03-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Nm3_06_ON/Nm3_06_ON_0/Nm3_06_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Nm3_06_ON/Nm3_06_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-03-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Nm3_06_ON/Nm3_06_ON_90/Nm3_06_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Nm3_06_ON/Nm3_06_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "006",
-    "condition": "nm-03-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Nm3_06_ON/Nm3_06_ON_180/Nm3_06_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub06_ON/Nm3_06_ON/Nm3_06_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "cl-01-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Lc1_07_ID/Lc1_07_ID_0/Lc1_07_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Lc1_07_ID/Lc1_07_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "cl-01-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Lc1_07_ID/Lc1_07_ID_90/Lc1_07_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Lc1_07_ID/Lc1_07_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "cl-01-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Lc1_07_ID/Lc1_07_ID_180/Lc1_07_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Lc1_07_ID/Lc1_07_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "cl-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Lc1_07_OD/Lc1_07_OD_0/Lc1_07_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Lc1_07_OD/Lc1_07_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "cl-01-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Lc1_07_OD/Lc1_07_OD_90/Lc1_07_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Lc1_07_OD/Lc1_07_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "cl-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Lc1_07_OD/Lc1_07_OD_180/Lc1_07_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Lc1_07_OD/Lc1_07_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "cl-01-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Lc1_07_ON/Lc1_07_ON_0/Lc1_07_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Lc1_07_ON/Lc1_07_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "cl-01-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Lc1_07_ON/Lc1_07_ON_90/Lc1_07_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Lc1_07_ON/Lc1_07_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "cl-01-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Lc1_07_ON/Lc1_07_ON_180/Lc1_07_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Lc1_07_ON/Lc1_07_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "cl-02-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Lc2_07_ID/Lc2_07_ID_0/Lc2_07_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Lc2_07_ID/Lc2_07_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "cl-02-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Lc2_07_ID/Lc2_07_ID_90/Lc2_07_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Lc2_07_ID/Lc2_07_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "cl-02-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Lc2_07_ID/Lc2_07_ID_180/Lc2_07_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Lc2_07_ID/Lc2_07_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "cl-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Lc2_07_OD/Lc2_07_OD_0/Lc2_07_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Lc2_07_OD/Lc2_07_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "cl-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Lc2_07_OD/Lc2_07_OD_90/Lc2_07_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Lc2_07_OD/Lc2_07_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "cl-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Lc2_07_OD/Lc2_07_OD_180/Lc2_07_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Lc2_07_OD/Lc2_07_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "cl-02-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Lc2_07_ON/Lc2_07_ON_0/Lc2_07_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Lc2_07_ON/Lc2_07_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "cl-02-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Lc2_07_ON/Lc2_07_ON_90/Lc2_07_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Lc2_07_ON/Lc2_07_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "cl-02-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Lc2_07_ON/Lc2_07_ON_180/Lc2_07_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Lc2_07_ON/Lc2_07_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-01-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Nm1_07_ID/Nm1_07_ID_0/Nm1_07_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Nm1_07_ID/Nm1_07_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-01-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Nm1_07_ID/Nm1_07_ID_90/Nm1_07_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Nm1_07_ID/Nm1_07_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-01-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Nm1_07_ID/Nm1_07_ID_180/Nm1_07_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Nm1_07_ID/Nm1_07_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Nm1_07_OD/Nm1_07_OD_0/Nm1_07_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Nm1_07_OD/Nm1_07_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-01-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Nm1_07_OD/Nm1_07_OD_90/Nm1_07_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Nm1_07_OD/Nm1_07_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Nm1_07_OD/Nm1_07_OD_180/Nm1_07_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Nm1_07_OD/Nm1_07_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-01-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Nm1_07_ON/Nm1_07_ON_0/Nm1_07_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Nm1_07_ON/Nm1_07_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-01-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Nm1_07_ON/Nm1_07_ON_90/Nm1_07_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Nm1_07_ON/Nm1_07_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-01-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Nm1_07_ON/Nm1_07_ON_180/Nm1_07_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Nm1_07_ON/Nm1_07_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-02-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Nm2_07_ID/Nm2_07_ID_0/Nm2_07_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Nm2_07_ID/Nm2_07_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-02-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Nm2_07_ID/Nm2_07_ID_90/Nm2_07_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Nm2_07_ID/Nm2_07_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-02-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Nm2_07_ID/Nm2_07_ID_180/Nm2_07_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Nm2_07_ID/Nm2_07_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Nm2_07_OD/Nm2_07_OD_0/Nm2_07_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Nm2_07_OD/Nm2_07_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Nm2_07_OD/Nm2_07_OD_90/Nm2_07_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Nm2_07_OD/Nm2_07_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Nm2_07_OD/Nm2_07_OD_180/2026-07-08 10-44-05.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Nm2_07_OD/Nm2_07_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-02-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Nm2_07_ON/Nm2_07_ON_0/Nm2_07_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Nm2_07_ON/Nm2_07_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-02-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Nm2_07_ON/Nm2_07_ON_90/Nm2_07_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Nm2_07_ON/Nm2_07_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-02-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Nm2_07_ON/Nm2_07_ON_180/Nm2_07_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Nm2_07_ON/Nm2_07_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-03-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Nm3_07_ID/Nm3_07_ID_0/Nm3_07_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Nm3_07_ID/Nm3_07_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-03-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Nm3_07_ID/Nm3_07_ID_90/Nm3_07_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Nm3_07_ID/Nm3_07_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-03-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Nm3_07_ID/Nm3_07_ID_180/Nm3_07_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub07_ID/Nm3_07_ID/Nm3_07_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-03-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Nm3_07_OD/Nm3_07_OD_0/Nm3_07_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Nm3_07_OD/Nm3_07_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-03-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Nm3_07_OD/Nm3_07_OD_90/Nm3_07_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Nm3_07_OD/Nm3_07_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-03-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Nm3_07_OD/Nm3_07_OD_180/Nm3_07_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub07_OD/Nm3_07_OD/Nm3_07_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-03-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Nm3_07_ON/Nm3_07_ON_0/Nm3_07_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Nm3_07_ON/Nm3_07_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-03-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Nm3_07_ON/Nm3_07_ON_90/Nm3_07_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Nm3_07_ON/Nm3_07_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "007",
-    "condition": "nm-03-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Nm3_07_ON/Nm3_07_ON_180/Nm3_07_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub07_ON/Nm3_07_ON/Nm3_07_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "cl-01-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Lc1_08_ID/Lc1_08_ID_0/Lc1_08_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Lc1_08_ID/Lc1_08_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "cl-01-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Lc1_08_ID/Lc1_08_ID_90/Lc1_08_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Lc1_08_ID/Lc1_08_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "cl-01-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Lc1_08_ID/Lc1_08_ID_180/Lc1_08_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Lc1_08_ID/Lc1_08_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "cl-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Lc1_08_OD/Lc1_08_OD_0/Lc1_08_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Lc1_08_OD/Lc1_08_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "cl-01-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Lc1_08_OD/Lc1_08_OD_90/Lc1_08_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Lc1_08_OD/Lc1_08_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "cl-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Lc1_08_OD/Lc1_08_OD_180/Lc1_08_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Lc1_08_OD/Lc1_08_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "cl-01-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Lc1_08_ON/Lc1_08_ON_0/Lc1_08_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Lc1_08_ON/Lc1_08_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "cl-01-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Lc1_08_ON/Lc1_08_ON_90/Lc1_08_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Lc1_08_ON/Lc1_08_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "cl-01-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Lc1_08_ON/Lc1_08_ON_180/Lc1_08_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Lc1_08_ON/Lc1_08_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "cl-02-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Lc2_08_ID/Lc2_08_ID_0/Lc2_08_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Lc2_08_ID/Lc2_08_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "cl-02-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Lc2_08_ID/Lc2_08_ID_90/Lc2_08_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Lc2_08_ID/Lc2_08_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "cl-02-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Lc2_08_ID/Lc2_08_ID_180/Lc2_08_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Lc2_08_ID/Lc2_08_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "cl-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Lc2_08_OD/Lc2_08_OD_0/Lc2_08_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Lc2_08_OD/Lc2_08_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "cl-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Lc2_08_OD/Lc2_08_OD_90/Lc2_08_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Lc2_08_OD/Lc2_08_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "cl-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Lc2_08_OD/Lc2_08_OD_180/Lc2_08_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Lc2_08_OD/Lc2_08_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "cl-02-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Lc2_08_ON/Lc2_08_ON_0/Lc2_08_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Lc2_08_ON/Lc2_08_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "cl-02-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Lc2_08_ON/Lc2_08_ON_90/Lc2_08_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Lc2_08_ON/Lc2_08_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "cl-02-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Lc2_08_ON/Lc2_08_ON_180/Lc2_08_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Lc2_08_ON/Lc2_08_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-01-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Nm1_08_ID/Nm1_08_ID_0/Nm1_08_ID_0..mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Nm1_08_ID/Nm1_08_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-01-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Nm1_08_ID/Nm1_08_ID_90/Nm1_08_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Nm1_08_ID/Nm1_08_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-01-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Nm1_08_ID/Nm1_08_ID_180/Nm1_08_ID_180..mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Nm1_08_ID/Nm1_08_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Nm1_08_OD/Nm1_08_OD_0/Nm1_08_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Nm1_08_OD/Nm1_08_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-01-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Nm1_08_OD/Nm1_08_OD_90/Nm1_08_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Nm1_08_OD/Nm1_08_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Nm1_08_OD/Nm1_08_OD_180/Nm1_08_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Nm1_08_OD/Nm1_08_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-01-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Nm1_08_ON/Nm1_08_ON_0/Nm1_08_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Nm1_08_ON/Nm1_08_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-01-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Nm1_08_ON/Nm1_08_ON_90/2026-07-07 21-20-33.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Nm1_08_ON/Nm1_08_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-01-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Nm1_08_ON/Nm1_08_ON_180/Nm1_08_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Nm1_08_ON/Nm1_08_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-02-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Nm2_08_ID/Nm2_08_ID_0/Nm2_08_ID_0..mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Nm2_08_ID/Nm2_08_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-02-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Nm2_08_ID/Nm2_08_ID_90/Nm2_08_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Nm2_08_ID/Nm2_08_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-02-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Nm2_08_ID/Nm2_08_ID_180/Nm2_08_ID_180..mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Nm2_08_ID/Nm2_08_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Nm2_08_OD/Nm2_08_OD_0/Nm2_08_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Nm2_08_OD/Nm2_08_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Nm2_08_OD/Nm2_08_OD_90/Nm2_08_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Nm2_08_OD/Nm2_08_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Nm2_08_OD/Nm2_08_OD_180/Nm2_08_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Nm2_08_OD/Nm2_08_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-02-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Nm2_08_ON/Nm2_08_ON_0/Nm2_08_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Nm2_08_ON/Nm2_08_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-02-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Nm2_08_ON/Nm2_08_ON_90/Nm2_08_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Nm2_08_ON/Nm2_08_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-02-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Nm2_08_ON/Nm2_08_ON_180/Nm2_08_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Nm2_08_ON/Nm2_08_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-03-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Nm3_08_ID/Nm3_08_ID_0/Nm3_08_ID_0..mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Nm3_08_ID/Nm3_08_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-03-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Nm3_08_ID/Nm3_08_ID_90/Nm3_08_ID_90..mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Nm3_08_ID/Nm3_08_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-03-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Nm3_08_ID/Nm3_08_ID_180/Nm3_08_ID_180..mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub08_ID/Nm3_08_ID/Nm3_08_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-03-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Nm3_08_OD/Nm3_08_OD_0/Nm3_08_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Nm3_08_OD/Nm3_08_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-03-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Nm3_08_OD/Nm3_08_OD_90/Nm3_08_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Nm3_08_OD/Nm3_08_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-03-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Nm3_08_OD/Nm3_08_OD_180/Nm3_08_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub08_OD/Nm3_08_OD/Nm3_08_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-03-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Nm3_08_ON/Nm3_08_ON_0/Nm3_08_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Nm3_08_ON/Nm3_08_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-03-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Nm3_08_ON/Nm3_08_ON_90/Nm3_08_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Nm3_08_ON/Nm3_08_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "008",
-    "condition": "nm-03-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Nm3_08_ON/Nm3_08_ON_180/Nm3_08_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub08_ON/Nm3_08_ON/Nm3_08_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "cl-01-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Lc1_09_ID/Lc1_09_ID_0/Lc1_09_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Lc1_09_ID/Lc1_09_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "cl-01-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Lc1_09_ID/Lc1_09_ID_90/Lc1_09_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Lc1_09_ID/Lc1_09_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "cl-01-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Lc1_09_ID/Lc1_09_ID_180/Lc1_09_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Lc1_09_ID/Lc1_09_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "cl-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Lc1_09_OD/Lc1_09_OD_0/Lc1_09_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Lc1_09_OD/Lc1_09_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "cl-01-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Lc1_09_OD/Lc1_09_OD_90/Lc1_09_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Lc1_09_OD/Lc1_09_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "cl-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Lc1_09_OD/Lc1_09_OD_180/Lc1_09_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Lc1_09_OD/Lc1_09_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "cl-01-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Lc1_09_ON/Lc1_09_ON_0/Lc1_09_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Lc1_09_ON/Lc1_09_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "cl-01-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Lc1_09_ON/Lc1_09_ON_90/Lc1_09_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Lc1_09_ON/Lc1_09_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "cl-01-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Lc1_09_ON/Lc1_09_ON_180/Lc1_09_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Lc1_09_ON/Lc1_09_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "cl-02-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Lc2_09_ID/Lc2_09_ID_0/Lc2_09_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Lc2_09_ID/Lc2_09_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "cl-02-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Lc2_09_ID/Lc2_09_ID_90/Lc2_09_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Lc2_09_ID/Lc2_09_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "cl-02-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Lc2_09_ID/Lc2_09_ID_180/Lc2_09_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Lc2_09_ID/Lc2_09_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "cl-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Lc2_09_OD/Lc2_09_OD_0/Lc2_09_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Lc2_09_OD/Lc2_09_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "cl-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Lc2_09_OD/Lc2_09_OD_90/Lc2_09_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Lc2_09_OD/Lc2_09_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "cl-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Lc2_09_OD/Lc2_09_OD_180/Lc2_09_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Lc2_09_OD/Lc2_09_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "cl-02-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Lc2_09_ON/Lc2_09_ON_0/Lc2_09_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Lc2_09_ON/Lc2_09_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "cl-02-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Lc2_09_ON/Lc2_09_ON_90/Lc2_09_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Lc2_09_ON/Lc2_09_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "cl-02-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Lc2_09_ON/Lc2_09_ON_180/Lc2_09_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Lc2_09_ON/Lc2_09_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-01-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Nm1_09_ID/Nm1_09_ID_0/Nm1_09_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Nm1_09_ID/Nm1_09_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-01-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Nm1_09_ID/Nm1_09_ID_90/Nm1_09_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Nm1_09_ID/Nm1_09_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-01-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Nm1_09_ID/Nm1_09_ID_180/Nm1_09_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Nm1_09_ID/Nm1_09_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Nm1_09_OD/Nm1_09_OD_0/Nm1_09_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Nm1_09_OD/Nm1_09_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-01-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Nm1_09_OD/Nm1_09_OD_90/Nm1_09_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Nm1_09_OD/Nm1_09_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Nm1_09_OD/Nm1_09_OD_180/Nm1_09_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Nm1_09_OD/Nm1_09_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-01-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Nm1_09_ON/Nm1_09_ON_0/Nm1_09_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Nm1_09_ON/Nm1_09_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-01-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Nm1_09_ON/Nm1_09_ON_90/Nm1_09_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Nm1_09_ON/Nm1_09_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-01-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Nm1_09_ON/Nm1_09_ON_180/Nm1_09_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Nm1_09_ON/Nm1_09_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-02-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Nm2_09_ID/Nm2_09_ID_0/Nm2_09_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Nm2_09_ID/Nm2_09_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-02-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Nm2_09_ID/Nm2_09_ID_90/Nm2_09_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Nm2_09_ID/Nm2_09_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-02-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Nm2_09_ID/Nm2_09_ID_180/Nm2_09_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Nm2_09_ID/Nm2_09_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Nm2_09_OD/Nm2_09_OD_0/Nm2_09_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Nm2_09_OD/Nm2_09_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Nm2_09_OD/Nm2_09_OD_90/Nm2_09_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Nm2_09_OD/Nm2_09_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Nm2_09_OD/Nm2_09_OD_180/Nm2_09_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Nm2_09_OD/Nm2_09_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-02-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Nm2_09_ON/Nm2_09_ON_0/Nm2_09_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Nm2_09_ON/Nm2_09_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-02-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Nm2_09_ON/Nm2_09_ON_90/Nm2_09_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Nm2_09_ON/Nm2_09_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-02-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Nm2_09_ON/Nm2_09_ON_180/Nm2_09_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Nm2_09_ON/Nm2_09_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-03-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Nm3_09_ID/Nm3_09_ID_0/Nm3_09_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Nm3_09_ID/Nm3_09_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-03-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Nm3_09_ID/Nm3_09_ID_90/Nm3_09_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Nm3_09_ID/Nm3_09_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-03-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Nm3_09_ID/Nm3_09_ID_180/Nm3_09_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub09_ID/Nm3_09_ID/Nm3_09_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-03-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Nm3_09_OD/Nm3_09_OD_0/Nm3_09_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Nm3_09_OD/Nm3_09_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-03-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Nm3_09_OD/Nm3_09_OD_90/Nm3_09_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Nm3_09_OD/Nm3_09_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-03-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Nm3_09_OD/Nm3_09_OD_180/Nm3_09_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub09_OD/Nm3_09_OD/Nm3_09_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-03-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Nm3_09_ON/Nm3_09_ON_0/Nm3_09_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Nm3_09_ON/Nm3_09_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-03-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Nm3_09_ON/Nm3_09_ON_90/Nm3_09_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Nm3_09_ON/Nm3_09_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "009",
-    "condition": "nm-03-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Nm3_09_ON/Nm3_09_ON_180/Nm3_09_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub09_ON/Nm3_09_ON/Nm3_09_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "cl-01-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Lc1_10_ID/Lc1_10_ID_0/Lc1_10_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Lc1_10_ID/Lc1_10_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "cl-01-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Lc1_10_ID/Lc1_10_ID_90/Lc1_10_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Lc1_10_ID/Lc1_10_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "cl-01-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Lc1_10_ID/Lc1_10_ID_180/Lc1_10_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Lc1_10_ID/Lc1_10_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "cl-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Lc1_10_OD/Lc1_10_OD_0/Lc1_10_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Lc1_10_OD/Lc1_10_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "cl-01-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Lc1_10_OD/Lc1_10_OD_90/Lc1_10_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Lc1_10_OD/Lc1_10_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "cl-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Lc1_10_OD/Lc1_10_OD_180/Lc1_10_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Lc1_10_OD/Lc1_10_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "cl-01-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Lc1_10_ON/Lc1_10_ON_0/Lc1_10_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Lc1_10_ON/Lc1_10_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "cl-01-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Lc1_10_ON/Lc1_10_ON_90/Lc1_10_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Lc1_10_ON/Lc1_10_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "cl-01-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Lc1_10_ON/Lc1_10_ON_180/Lc1_10_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Lc1_10_ON/Lc1_10_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "cl-02-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Lc2_10_ID/Lc2_10_ID_0/Lc2_10_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Lc2_10_ID/Lc2_10_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "cl-02-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Lc2_10_ID/Lc2_10_ID_90/Lc2_10_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Lc2_10_ID/Lc2_10_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "cl-02-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Lc2_10_ID/Lc2_10_ID_180/Lc2_10_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Lc2_10_ID/Lc2_10_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "cl-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Lc2_10_OD/Lc2_10_OD_0/Lc2_10_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Lc2_10_OD/Lc2_10_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "cl-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Lc2_10_OD/Lc2_10_OD_90/Lc2_10_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Lc2_10_OD/Lc2_10_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "cl-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Lc2_10_OD/Lc2_10_OD_180/Lc2_10_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Lc2_10_OD/Lc2_10_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "cl-02-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Lc2_10_ON/Lc2_10_ON_0/Lc2_10_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Lc2_10_ON/Lc2_10_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "cl-02-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Lc2_10_ON/Lc2_10_ON_90/Lc2_10_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Lc2_10_ON/Lc2_10_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "cl-02-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Lc2_10_ON/Lc2_10_ON_180/Lc2_10_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Lc2_10_ON/Lc2_10_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-01-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Nm1_10_ID/Nm1_10_ID_0/Nm1_10_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Nm1_10_ID/Nm1_10_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-01-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Nm1_10_ID/Nm1_10_ID_90/Nm1_10_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Nm1_10_ID/Nm1_10_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-01-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Nm1_10_ID/Nm1_10_ID_180/Nm1_10_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Nm1_10_ID/Nm1_10_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-01-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Nm1_10_OD/Nm1_10_OD_0/Nm1_10_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Nm1_10_OD/Nm1_10_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-01-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Nm1_10_OD/Nm1_10_OD_90/Nm1_10_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Nm1_10_OD/Nm1_10_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-01-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Nm1_10_OD/Nm1_10_OD_180/Nm1_10_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Nm1_10_OD/Nm1_10_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-01-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Nm1_10_ON/Nm1_10_ON_0/Nm1_10_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Nm1_10_ON/Nm1_10_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-01-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Nm1_10_ON/Nm1_10_ON_90/Nm1_10_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Nm1_10_ON/Nm1_10_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-01-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Nm1_10_ON/Nm1_10_ON_180/Nm1_10_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Nm1_10_ON/Nm1_10_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-02-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Nm2_10_ID/Nm2_10_ID_0/Nm2_10_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Nm2_10_ID/Nm2_10_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-02-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Nm2_10_ID/Nm2_10_ID_90/Nm2_10_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Nm2_10_ID/Nm2_10_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-02-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Nm2_10_ID/Nm2_10_ID_180/Nm2_10_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Nm2_10_ID/Nm2_10_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-02-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Nm2_10_OD/Nm2_10_OD_0/Nm2_10_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Nm2_10_OD/Nm2_10_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-02-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Nm2_10_OD/Nm2_10_OD_90/Nm2_10_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Nm2_10_OD/Nm2_10_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-02-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Nm2_10_OD/Nm2_10_OD_180/Nm2_10_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Nm2_10_OD/Nm2_10_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-02-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Nm2_10_ON/Nm2_10_ON_0/Nm2_10_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Nm2_10_ON/Nm2_10_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-02-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Nm2_10_ON/Nm2_10_ON_90/Nm2_10_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Nm2_10_ON/Nm2_10_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-02-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Nm2_10_ON/Nm2_10_ON_180/Nm2_10_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Nm2_10_ON/Nm2_10_ON_180",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-03-id",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Nm3_10_ID/Nm3_10_ID_0/Nm3_10_ID_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Nm3_10_ID/Nm3_10_ID_0",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-03-id",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Nm3_10_ID/Nm3_10_ID_90/Nm3_10_ID_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Nm3_10_ID/Nm3_10_ID_90",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-03-id",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Nm3_10_ID/Nm3_10_ID_180/Nm3_10_ID_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/INDOOR/Sub10_ID/Nm3_10_ID/Nm3_10_ID_180",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-03-od",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Nm3_10_OD/Nm3_10_OD_0/Nm3_10_OD_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Nm3_10_OD/Nm3_10_OD_0",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-03-od",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Nm3_10_OD/Nm3_10_OD_90/Nm3_10_OD_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Nm3_10_OD/Nm3_10_OD_90",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-03-od",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Nm3_10_OD/Nm3_10_OD_180/Nm3_10_OD_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Day/Sub10_OD/Nm3_10_OD/Nm3_10_OD_180",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-03-on",
-    "view": "000",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Nm3_10_ON/Nm3_10_ON_0/Nm3_10_ON_0.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Nm3_10_ON/Nm3_10_ON_0",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-03-on",
-    "view": "090",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Nm3_10_ON/Nm3_10_ON_90/Nm3_10_ON_90.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Nm3_10_ON/Nm3_10_ON_90",
-    "status": "ok"
-  },
-  {
-    "subject": "010",
-    "condition": "nm-03-on",
-    "view": "180",
-    "video_path": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Nm3_10_ON/Nm3_10_ON_180/Nm3_10_ON_180.mp4",
-    "raw_leaf": "datasets/CLoP-Gait/OUTDOOR/Outdoor_Night/Sub10_ON/Nm3_10_ON/Nm3_10_ON_180",
+    "video_path": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Nm3_05_ON/Nm3_05_ON_180/Nm3_05_ON_180.mp4",
+    "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub05_ON/Nm3_05_ON/Nm3_05_ON_180",
     "status": "ok"
   }
 ]

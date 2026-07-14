@@ -1,0 +1,715 @@
+{
+  "coverage": {
+    "total_raw_sequences": 150,
+    "known_gaps": 3,
+    "usable_sequences": 147,
+    "processed": 60,
+    "not_yet_processed": 87
+  },
+  "known_gaps": [
+    {
+      "key": "003/nm-01-on/090",
+      "status": "missing",
+      "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub03_ON/Nm1_03_ON/Nm1_03_ON_90"
+    },
+    {
+      "key": "004/cl-01-on/000",
+      "status": "missing",
+      "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Lc1_04_ON/Lc1_04_ON_0"
+    },
+    {
+      "key": "004/cl-01-on/180",
+      "status": "missing",
+      "raw_leaf": "datasets/CLoP-Gait_v2/CLoP-Gait - Copy/OUTDOOR/Outdoor_Night/Sub04_ON/Lc1_04_ON/Lc1_04_ON_180"
+    }
+  ],
+  "unexpected_failures": [],
+  "low_frame_count": [],
+  "missing_pairs": [],
+  "not_yet_processed": [
+    {
+      "key": "002/cl-01-id/000"
+    },
+    {
+      "key": "002/cl-01-id/090"
+    },
+    {
+      "key": "002/cl-01-id/180"
+    },
+    {
+      "key": "002/cl-01-on/000"
+    },
+    {
+      "key": "002/cl-01-on/090"
+    },
+    {
+      "key": "002/cl-01-on/180"
+    },
+    {
+      "key": "002/cl-02-id/000"
+    },
+    {
+      "key": "002/cl-02-id/090"
+    },
+    {
+      "key": "002/cl-02-id/180"
+    },
+    {
+      "key": "002/cl-02-on/000"
+    },
+    {
+      "key": "002/cl-02-on/090"
+    },
+    {
+      "key": "002/cl-02-on/180"
+    },
+    {
+      "key": "002/nm-01-id/000"
+    },
+    {
+      "key": "002/nm-01-id/090"
+    },
+    {
+      "key": "002/nm-01-id/180"
+    },
+    {
+      "key": "002/nm-01-on/000"
+    },
+    {
+      "key": "002/nm-01-on/090"
+    },
+    {
+      "key": "002/nm-01-on/180"
+    },
+    {
+      "key": "002/nm-02-id/000"
+    },
+    {
+      "key": "002/nm-02-id/090"
+    },
+    {
+      "key": "002/nm-02-id/180"
+    },
+    {
+      "key": "002/nm-02-on/000"
+    },
+    {
+      "key": "002/nm-02-on/090"
+    },
+    {
+      "key": "002/nm-02-on/180"
+    },
+    {
+      "key": "002/nm-03-id/000"
+    },
+    {
+      "key": "002/nm-03-id/090"
+    },
+    {
+      "key": "002/nm-03-id/180"
+    },
+    {
+      "key": "002/nm-03-on/000"
+    },
+    {
+      "key": "002/nm-03-on/090"
+    },
+    {
+      "key": "002/nm-03-on/180"
+    },
+    {
+      "key": "003/cl-01-id/000"
+    },
+    {
+      "key": "003/cl-01-id/090"
+    },
+    {
+      "key": "003/cl-01-id/180"
+    },
+    {
+      "key": "003/cl-01-on/000"
+    },
+    {
+      "key": "003/cl-01-on/090"
+    },
+    {
+      "key": "003/cl-01-on/180"
+    },
+    {
+      "key": "003/cl-02-id/000"
+    },
+    {
+      "key": "003/cl-02-id/090"
+    },
+    {
+      "key": "003/cl-02-id/180"
+    },
+    {
+      "key": "003/cl-02-on/000"
+    },
+    {
+      "key": "003/cl-02-on/090"
+    },
+    {
+      "key": "003/cl-02-on/180"
+    },
+    {
+      "key": "003/nm-01-id/000"
+    },
+    {
+      "key": "003/nm-01-id/090"
+    },
+    {
+      "key": "003/nm-01-id/180"
+    },
+    {
+      "key": "003/nm-01-on/000"
+    },
+    {
+      "key": "003/nm-01-on/180"
+    },
+    {
+      "key": "003/nm-02-id/000"
+    },
+    {
+      "key": "003/nm-02-id/090"
+    },
+    {
+      "key": "003/nm-02-id/180"
+    },
+    {
+      "key": "003/nm-02-on/000"
+    },
+    {
+      "key": "003/nm-02-on/090"
+    },
+    {
+      "key": "003/nm-02-on/180"
+    },
+    {
+      "key": "003/nm-03-id/000"
+    },
+    {
+      "key": "003/nm-03-id/090"
+    },
+    {
+      "key": "003/nm-03-id/180"
+    },
+    {
+      "key": "003/nm-03-on/000"
+    },
+    {
+      "key": "003/nm-03-on/090"
+    },
+    {
+      "key": "003/nm-03-on/180"
+    },
+    {
+      "key": "004/cl-01-id/000"
+    },
+    {
+      "key": "004/cl-01-id/090"
+    },
+    {
+      "key": "004/cl-01-id/180"
+    },
+    {
+      "key": "004/cl-01-on/090"
+    },
+    {
+      "key": "004/cl-02-id/000"
+    },
+    {
+      "key": "004/cl-02-id/090"
+    },
+    {
+      "key": "004/cl-02-id/180"
+    },
+    {
+      "key": "004/cl-02-on/000"
+    },
+    {
+      "key": "004/cl-02-on/090"
+    },
+    {
+      "key": "004/cl-02-on/180"
+    },
+    {
+      "key": "004/nm-01-id/000"
+    },
+    {
+      "key": "004/nm-01-id/090"
+    },
+    {
+      "key": "004/nm-01-id/180"
+    },
+    {
+      "key": "004/nm-01-on/000"
+    },
+    {
+      "key": "004/nm-01-on/090"
+    },
+    {
+      "key": "004/nm-01-on/180"
+    },
+    {
+      "key": "004/nm-02-id/000"
+    },
+    {
+      "key": "004/nm-02-id/090"
+    },
+    {
+      "key": "004/nm-02-id/180"
+    },
+    {
+      "key": "004/nm-02-on/000"
+    },
+    {
+      "key": "004/nm-02-on/090"
+    },
+    {
+      "key": "004/nm-02-on/180"
+    },
+    {
+      "key": "004/nm-03-id/000"
+    },
+    {
+      "key": "004/nm-03-id/090"
+    },
+    {
+      "key": "004/nm-03-id/180"
+    },
+    {
+      "key": "004/nm-03-on/000"
+    },
+    {
+      "key": "004/nm-03-on/090"
+    },
+    {
+      "key": "004/nm-03-on/180"
+    }
+  ],
+  "multi_person_frames_total": 120,
+  "processed_sequences": [
+    {
+      "key": "001/cl-01-id/000",
+      "frames_kept": 157,
+      "frames_dropped": 0,
+      "skeleton_frames": 157,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/cl-01-id/090",
+      "frames_kept": 171,
+      "frames_dropped": 8,
+      "skeleton_frames": 171,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/cl-01-id/180",
+      "frames_kept": 194,
+      "frames_dropped": 0,
+      "skeleton_frames": 194,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/cl-01-on/000",
+      "frames_kept": 172,
+      "frames_dropped": 0,
+      "skeleton_frames": 172,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/cl-01-on/090",
+      "frames_kept": 206,
+      "frames_dropped": 8,
+      "skeleton_frames": 206,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/cl-01-on/180",
+      "frames_kept": 206,
+      "frames_dropped": 0,
+      "skeleton_frames": 206,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/cl-02-id/000",
+      "frames_kept": 149,
+      "frames_dropped": 0,
+      "skeleton_frames": 149,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/cl-02-id/090",
+      "frames_kept": 168,
+      "frames_dropped": 8,
+      "skeleton_frames": 168,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/cl-02-id/180",
+      "frames_kept": 178,
+      "frames_dropped": 1,
+      "skeleton_frames": 178,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/cl-02-on/000",
+      "frames_kept": 178,
+      "frames_dropped": 1,
+      "skeleton_frames": 178,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/cl-02-on/090",
+      "frames_kept": 180,
+      "frames_dropped": 34,
+      "skeleton_frames": 180,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/cl-02-on/180",
+      "frames_kept": 187,
+      "frames_dropped": 0,
+      "skeleton_frames": 187,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/nm-01-id/000",
+      "frames_kept": 134,
+      "frames_dropped": 0,
+      "skeleton_frames": 134,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/nm-01-id/090",
+      "frames_kept": 180,
+      "frames_dropped": 13,
+      "skeleton_frames": 180,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/nm-01-id/180",
+      "frames_kept": 181,
+      "frames_dropped": 0,
+      "skeleton_frames": 181,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/nm-01-on/000",
+      "frames_kept": 179,
+      "frames_dropped": 0,
+      "skeleton_frames": 179,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/nm-01-on/090",
+      "frames_kept": 179,
+      "frames_dropped": 14,
+      "skeleton_frames": 179,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/nm-01-on/180",
+      "frames_kept": 145,
+      "frames_dropped": 0,
+      "skeleton_frames": 145,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/nm-02-id/000",
+      "frames_kept": 142,
+      "frames_dropped": 0,
+      "skeleton_frames": 142,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/nm-02-id/090",
+      "frames_kept": 172,
+      "frames_dropped": 3,
+      "skeleton_frames": 172,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/nm-02-id/180",
+      "frames_kept": 179,
+      "frames_dropped": 0,
+      "skeleton_frames": 179,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/nm-02-on/000",
+      "frames_kept": 166,
+      "frames_dropped": 0,
+      "skeleton_frames": 166,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/nm-02-on/090",
+      "frames_kept": 170,
+      "frames_dropped": 32,
+      "skeleton_frames": 170,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/nm-02-on/180",
+      "frames_kept": 173,
+      "frames_dropped": 0,
+      "skeleton_frames": 173,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/nm-03-id/000",
+      "frames_kept": 115,
+      "frames_dropped": 0,
+      "skeleton_frames": 115,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/nm-03-id/090",
+      "frames_kept": 150,
+      "frames_dropped": 55,
+      "skeleton_frames": 150,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/nm-03-id/180",
+      "frames_kept": 190,
+      "frames_dropped": 0,
+      "skeleton_frames": 190,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/nm-03-on/000",
+      "frames_kept": 157,
+      "frames_dropped": 0,
+      "skeleton_frames": 157,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/nm-03-on/090",
+      "frames_kept": 173,
+      "frames_dropped": 14,
+      "skeleton_frames": 173,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "001/nm-03-on/180",
+      "frames_kept": 185,
+      "frames_dropped": 0,
+      "skeleton_frames": 185,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/cl-01-id/000",
+      "frames_kept": 157,
+      "frames_dropped": 0,
+      "skeleton_frames": 157,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/cl-01-id/090",
+      "frames_kept": 181,
+      "frames_dropped": 0,
+      "skeleton_frames": 181,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/cl-01-id/180",
+      "frames_kept": 161,
+      "frames_dropped": 0,
+      "skeleton_frames": 161,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/cl-01-on/000",
+      "frames_kept": 205,
+      "frames_dropped": 0,
+      "skeleton_frames": 205,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/cl-01-on/090",
+      "frames_kept": 228,
+      "frames_dropped": 2,
+      "skeleton_frames": 228,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/cl-01-on/180",
+      "frames_kept": 206,
+      "frames_dropped": 0,
+      "skeleton_frames": 206,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/cl-02-id/000",
+      "frames_kept": 154,
+      "frames_dropped": 0,
+      "skeleton_frames": 154,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/cl-02-id/090",
+      "frames_kept": 169,
+      "frames_dropped": 1,
+      "skeleton_frames": 169,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/cl-02-id/180",
+      "frames_kept": 148,
+      "frames_dropped": 0,
+      "skeleton_frames": 148,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/cl-02-on/000",
+      "frames_kept": 184,
+      "frames_dropped": 0,
+      "skeleton_frames": 184,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/cl-02-on/090",
+      "frames_kept": 208,
+      "frames_dropped": 19,
+      "skeleton_frames": 208,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/cl-02-on/180",
+      "frames_kept": 209,
+      "frames_dropped": 0,
+      "skeleton_frames": 209,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/nm-01-id/000",
+      "frames_kept": 157,
+      "frames_dropped": 0,
+      "skeleton_frames": 157,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/nm-01-id/090",
+      "frames_kept": 185,
+      "frames_dropped": 5,
+      "skeleton_frames": 185,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/nm-01-id/180",
+      "frames_kept": 172,
+      "frames_dropped": 0,
+      "skeleton_frames": 172,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/nm-01-on/000",
+      "frames_kept": 181,
+      "frames_dropped": 0,
+      "skeleton_frames": 181,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/nm-01-on/090",
+      "frames_kept": 235,
+      "frames_dropped": 1,
+      "skeleton_frames": 235,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/nm-01-on/180",
+      "frames_kept": 181,
+      "frames_dropped": 0,
+      "skeleton_frames": 181,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/nm-02-id/000",
+      "frames_kept": 148,
+      "frames_dropped": 0,
+      "skeleton_frames": 148,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/nm-02-id/090",
+      "frames_kept": 158,
+      "frames_dropped": 3,
+      "skeleton_frames": 158,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/nm-02-id/180",
+      "frames_kept": 157,
+      "frames_dropped": 0,
+      "skeleton_frames": 157,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/nm-02-on/000",
+      "frames_kept": 182,
+      "frames_dropped": 0,
+      "skeleton_frames": 182,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/nm-02-on/090",
+      "frames_kept": 219,
+      "frames_dropped": 28,
+      "skeleton_frames": 219,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/nm-02-on/180",
+      "frames_kept": 193,
+      "frames_dropped": 0,
+      "skeleton_frames": 193,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/nm-03-id/000",
+      "frames_kept": 158,
+      "frames_dropped": 0,
+      "skeleton_frames": 158,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/nm-03-id/090",
+      "frames_kept": 166,
+      "frames_dropped": 1,
+      "skeleton_frames": 166,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/nm-03-id/180",
+      "frames_kept": 156,
+      "frames_dropped": 1,
+      "skeleton_frames": 156,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/nm-03-on/000",
+      "frames_kept": 196,
+      "frames_dropped": 0,
+      "skeleton_frames": 196,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/nm-03-on/090",
+      "frames_kept": 235,
+      "frames_dropped": 0,
+      "skeleton_frames": 235,
+      "empty_skeleton_frames": 0
+    },
+    {
+      "key": "005/nm-03-on/180",
+      "frames_kept": 205,
+      "frames_dropped": 0,
+      "skeleton_frames": 205,
+      "empty_skeleton_frames": 0
+    }
+  ]
+}
