@@ -1,0 +1,114 @@
+{
+  "total_subjects": 5,
+  "total_raw_sequences": 210,
+  "total_ok_sequences": 205,
+  "coverage_by_domain": {
+    "indoor": {
+      "subjects": [
+        "001",
+        "002",
+        "003",
+        "004",
+        "005"
+      ],
+      "total_sequences": 75,
+      "ok_sequences": 75,
+      "missing_sequences": 0
+    },
+    "outdoor-day": {
+      "subjects": [
+        "001",
+        "002",
+        "003",
+        "004"
+      ],
+      "total_sequences": 60,
+      "ok_sequences": 58,
+      "missing_sequences": 2
+    },
+    "outdoor-night": {
+      "subjects": [
+        "001",
+        "002",
+        "003",
+        "004",
+        "005"
+      ],
+      "total_sequences": 75,
+      "ok_sequences": 72,
+      "missing_sequences": 3
+    }
+  },
+  "silhouette_frame_distribution": {
+    "count": 205,
+    "mean": 56.7,
+    "median": 56,
+    "min": 35,
+    "max": 90,
+    "stdev": 10.6
+  },
+  "silhouette_frame_distribution_by_domain": {
+    "indoor": {
+      "count": 75,
+      "mean": 56.1,
+      "median": 55,
+      "min": 38,
+      "max": 82,
+      "stdev": 8.1
+    },
+    "outdoor-day": {
+      "count": 58,
+      "mean": 48.9,
+      "median": 49.0,
+      "min": 35,
+      "max": 74,
+      "stdev": 8.5
+    },
+    "outdoor-night": {
+      "count": 72,
+      "mean": 63.8,
+      "median": 62.0,
+      "min": 42,
+      "max": 90,
+      "stdev": 9.8
+    }
+  },
+  "skeleton_frame_distribution": {
+    "count": 205,
+    "mean": 56.7,
+    "median": 56,
+    "min": 35,
+    "max": 90,
+    "stdev": 10.6
+  },
+  "domain_generalization_split": {
+    "test_domain_suffix": "od",
+    "per_subject": {
+      "001": {
+        "train": 30,
+        "test": 15
+      },
+      "002": {
+        "train": 30,
+        "test": 14
+      },
+      "003": {
+        "train": 29,
+        "test": 15
+      },
+      "004": {
+        "train": 28,
+        "test": 14
+      },
+      "005": {
+        "train": 30,
+        "test": 0
+      }
+    },
+    "total_train_sequences": 147,
+    "total_test_sequences": 58,
+    "subjects_with_zero_test_sequences": [
+      "005"
+    ]
+  }
+}

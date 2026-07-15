@@ -6,3 +6,4 @@ opencv-python-headless>=4.9,<5
 matplotlib>=3.8,<4
 torch>=2.4,<3
 torchvision>=0.19,<1
+tqdm>=4.66,<5

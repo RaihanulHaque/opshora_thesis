@@ -637,6 +637,70 @@ V6 satisfies these points:
 | No need for closed-set prediction at test time | Evaluation uses embedding distances, not classifier predictions. |
 | Silhouette safeguard | Uses paired silhouettes as a second stream. |
 
+## 14.5 CLoP-Gait custom dataset retraining (domain-generalization protocol)
+
+V6's architecture (sections 4-7 above) is entirely unchanged when retrained
+on the self-collected `datasets/CLoP-Gait` dataset -- all input/output
+dimensions, layer sizes, and loss composition described above apply
+identically. Only two things differ from the CASIA-B run documented in
+section 12:
+
+- **`num_classes` is 5** (CLoP-Gait's subject count), not 74, so `logits`
+  is `(batch, 5)` and the auxiliary classifier is a 5-way head. This only
+  affects the classifier layer's shape -- everything upstream of it
+  (embedding, projection, reconstruction) is identical.
+- **The train/test split is domain-generalization, not identity-holdout.**
+  `gait.dataset.GaitSequenceDataset(split_mode="domain")`: all 5 subjects'
+  indoor + outdoor-night sequences train the model; their outdoor-day
+  sequences (same identities, unseen environment) are the entire test/probe
+  set. This tests "recognize known people in a new environment" rather than
+  CASIA-B's "recognize never-seen people," so its Rank-1/AUC numbers are
+  **not on the same scale as section 12's CASIA-B numbers** -- see
+  `runs/MODEL_COMPARISON.md`'s "Tier C" section for the full writeup and
+  caveats.
+
+Config: `designs/skeleton_silhouette_fusion_v6/clopgait_config.json`
+(dataset paths + `split_mode`/`test_domain_suffix` overrides on top of this
+design's base `config.json` -- same architecture/loss hyperparameters).
+
+Result (`clopgait_domain_split_002`, the corrected run -- see below):
+
+```text
+epochs (stopped): 38
+best Rank-1:      0.8696  (epoch 15)
+Rank-5 there:     1.0000
+verification AUC there: 0.8155
+distance gap there:     0.6155
+```
+
+### A preprocessing bug this surfaced (now fixed)
+
+The first attempt (`clopgait_domain_split_001`) trained on a broken
+skeleton channel: `gait/preprocessing.py`'s `process_skeleton_silhouette_sequence()`
+resized the skeleton frame to the 64x64 training canvas with a direct,
+non-aspect-preserving `cv2.resize(..., interpolation=cv2.INTER_NEAREST)`,
+independent of how the paired silhouette was cropped. For CLoP-Gait's
+1px-wide skeleton lines stored at 320x240, that point-sampled resize
+destroyed nearly all of it (a real sample went from 650 skeleton pixels to
+31 survivors) and didn't even keep the skeleton spatially aligned with its
+silhouette. The reconstruction-preview images made this obvious: the
+"target skeleton" panel showed scattered disconnected dots instead of a
+coherent branchy structure.
+
+Fix: the skeleton now reuses the exact crop transform computed for its
+paired silhouette (`compute_crop_transform`/`apply_crop_transform`, split
+out of `crop_to_canvas`), so both channels stay co-registered, and
+downsamples via an "any-coverage" rule (keep a pixel if the source region
+has *any* skeleton coverage) followed by re-thinning
+(`topology_preserving_thinning`) so the result is a genuine 1px skeleton
+again rather than vanishing or turning into a blob. This only changes
+behavior when the stored skeleton's resolution differs from the training
+canvas -- CASIA-B's `CASIA_B_Hamilton_Skeleton` is already pre-aligned to
+64x64 so this branch never runs for it, confirmed byte-for-byte identical
+on real CASIA-B data before/after. Section 12's CASIA-B numbers are
+unaffected. `clopgait_domain_split_002` (the numbers above) is the
+corrected re-run and is what should be cited going forward.
+
 ## 15. Practical run command
 
 Deploy the Modal app after code/config changes:
@@ -661,6 +725,7 @@ python submit_modal.py run --design skeleton_silhouette_fusion_v6 --run fusion_r
 
 ```text
 designs/skeleton_silhouette_fusion_v6/config.json
+designs/skeleton_silhouette_fusion_v6/clopgait_config.json      (CLoP-Gait overrides, section 14.5)
 designs/skeleton_silhouette_fusion_v6/model.py
 designs/skeleton_silhouette_fusion_v6/README.md
 designs/skeleton_silhouette_fusion_v6/MODEL_ARCHITECTURE_AND_FLOW.md

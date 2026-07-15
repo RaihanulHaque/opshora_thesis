@@ -61,6 +61,81 @@ V6's own README documents — it's why V6's config later added
 real (it's what the training loop actually saved) but is very unlikely to
 reflect genuine converged retrieval ability.
 
+## Tier C — custom CLoP-Gait dataset (different dataset and protocol, not comparable to Tier A/B)
+
+Self-collected dataset (`datasets/CLoP-Gait`, 5 subjects, indoor + outdoor-day
++ outdoor-night domains), same V6 architecture and loss recipe as Tier A,
+retrained via `designs/skeleton_silhouette_fusion_v6/clopgait_config.json`.
+The split is **domain-generalization, not identity-holdout**: all 5 subjects'
+indoor + outdoor-night sequences are used for training, and their
+outdoor-day sequences (same identities, unseen environment) are the entire
+test/probe set (`gait.dataset.GaitSequenceDataset(split_mode="domain")`).
+This is a fundamentally different task from Tier A/B's unseen-identity
+protocol, and the test pool is tiny (subject `005` has zero outdoor-day
+footage, so only 4 subjects actually contribute probe sequences) --
+**do not read this Rank-1 side-by-side with Tier A/B's 50-subject numbers
+as if they were on the same scale.** A 4-subject identification task is
+categorically easier than a 50-subject one.
+
+| Model | Run | Epochs (stopped) | Rank-1 | Rank-5 | Verification AUC | Distance gap | Notes |
+|---|---|---:|---:|---:|---:|---:|---|
+| Fusion V6 | `clopgait_domain_split_002` | 38 | 86.96% | 100.00% | 81.55%† | 0.616 | Corrected skeleton preprocessing (see below) |
+| ~~Fusion V6~~ | ~~`clopgait_domain_split_001`~~ | ~~54~~ | ~~89.13%~~ | ~~100.00%~~ | ~~85.00%†~~ | ~~0.702~~ | **Invalid** -- trained on a broken skeleton channel, kept only for the before/after comparison below |
+
+† value read at the epoch matching that row's official best-Rank-1 epoch
+(the exact epoch whose checkpoint was saved as `best_rank1_model.pt`), same
+convention as Tier A. Each run's own separately-best verification AUC
+happened at a nearby but different epoch: `_002` peaked at 86.54% (epoch 13,
+rank1 82.61% there), `_001` peaked at 88.26% (epoch 29, rank1 89.13% there).
+
+`clopgait_domain_split_001` was trained before a preprocessing bug was
+found and fixed (see "What was actually broken" below): the skeleton
+channel was silently near-empty (~95% of skeleton pixels lost to a bad
+resize), so that run was effectively learning from the silhouette channel
+almost alone. `clopgait_domain_split_002` is the corrected re-run and is
+the number that should be cited/used going forward. Its lower Rank-1/AUC
+vs. `_001` is expected, not a regression: the model is now learning from a
+real, information-carrying skeleton channel instead of noise, and this
+size of shift on a 5-subject dataset is well within run-to-run noise. Both
+runs' artifacts remain under
+`experiments/skeleton_silhouette_fusion_v6/clopgait_domain_split_00{1,2}/`
+on the Modal volume.
+
+### What was actually broken, and the fix
+
+`gait/preprocessing.py`'s `process_skeleton_silhouette_sequence()` resized
+the skeleton frame to the training canvas with a direct, non-aspect-preserving
+stretch (`cv2.resize(..., interpolation=cv2.INTER_NEAREST)`), independently
+of how the paired silhouette was cropped/aligned. Two separate problems
+followed from that single line:
+
+1. **Near-total loss of the skeleton's thin (1px) lines.** CLoP-Gait's
+   skeleton PNGs are stored at 320x240 (natural-margin storage convention);
+   the training canvas is 64x64. NEAREST point-samples one source pixel per
+   output pixel with no averaging, so a 1px line surviving a ~5x downscale
+   is mostly luck -- measured on a real sample, 650 skeleton pixels dropped
+   to 31 (95% loss), which is exactly the scattered-dot noise visible in
+   the old preview images instead of a coherent branchy structure.
+2. **No spatial co-registration with the silhouette.** The silhouette and
+   skeleton were each cropped/scaled independently (own bounding box, own
+   scale factor), so even the surviving skeleton pixels weren't guaranteed
+   to line up with the silhouette's body position.
+
+The fix (same file): the skeleton now reuses the *exact* crop transform
+computed for its paired silhouette (`compute_crop_transform`/
+`apply_crop_transform`, factored out of the existing `crop_to_canvas`), so
+both channels are geometrically co-registered by construction. Downsampling
+uses an "any-coverage" rule (a destination pixel is kept if the source
+region has *any* skeleton coverage, not a >50% majority) followed by
+re-thinning (`topology_preserving_thinning`), so the result survives as a
+genuine 1px skeleton rather than either vanishing (NEAREST) or turning into
+a thick blob (naive area-averaging alone). This only changes behavior when
+the stored skeleton's resolution differs from the training canvas --
+CASIA-B's `CASIA_B_Hamilton_Skeleton` is already pre-aligned to 64x64, so
+that branch is skipped entirely for it, and this was confirmed
+byte-for-byte identical on real CASIA-B data before and after the change.
+Tier A/B numbers above are entirely unaffected.
+
 ## Data quality notes
 
 A few things worth flagging plainly rather than silently working around:

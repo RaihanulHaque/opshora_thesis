@@ -216,8 +216,12 @@ def train_experiment(
         commit_callback()
     print(f"Prepared dataset: {summary}", flush=True)
 
-    train_data = GaitSequenceDataset(config.cache_dir, "train", config.train_subjects)
-    test_data = GaitSequenceDataset(config.cache_dir, "test", config.train_subjects)
+    train_data = GaitSequenceDataset(
+        config.cache_dir, "train", config.train_subjects, config.split_mode, config.test_domain_suffix
+    )
+    test_data = GaitSequenceDataset(
+        config.cache_dir, "test", config.train_subjects, config.split_mode, config.test_domain_suffix
+    )
     sampler = PKBatchSampler(
         train_data,
         config.identities_per_batch,

@@ -27,18 +27,46 @@ def _condition_family(condition: str) -> str:
 
 
 class GaitSequenceDataset(Dataset):
-    def __init__(self, cache_dir: str, split: str, train_subjects: int = 100):
+    def __init__(
+        self,
+        cache_dir: str,
+        split: str,
+        train_subjects: int = 100,
+        split_mode: str = "subject",
+        test_domain_suffix: str = "od",
+    ):
         self.cache_dir = Path(cache_dir)
         manifest_path = self.cache_dir / "manifest.jsonl"
         if not manifest_path.exists():
             raise FileNotFoundError(f"Prepared manifest missing: {manifest_path}")
         records = [json.loads(line) for line in manifest_path.read_text().splitlines() if line]
-        subjects = sorted({record["subject"] for record in records})
-        boundary = min(train_subjects, len(subjects))
-        selected = set(subjects[:boundary] if split == "train" else subjects[boundary:])
-        self.records = [record for record in records if record["subject"] in selected]
-        if not self.records:
-            raise ValueError(f"Split {split!r} has no records; subjects={len(subjects)}, boundary={boundary}")
+
+        if split_mode == "domain":
+            # Domain-generalization split: every subject appears in both splits.
+            # Train = all sequences except the held-out test domain (e.g. indoor +
+            # outdoor-night); test = only sequences from the held-out domain (e.g.
+            # outdoor-day). This tests recognizing known identities in an unseen
+            # environment, not generalizing to unseen identities.
+            def is_test_domain(record: dict) -> bool:
+                return record["condition"].rsplit("-", 1)[-1] == test_domain_suffix
+
+            if split == "train":
+                self.records = [record for record in records if not is_test_domain(record)]
+            else:
+                self.records = [record for record in records if is_test_domain(record)]
+            if not self.records:
+                raise ValueError(
+                    f"Split {split!r} (domain mode, test_domain_suffix={test_domain_suffix!r}) has no records"
+                )
+            selected = {record["subject"] for record in self.records}
+        else:
+            subjects = sorted({record["subject"] for record in records})
+            boundary = min(train_subjects, len(subjects))
+            selected = set(subjects[:boundary] if split == "train" else subjects[boundary:])
+            self.records = [record for record in records if record["subject"] in selected]
+            if not self.records:
+                raise ValueError(f"Split {split!r} has no records; subjects={len(subjects)}, boundary={boundary}")
+
         self.subject_to_label = {subject: index for index, subject in enumerate(sorted(selected))}
 
     def __len__(self) -> int:

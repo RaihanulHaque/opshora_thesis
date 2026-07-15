@@ -305,7 +305,14 @@ def decode_mask(data: bytes) -> np.ndarray:
     return image > 0
 
 
-def clean_and_align(mask: np.ndarray, config: ExperimentConfig) -> np.ndarray:
+def clean_silhouette_mask(mask: np.ndarray, config: ExperimentConfig) -> np.ndarray:
+    """Morphological close + keep-largest-components + fill holes.
+
+    Same-shape output, not yet cropped/resized -- split out of clean_and_align
+    so callers that want a different crop/margin policy (e.g. segment.py's
+    natural-margin storage crop) can reuse this cleanup step without
+    duplicating it.
+    """
     mask_u8 = mask.astype(np.uint8)
     kernel_size = max(1, config.morphology_kernel)
     kernel = np.ones((kernel_size, kernel_size), np.uint8)
@@ -313,29 +320,111 @@ def clean_and_align(mask: np.ndarray, config: ExperimentConfig) -> np.ndarray:
 
     count, labels, stats, _ = cv2.connectedComponentsWithStats(mask_u8, connectivity=8)
     if count <= 1:
-        return np.zeros((config.height, config.width), dtype=np.uint8)
+        return np.zeros_like(mask_u8, dtype=bool)
     areas = stats[1:, cv2.CC_STAT_AREA]
     largest = int(areas.max())
     keep = np.flatnonzero(areas >= max(2, largest * config.min_component_ratio)) + 1
     mask_u8 = np.isin(labels, keep)
-    mask_u8 = ndimage.binary_fill_holes(mask_u8)
+    return ndimage.binary_fill_holes(mask_u8)
 
-    ys, xs = np.nonzero(mask_u8)
+
+@dataclass(frozen=True, slots=True)
+class CropTransform:
+    """Bbox + scale + placement derived from one mask, reusable to co-align
+    a second image that shares the first mask's native pixel grid (e.g. a
+    skeleton frame rendered on the same canvas as its paired silhouette)."""
+
+    y_start: int
+    y_stop: int
+    x_start: int
+    x_stop: int
+    new_h: int
+    new_w: int
+    y0: int
+    x0: int
+
+
+def compute_crop_transform(mask: np.ndarray, height: int, width: int, margin: int = 2) -> CropTransform | None:
+    ys, xs = np.nonzero(mask)
     if len(xs) == 0:
-        return np.zeros((config.height, config.width), dtype=np.uint8)
-    cropped = mask_u8[ys.min() : ys.max() + 1, xs.min() : xs.max() + 1].astype(np.uint8)
-    margin = 2
-    available_h = config.height - 2 * margin
-    available_w = config.width - 2 * margin
-    scale = min(available_h / cropped.shape[0], available_w / cropped.shape[1])
-    new_h = max(1, round(cropped.shape[0] * scale))
-    new_w = max(1, round(cropped.shape[1] * scale))
-    resized = cv2.resize(cropped, (new_w, new_h), interpolation=cv2.INTER_NEAREST)
-    canvas = np.zeros((config.height, config.width), dtype=np.uint8)
-    y0 = (config.height - new_h) // 2
-    x0 = (config.width - new_w) // 2
-    canvas[y0 : y0 + new_h, x0 : x0 + new_w] = resized
+        return None
+    y_start, y_stop = int(ys.min()), int(ys.max()) + 1
+    x_start, x_stop = int(xs.min()), int(xs.max()) + 1
+    available_h = height - 2 * margin
+    available_w = width - 2 * margin
+    scale = min(available_h / (y_stop - y_start), available_w / (x_stop - x_start))
+    new_h = max(1, round((y_stop - y_start) * scale))
+    new_w = max(1, round((x_stop - x_start) * scale))
+    y0 = (height - new_h) // 2
+    x0 = (width - new_w) // 2
+    return CropTransform(y_start, y_stop, x_start, x_stop, new_h, new_w, y0, x0)
+
+
+def apply_crop_transform(
+    mask: np.ndarray,
+    transform: CropTransform,
+    height: int,
+    width: int,
+    resize_interpolation: int = cv2.INTER_NEAREST,
+    any_coverage: bool = False,
+) -> np.ndarray:
+    """Render `mask` (same native pixel grid as whatever mask produced `transform`) onto a height x width canvas.
+
+    any_coverage=True marks an output pixel as set if the source region has
+    ANY nonzero coverage (rather than requiring >50%), which is what thin,
+    1px-wide structures like a skeleton need to survive a large downscale --
+    exact-point NEAREST sampling or a majority-vote threshold both tend to
+    drop most of a 1px line's pixels entirely.
+    """
+    cropped = mask[transform.y_start : transform.y_stop, transform.x_start : transform.x_stop].astype(np.uint8)
+    canvas = np.zeros((height, width), dtype=np.uint8)
+    if any_coverage:
+        soft = cv2.resize(cropped * 255, (transform.new_w, transform.new_h), interpolation=cv2.INTER_AREA)
+        resized = (soft > 0).astype(np.uint8)
+    elif resize_interpolation == cv2.INTER_NEAREST:
+        resized = cv2.resize(cropped, (transform.new_w, transform.new_h), interpolation=cv2.INTER_NEAREST)
+    else:
+        soft = cv2.resize(cropped * 255, (transform.new_w, transform.new_h), interpolation=resize_interpolation)
+        resized = (soft > 127).astype(np.uint8)
+    canvas[transform.y0 : transform.y0 + transform.new_h, transform.x0 : transform.x0 + transform.new_w] = resized
     return canvas
+
+
+def crop_to_canvas(
+    mask: np.ndarray,
+    height: int,
+    width: int,
+    margin: int = 2,
+    resize_interpolation: int = cv2.INTER_NEAREST,
+) -> np.ndarray:
+    """Crop to mask's bounding box (with `margin` px breathing room) and rescale to fill height x width.
+
+    resize_interpolation defaults to INTER_NEAREST (exact behavior CASIA-B/V6
+    preprocessing has always used -- its native silhouettes are small enough
+    that this crop-then-resize is an upscale, where NEAREST stays block-clean).
+    Callers cropping from higher-resolution source (e.g. full HD video, where
+    this step is a real downscale and NEAREST aliases into jagged edges) should
+    pass cv2.INTER_AREA instead, which area-averages then re-binarizes.
+    """
+    transform = compute_crop_transform(mask, height, width, margin)
+    if transform is None:
+        return np.zeros((height, width), dtype=np.uint8)
+    return apply_crop_transform(mask, transform, height, width, resize_interpolation=resize_interpolation)
+
+
+def clean_and_align(
+    mask: np.ndarray,
+    config: ExperimentConfig,
+    resize_interpolation: int = cv2.INTER_NEAREST,
+) -> np.ndarray:
+    """Clean up a raw mask and crop/rescale it to fill config.height x width.
+
+    This is what V6 training applies to CASIA-B's raw silhouettes at
+    cache-build time -- see crop_to_canvas()'s docstring for the
+    resize_interpolation tradeoff.
+    """
+    cleaned = clean_silhouette_mask(mask, config)
+    return crop_to_canvas(cleaned, config.height, config.width, margin=2, resize_interpolation=resize_interpolation)
 
 
 def hamilton_jacobi_topology(mask: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
@@ -436,20 +525,50 @@ def process_skeleton_silhouette_sequence(
     1. binary Hamilton skeleton,
     2. blurred structural field around the skeleton,
     3. temporal skeleton motion-difference field.
+
+    Skeleton alignment has two supported cases:
+    - Already pre-aligned to (config.height, config.width) externally (CASIA-B's
+      CASIA_B_Hamilton_Skeleton convention) -- used as-is, no resize at all.
+    - Shares the same native pixel grid as the paired silhouette (CLoP-Gait's own
+      pipeline: tools/dataset_pipeline/skeleton.py computes the skeleton directly
+      from the same stored silhouette PNG) -- co-aligned using the SAME crop
+      transform as the silhouette, so the two channels stay spatially registered.
+      A naive direct resize here would both misalign the two channels (each
+      cropped/scaled independently) and, for a 1px-wide skeleton line being
+      downscaled a lot (e.g. CLoP-Gait's 320x240 storage -> 64x64 training),
+      destroy nearly all of it via point-sampled NEAREST. Instead this crops
+      with the silhouette's transform, downsamples via any-coverage (keeps a
+      pixel if the source region has ANY skeleton coverage, not just >50%),
+      then re-thins so the result is still a genuine 1px skeleton.
     """
     output = np.zeros((config.sequence_length, 4, config.height, config.width), dtype=np.uint8)
     skeleton_frames = uniform_sample(skeleton_sequence.frames, config.sequence_length)
     silhouette_frames = uniform_sample(silhouette_sequence.frames, config.sequence_length)
     previous_skeleton: np.ndarray | None = None
     for index, (skeleton_encoded, silhouette_encoded) in enumerate(zip(skeleton_frames, silhouette_frames)):
-        silhouette = clean_and_align(decode_mask(silhouette_encoded), config)
+        raw_silhouette_mask = decode_mask(silhouette_encoded)
+        cleaned_silhouette_mask = clean_silhouette_mask(raw_silhouette_mask, config)
+        transform = compute_crop_transform(cleaned_silhouette_mask, config.height, config.width, margin=2)
+        if transform is None:
+            silhouette = np.zeros((config.height, config.width), dtype=np.uint8)
+        else:
+            silhouette = apply_crop_transform(cleaned_silhouette_mask, transform, config.height, config.width)
 
         skeleton_image = cv2.imdecode(np.frombuffer(skeleton_encoded, dtype=np.uint8), cv2.IMREAD_GRAYSCALE)
         if skeleton_image is None:
             raise ValueError("OpenCV could not decode a skeleton frame")
-        skeleton = (skeleton_image > 0).astype(np.uint8)
-        if skeleton.shape != (config.height, config.width):
-            skeleton = cv2.resize(skeleton, (config.width, config.height), interpolation=cv2.INTER_NEAREST)
+        skeleton_mask = skeleton_image > 0
+        if skeleton_mask.shape == (config.height, config.width):
+            skeleton = skeleton_mask.astype(np.uint8)
+        elif skeleton_mask.shape == raw_silhouette_mask.shape and transform is not None:
+            covered = apply_crop_transform(
+                skeleton_mask.astype(np.uint8), transform, config.height, config.width, any_coverage=True
+            )
+            skeleton = topology_preserving_thinning(covered.astype(bool)).astype(np.uint8)
+        else:
+            skeleton = cv2.resize(
+                skeleton_mask.astype(np.uint8), (config.width, config.height), interpolation=cv2.INTER_NEAREST
+            )
         structure = cv2.GaussianBlur(skeleton.astype(np.float32), (0, 0), sigmaX=1.2, sigmaY=1.2)
         if structure.max() > 0:
             structure /= structure.max()

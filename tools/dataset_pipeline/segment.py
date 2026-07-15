@@ -5,6 +5,14 @@ following DATASET_DEVELOPMENT_PIPELINE.md section 5's segmentation rules:
 keep the main walking subject (matching the previous frame's track when more
 than one person is detected), fill small holes, remove small blobs, save as
 PNG (never JPG).
+
+Stores silhouettes with a natural margin around the subject (like CASIA-B's
+raw GaitDatasetB-silh storage: person occupies a modest fraction of the
+frame, not cropped tight to their bounding box) rather than baking in the
+tight fill-canvas normalization -- that step (gait.preprocessing.clean_and_align)
+already runs at V6 training-cache-build time, exactly as it does for real
+CASIA-B. This only changes how the stored dataset looks on disk, not what
+V6 actually trains on.
 """
 
 from __future__ import annotations
@@ -16,11 +24,13 @@ from pathlib import Path
 
 import cv2
 import numpy as np
+from tqdm import tqdm
 
 from gait.config import ExperimentConfig
-from gait.preprocessing import clean_and_align
+from gait.preprocessing import clean_silhouette_mask
 
 DEFAULT_WEIGHTS = "yolo26m-seg.pt"
+DEFAULT_IMGSZ = 1280
 _MODEL_CACHE: dict[str, object] = {}
 
 
@@ -70,6 +80,41 @@ def select_tracked_mask(
     return best_mask, best_centroid
 
 
+def crop_with_margin(
+    mask: np.ndarray,
+    height: int,
+    width: int,
+    fill_ratio: float = 0.45,
+) -> np.ndarray:
+    """Crop to the subject's bbox with generous margin and store at a fixed canvas.
+
+    Unlike gait.preprocessing.crop_to_canvas (tight fill, margin=2px, used at
+    V6 training time), this scales the subject to occupy only fill_ratio of
+    the canvas height (default 0.45), leaving natural headroom/footroom --
+    matching how CASIA-B's raw GaitDatasetB-silh silhouettes look before any
+    training-time alignment. Always uses area-average downscaling (proper
+    anti-aliasing for the large full-HD-to-canvas reduction), not NEAREST.
+    """
+    ys, xs = np.nonzero(mask)
+    if len(xs) == 0:
+        return np.zeros((height, width), dtype=np.uint8)
+    cropped = mask[ys.min() : ys.max() + 1, xs.min() : xs.max() + 1].astype(np.uint8)
+    scale = (height * fill_ratio) / cropped.shape[0]
+    new_h = max(1, round(cropped.shape[0] * scale))
+    new_w = max(1, round(cropped.shape[1] * scale))
+    if new_w > width:
+        scale = width / cropped.shape[1]
+        new_h = max(1, round(cropped.shape[0] * scale))
+        new_w = width
+    soft = cv2.resize(cropped * 255, (new_w, new_h), interpolation=cv2.INTER_AREA)
+    resized = (soft > 127).astype(np.uint8)
+    canvas = np.zeros((height, width), dtype=np.uint8)
+    y0 = (height - new_h) // 2
+    x0 = (width - new_w) // 2
+    canvas[y0 : y0 + new_h, x0 : x0 + new_w] = resized
+    return canvas
+
+
 @dataclass(slots=True)
 class SegmentationResult:
     source_video: str
@@ -82,6 +127,8 @@ class SegmentationResult:
     source_fps: float
     sample_fps: float | None
     stride: int
+    imgsz: int
+    fill_ratio: float
 
 
 def _frame_masks(result, frame_shape: tuple[int, int]) -> list[np.ndarray]:
@@ -104,6 +151,9 @@ def segment_video(
     view: str,
     weights_path: str = DEFAULT_WEIGHTS,
     sample_fps: float | None = None,
+    progress_position: int = 2,
+    imgsz: int = DEFAULT_IMGSZ,
+    fill_ratio: float = 0.45,
 ) -> SegmentationResult:
     """Segment one video into binary silhouette PNGs.
 
@@ -111,6 +161,12 @@ def segment_video(
     source video are decoded and run through YOLO; the rest are skipped via
     cv2's cheap grab() (no full decode), so a lower sample rate is also a
     real speedup, not just fewer output files.
+
+    imgsz controls YOLO's inference resolution -- Ultralytics' returned masks
+    are already hard-binarized at a resolution proportional to imgsz, so the
+    default 640 produces a coarse ~384x640 mask for our 1920x1080 source that
+    aliases into blocky limb edges. Raising it to 1280 (default here) gives
+    visibly cleaner mask detail at ~3.3x the per-frame YOLO cost.
     """
     model = load_model(weights_path)
     capture = cv2.VideoCapture(str(video_path))
@@ -122,6 +178,9 @@ def segment_video(
     if sample_fps and source_fps > 0:
         stride = max(1, round(source_fps / sample_fps))
 
+    total_source_frames = int(capture.get(cv2.CAP_PROP_FRAME_COUNT) or 0)
+    expected_sampled_frames = (total_source_frames + stride - 1) // stride if total_source_frames else None
+
     output_dir.mkdir(parents=True, exist_ok=True)
     start = time.time()
     source_frame_index = 0
@@ -130,32 +189,45 @@ def segment_video(
     multi_person_frames = 0
     previous_centroid: tuple[float, float] | None = None
 
-    while True:
-        if source_frame_index % stride != 0:
-            if not capture.grab():
+    frame_bar = tqdm(
+        total=expected_sampled_frames,
+        desc=f"    {subject}/{condition}/{view}",
+        unit="frame",
+        position=progress_position,
+        leave=False,
+    )
+    try:
+        while True:
+            if source_frame_index % stride != 0:
+                if not capture.grab():
+                    break
+                source_frame_index += 1
+                continue
+
+            success, frame = capture.read()
+            if not success:
                 break
             source_frame_index += 1
-            continue
+            frames_processed += 1
+            frame_bar.update(1)
 
-        success, frame = capture.read()
-        if not success:
-            break
-        source_frame_index += 1
-        frames_processed += 1
+            results = model(frame, classes=[0], verbose=False, imgsz=imgsz)
+            masks = _frame_masks(results[0], frame.shape[:2])
+            if len(masks) > 1:
+                multi_person_frames += 1
 
-        results = model(frame, classes=[0], verbose=False)
-        masks = _frame_masks(results[0], frame.shape[:2])
-        if len(masks) > 1:
-            multi_person_frames += 1
+            chosen, previous_centroid = select_tracked_mask(masks, previous_centroid)
+            if chosen is None:
+                continue
 
-        chosen, previous_centroid = select_tracked_mask(masks, previous_centroid)
-        if chosen is None:
-            continue
-
-        silhouette = clean_and_align(chosen.astype(bool), config)
-        filename = f"{subject}-{condition}-{view}-{frames_kept + 1:06d}.png"
-        cv2.imwrite(str(output_dir / filename), silhouette * 255, [cv2.IMWRITE_PNG_COMPRESSION, 3])
-        frames_kept += 1
+            cleaned = clean_silhouette_mask(chosen.astype(bool), config)
+            silhouette = crop_with_margin(cleaned, config.height, config.width, fill_ratio=fill_ratio)
+            filename = f"{subject}-{condition}-{view}-{frames_kept + 1:06d}.png"
+            cv2.imwrite(str(output_dir / filename), silhouette * 255, [cv2.IMWRITE_PNG_COMPRESSION, 3])
+            frames_kept += 1
+            frame_bar.set_postfix(kept=frames_kept, multi=multi_person_frames)
+    finally:
+        frame_bar.close()
 
     capture.release()
     elapsed = time.time() - start
@@ -170,6 +242,8 @@ def segment_video(
         source_fps=source_fps,
         sample_fps=sample_fps,
         stride=stride,
+        imgsz=imgsz,
+        fill_ratio=fill_ratio,
     )
 
     marker = {
@@ -180,6 +254,8 @@ def segment_video(
         "multi_person_frames": result.multi_person_frames,
         "elapsed_seconds": result.elapsed_seconds,
         "source_fps": result.source_fps,
+        "imgsz": result.imgsz,
+        "fill_ratio": result.fill_ratio,
         "sample_fps": result.sample_fps,
         "stride": result.stride,
     }

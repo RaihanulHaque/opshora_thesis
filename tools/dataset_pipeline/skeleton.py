@@ -24,6 +24,7 @@ from pathlib import Path
 
 import cv2
 import numpy as np
+from tqdm import tqdm
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -41,7 +42,12 @@ class SkeletonResult:
     elapsed_seconds: float
 
 
-def generate_skeleton_for_sequence(silhouette_dir: Path, skeleton_dir: Path) -> SkeletonResult:
+def generate_skeleton_for_sequence(
+    silhouette_dir: Path,
+    skeleton_dir: Path,
+    progress_desc: str | None = None,
+    progress_position: int = 2,
+) -> SkeletonResult:
     silhouette_paths = sorted(path for path in silhouette_dir.glob("*.png"))
     skeleton_dir.mkdir(parents=True, exist_ok=True)
 
@@ -49,7 +55,13 @@ def generate_skeleton_for_sequence(silhouette_dir: Path, skeleton_dir: Path) -> 
     frames_processed = 0
     empty_skeleton_frames = 0
 
-    for silhouette_path in silhouette_paths:
+    for silhouette_path in tqdm(
+        silhouette_paths,
+        desc=f"    {progress_desc or skeleton_dir.name}",
+        unit="frame",
+        position=progress_position,
+        leave=False,
+    ):
         image = cv2.imread(str(silhouette_path), cv2.IMREAD_GRAYSCALE)
         if image is None:
             raise ValueError(f"OpenCV could not decode silhouette frame: {silhouette_path}")

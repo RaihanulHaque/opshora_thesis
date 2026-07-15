@@ -24,6 +24,8 @@ class ExperimentConfig:
     min_component_ratio: float = 0.015
 
     train_subjects: int = 100
+    split_mode: str = "subject"
+    test_domain_suffix: str = "od"
     identities_per_batch: int = 8
     sequences_per_identity: int = 4
     num_workers: int = 2

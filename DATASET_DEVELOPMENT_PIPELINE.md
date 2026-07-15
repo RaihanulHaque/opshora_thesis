@@ -26,6 +26,17 @@ same person -> low distance
 different person -> high distance
 ```
 
+**This is no longer just a hypothetical guide** -- a real dataset was built
+following exactly this blueprint: `datasets/CLoP-Gait` (raw video) ->
+`datasets/CLoPGaitSilhouettes` / `datasets/CLoPGaitHamiltonSkeleton`
+(processed), via `tools/dataset_pipeline/` (`manifest.py`, `segment.py`,
+`skeleton.py`, `pipeline.py`, `qc.py`, `dataset_report.py`), retrained as
+`designs/skeleton_silhouette_fusion_v6/clopgait_config.json`. Results and a
+domain-generalization split example are in `runs/MODEL_COMPARISON.md`'s
+"Tier C" section and `designs/skeleton_silhouette_fusion_v6/MODEL_ARCHITECTURE_AND_FLOW.md`
+section 14.5. Where this document's advice below was revised because of
+real lessons learned building that dataset, it says so explicitly.
+
 ## 1. Full pipeline overview
 
 ```mermaid
@@ -170,6 +181,31 @@ For each frame:
 
 JPG compression can create gray artifacts around the silhouette. PNG is safer.
 
+### Segmentation resolution and storage margin
+
+Two lessons from actually building a real custom dataset this way
+(`tools/dataset_pipeline/`, backing `datasets/CLoP-Gait`):
+
+- **Tune the segmentation model's inference resolution up for high-res
+  source video.** Ultralytics YOLO returns masks already hard-binarized at
+  a resolution tied to its `imgsz` argument (default 640), which is coarse
+  for 1080p+ source footage -- on real CLoP-Gait footage this produced
+  visibly blocky limb edges (e.g. a squared-off notch at the shoulder/arm).
+  Raising `imgsz` to 1280 gave a clearly cleaner mask (proper tapered
+  limbs, separated feet) for roughly 3x the per-frame YOLO cost. See
+  `tools/dataset_pipeline/segment.py`'s `DEFAULT_IMGSZ`.
+- **Store silhouettes with natural margin, not tight-cropped to the
+  subject's bounding box.** It's tempting to normalize each stored frame to
+  fill the canvas (bbox + a couple px margin) since that's what the model
+  sees at training time -- but that tight crop already happens automatically
+  at training-cache-build time (`gait.preprocessing.clean_and_align`), so
+  baking it into storage too just makes the raw dataset harder to visually
+  QC (everything looks maximally zoomed-in and cropped) for no benefit.
+  Store with the subject occupying roughly 40-50% of the canvas height
+  instead (`tools/dataset_pipeline/segment.py`'s `crop_with_margin()`,
+  `fill_ratio` default 0.45) -- this also matches how CASIA-B's own raw
+  `GaitDatasetB-silh` is stored (person occupies well under half the frame).
+
 ## 6. Silhouette output structure
 
 The silhouette dataset must follow this folder structure:
@@ -250,6 +286,43 @@ background = black / 0
 ```
 
 The current model does not need the skeleton frame filename to exactly match the silhouette frame filename, but the frames must remain in the correct chronological order.
+
+### Critical: keep the skeleton co-registered with its silhouette, and don't let thin lines get resized away
+
+This is the single most important lesson from actually building CLoP-Gait's
+skeleton dataset, and it silently produced a broken (but not
+crashing/error-free) result the first time around.
+
+A skeleton is a **1-pixel-wide** structure. If the skeleton PNGs are stored
+at a higher resolution than the model's training canvas (64x64) -- e.g.
+CLoP-Gait stores them at 320x240 for easier visual QC -- naively resizing
+each skeleton frame down to 64x64 with plain nearest-neighbor point-sampling
+is close to worst-case for a thin line: on a real sample this dropped 650
+skeleton pixels down to just 31 survivors, which looks like scattered noise
+dots instead of a body-shaped skeleton once you preview it. On top of that,
+if the skeleton and its paired silhouette are each cropped/rescaled to the
+training canvas *independently* (own bounding box, own scale factor), the
+two channels can end up describing slightly different crops of the same
+frame -- they stop being spatially aligned.
+
+The fix implemented in `gait/preprocessing.py`'s
+`process_skeleton_silhouette_sequence()`: the skeleton reuses the *exact*
+crop transform computed from its paired silhouette
+(`compute_crop_transform`/`apply_crop_transform`), so both channels are
+guaranteed to describe the same crop, and downsamples via an "any-coverage"
+rule (a destination pixel counts as skeleton if the source region has *any*
+skeleton coverage, not a majority) followed by re-running
+`topology_preserving_thinning()` so the result is a genuine 1px skeleton
+again rather than vanishing or turning into a blob. This already runs
+automatically for any dataset whose stored skeleton resolution doesn't
+already match the training canvas -- you don't need to do anything extra in
+your own dataset pipeline, but you should know it's there, and if you write
+a from-scratch skeleton generator, apply the same principle: crop/scale
+the skeleton exactly like its silhouette, and never resize a thin binary
+structure with plain nearest-neighbor/majority-vote downsampling. If your
+skeleton PNGs are already pre-rendered at exactly 64x64 (CASIA-B's
+`CASIA_B_Hamilton_Skeleton` convention), none of this applies -- that
+resize branch is skipped entirely when the shape already matches.
 
 ## 8. Pairing rule for V6
 
@@ -419,6 +492,33 @@ If the custom dataset has only 30 subjects, use something like:
 
 so at least 10 subjects remain unseen for testing.
 
+### Alternative split: domain generalization instead of identity holdout
+
+`train_subjects` above implements an identity-holdout split (unseen
+*people*). If your dataset instead has multiple distinct **domains** per
+subject (e.g. indoor/outdoor, day/night -- the same people recorded in
+different environments), you may want to test generalization to an unseen
+*environment* for known people instead. `gait.dataset.GaitSequenceDataset`
+supports this via two extra config fields:
+
+```json
+{
+  "split_mode": "domain",
+  "test_domain_suffix": "od"
+}
+```
+
+With `split_mode: "domain"`, every subject's sequences whose `condition`
+string ends in `test_domain_suffix` (e.g. `nm-01-od`) become the entire
+test/probe set, and every other sequence (all domains except that one)
+becomes training data -- all subjects appear in both splits. This only
+makes sense if your condition-naming convention encodes the domain as a
+suffix (see CLoP-Gait's own `id`/`od`/`on` convention in
+`tools/dataset_pipeline/manifest.py`'s `DOMAIN_SUFFIX`). Leave `split_mode`
+unset (defaults to `"subject"`) for the standard identity-holdout protocol.
+Real example: `designs/skeleton_silhouette_fusion_v6/clopgait_config.json`
+and `runs/MODEL_COMPARISON.md`'s "Tier C" section.
+
 ## 13. Modal upload procedure
 
 Zip both processed datasets:
@@ -427,6 +527,17 @@ Zip both processed datasets:
 zip -r OpshoraSilhouettes.zip datasets/OpshoraSilhouettes
 zip -r OpshoraHamiltonSkeleton.zip datasets/OpshoraHamiltonSkeleton
 ```
+
+**Don't skip this step, even if you'd rather upload the folder directly --
+it matters for more than convenience.** Modal Volumes are network-mounted;
+uploading a dataset as a raw directory of many small files (a real
+CLoP-Gait silhouette dataset had ~11,600 individual PNGs) makes the
+training job's own dataset-indexing step read every file as a separate
+round trip over that mount, which can look like the job is hung for many
+minutes even though nothing is actually wrong. A single zip archive is read
+sequentially in one pass and indexes in seconds. If a run looks stuck at a
+line like `Indexing paired silhouette dataset: ...`, check whether that
+dataset was uploaded as a raw directory instead of a zip.
 
 Upload to Modal volume:
 
