@@ -1,0 +1,8 @@
+{
+  "status": "early_stopped",
+  "epochs_completed": 87,
+  "monitor_metric": "verification_auc",
+  "best_verification_auc": 0.9147828255170406,
+  "best_rank1": 0.6790830945558739,
+  "output_dir": "/data/experiments/skeleton_silhouette_partset_v7/partset_rank1_001"
+}

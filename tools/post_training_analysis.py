@@ -570,8 +570,12 @@ def run_model_evaluation(run_dir: Path, args: argparse.Namespace, output_dir: Pa
     config = load_config(run_dir, args)
     summary = prepare_dataset(config, force=args.force_preprocess)
     try:
-        train_data = GaitSequenceDataset(config.cache_dir, "train", config.train_subjects)
-        test_data = GaitSequenceDataset(config.cache_dir, "test", config.train_subjects)
+        train_data = GaitSequenceDataset(
+            config.cache_dir, "train", config.train_subjects, config.split_mode, config.test_domain_suffix
+        )
+        test_data = GaitSequenceDataset(
+            config.cache_dir, "test", config.train_subjects, config.split_mode, config.test_domain_suffix
+        )
     except ValueError as error:
         raise ValueError(
             f"{error}\n\n"

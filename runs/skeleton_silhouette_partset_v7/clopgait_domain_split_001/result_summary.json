@@ -1,0 +1,8 @@
+{
+  "status": "early_stopped",
+  "epochs_completed": 61,
+  "monitor_metric": "verification_auc",
+  "best_verification_auc": 0.82771407532085,
+  "best_rank1": 0.8260869565217391,
+  "output_dir": "/data/experiments/skeleton_silhouette_partset_v7/clopgait_domain_split_001"
+}

@@ -3,6 +3,7 @@ datasets/
 .DS_Store
 runs/fusion_rank1_002/local_processed_cache_full/
 runs/fusion_rank1_002/local_processed_cache/
+runs/clopgait_local_processed_cache/
 **/latest.pt
 .vscode/
 .claude/

@@ -1,0 +1,46 @@
+{
+  "epochs_recorded": 61,
+  "best_rank1": {
+    "epoch": 37,
+    "value": 0.8260869565217391
+  },
+  "best_rank5": {
+    "epoch": 1,
+    "value": 1.0
+  },
+  "best_verification_auc": {
+    "epoch": 37,
+    "value": 0.82771407532085
+  },
+  "best_verification_accuracy": {
+    "epoch": 48,
+    "value": 0.7596770865364385
+  },
+  "best_distance_gap": {
+    "epoch": 35,
+    "value": 0.702583372592926
+  },
+  "final_epoch": {
+    "epoch": 60,
+    "generative": 1.8365311026573181,
+    "recognition": 5.683748722076416,
+    "generative_steps": 2,
+    "recognition_steps": 5,
+    "steps": 7,
+    "generative_avg": 0.9182655513286591,
+    "recognition_avg": 1.1367497444152832,
+    "learning_rate": 8.604513917179152e-05,
+    "rank1": 0.6739130434782609,
+    "rank5": 1.0,
+    "same_distance": 0.3303835093975067,
+    "different_distance": 0.9770135283470154,
+    "distance_gap": 0.6466300189495087,
+    "verification_auc": 0.8096505850555924,
+    "verification_accuracy": 0.7551768923271132,
+    "gallery_per_subject": 3.0,
+    "monitor_metric": "verification_auc",
+    "monitoring_active": true,
+    "best_verification_auc": 0.82771407532085,
+    "best_rank1": 0.8260869565217391
+  }
+}

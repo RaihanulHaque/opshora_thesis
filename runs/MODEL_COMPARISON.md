@@ -8,29 +8,47 @@ loaded locally, that's stated explicitly rather than worked around.
 
 ## Tier A — directly comparable (identical dataset cache + protocol)
 
-These four share the exact same preprocessed cache
+These five share the exact same preprocessed cache
 (`skeleton_silhouette_fusion` format, 3-gallery-per-subject retrieval
 protocol) and the same loss recipe. Only the model architecture differs, so
 this is the cleanest apples-to-apples comparison.
 
 | Model | Run | Epochs (stopped) | Rank-1 | Rank-5 | Verification AUC | Distance gap |
 |---|---|---:|---:|---:|---:|---:|
-| **Fusion V6** (best) | `fusion_rank1_002` | 88 | **61.99%** | **89.40%** | **90.28%** | **0.559** |
+| **Part-Set V7** (best) | `partset_rank1_001` | 87 | **67.91%** | **91.31%** | **91.16%** | **0.589** |
+| Fusion V6 | `fusion_rank1_002` | 88 | 61.99% | 89.40% | 90.28% | 0.559 |
 | TCN baseline | `tcn_baseline_001` | 100 | 36.10% | 69.72% | 80.74% | 0.491 |
 | Transformer baseline | `transformer_baseline_001` | 61 | 34.10% | 67.81% | 78.12% | 0.389 |
 | LSTM baseline | `lstm_baseline_001` | 50 | 20.63% | 53.96% | 80.44% | 0.542 |
 
-V6 wins on every metric, by a clear margin. This is a genuine result, not
-staged.
+V7 (`skeleton_silhouette_partset_v7`) now wins on every metric, beating V6
+by +5.92 pp Rank-1 with slightly *fewer* parameters (6.20M vs 6.68M). It
+keeps V6's cache, loss recipe, protocol, and schedule byte-identical and
+changes only the architecture: spatial (per-pixel) gated fusion instead of
+vector-level fusion, and 8 horizontal body-part strips aggregated over time
+by set-max + local temporal convs (GaitSet/GaitGL style) instead of
+collapsing each frame to one vector before temporal modeling. The
+per-condition breakdown shows the gain is mostly in normal-condition
+retrieval (80.46% vs 72.96% Rank-1) with a smaller clothing-condition gain
+(36.33% vs 34.67%); EER improved from 17.43% to 16.47%. Full design
+rationale: `designs/skeleton_silhouette_partset_v7/MODEL_ARCHITECTURE_AND_FLOW.md`.
 
-All four rows read Rank-5/AUC/distance-gap from the same epoch as each
+All five rows read Rank-5/AUC/distance-gap from the same epoch as each
 model's own official (early-stopping-gated) best Rank-1 — i.e. the exact
 epoch whose checkpoint was saved as `best_rank1_model.pt` — so the columns
-stay internally consistent per row. Three of the four models' own best-ever verification AUC happened at a
-different, later epoch than their best Rank-1: the Transformer's own AUC
-peak (epoch 31) reached 84.05%, the TCN's own AUC peak (epoch 76) reached
-83.94%, and the LSTM's own AUC peak (epoch 38) reached 80.64%. Full
-per-epoch curves are in each run's `post_training_analysis/`.
+stay internally consistent per row. Most models' own best-ever verification
+AUC happened at a different epoch than their best Rank-1: V7's own AUC peak
+(epoch 62) reached 91.48%, V6's own AUC peak (epoch 78) reached 90.78%, the
+Transformer's own AUC peak (epoch 31) reached 84.05%, the TCN's own AUC
+peak (epoch 76) reached 83.94%, and the LSTM's own AUC peak (epoch 38)
+reached 80.64%. Full per-epoch curves are in each run's
+`post_training_analysis/`.
+
+One honest caveat on V7: its best Rank-1 landed on its final completed
+epoch (86) — training was stopped by the verification-AUC patience while
+Rank-1 was still setting new highs, so there may be Rank-1 headroom behind
+a longer patience. The reported number is what the official early-stopping
+policy actually produced, not an after-the-fact pick.
 
 ## Tier B — earlier development lineage (different datasets/protocols)
 
@@ -64,8 +82,11 @@ reflect genuine converged retrieval ability.
 ## Tier C — custom CLoP-Gait dataset (different dataset and protocol, not comparable to Tier A/B)
 
 Self-collected dataset (`datasets/CLoP-Gait`, 5 subjects, indoor + outdoor-day
-+ outdoor-night domains), same V6 architecture and loss recipe as Tier A,
-retrained via `designs/skeleton_silhouette_fusion_v6/clopgait_config.json`.
++ outdoor-night domains), same architectures and loss recipe as Tier A,
+retrained via each design's `clopgait_config.json`
+(`designs/skeleton_silhouette_fusion_v6/` and
+`designs/skeleton_silhouette_partset_v7/` — byte-identical configs, only the
+architecture differs).
 The split is **domain-generalization, not identity-holdout**: all 5 subjects'
 indoor + outdoor-night sequences are used for training, and their
 outdoor-day sequences (same identities, unseen environment) are the entire
@@ -80,13 +101,33 @@ categorically easier than a 50-subject one.
 | Model | Run | Epochs (stopped) | Rank-1 | Rank-5 | Verification AUC | Distance gap | Notes |
 |---|---|---:|---:|---:|---:|---:|---|
 | Fusion V6 | `clopgait_domain_split_002` | 38 | 86.96% | 100.00% | 81.55%† | 0.616 | Corrected skeleton preprocessing (see below) |
+| Part-Set V7 | `clopgait_domain_split_001` (V7) | 61 | 82.61% | 100.00% | 82.77%† | 0.693 | Same corrected cache and config as the V6 row; see the V6-vs-V7 note below |
 | ~~Fusion V6~~ | ~~`clopgait_domain_split_001`~~ | ~~54~~ | ~~89.13%~~ | ~~100.00%~~ | ~~85.00%†~~ | ~~0.702~~ | **Invalid** -- trained on a broken skeleton channel, kept only for the before/after comparison below |
 
 † value read at the epoch matching that row's official best-Rank-1 epoch
 (the exact epoch whose checkpoint was saved as `best_rank1_model.pt`), same
-convention as Tier A. Each run's own separately-best verification AUC
-happened at a nearby but different epoch: `_002` peaked at 86.54% (epoch 13,
-rank1 82.61% there), `_001` peaked at 88.26% (epoch 29, rank1 89.13% there).
+convention as Tier A. V6 `_002`'s own separately-best verification AUC
+peaked at 86.54% (epoch 13, rank1 82.61% there); the invalid V6 `_001`
+peaked at 88.26% (epoch 29). V7's best AUC and best Rank-1 landed on the
+same epoch (36), so its row needs no separate footnote value.
+
+### V6 vs V7 on CLoP-Gait: statistically indistinguishable, and why
+
+The test pool here is 46 probe sequences over 4 subjects (subject `005`
+has no outdoor-day footage). V6's 86.96% is 40/46 probes correct; V7's
+82.61% is 38/46 -- a difference of exactly **2 probe sequences**, far
+inside run-to-run noise on a pool this small. The secondary metrics split
+both ways: V7 has the better verification AUC at its best-Rank-1 epoch
+(82.77% vs 81.55%) and the better distance gap (0.693 vs 0.616), while V6
+has the better own-best AUC (86.54% vs 82.77%). The honest conclusion is
+that **CLoP-Gait cannot rank these two architectures** -- the Tier A
+CASIA-B comparison (1,047 probes, where V7 wins by +5.92 pp Rank-1) is the
+statistically meaningful one. What Tier C does show is that V7 transfers
+to the custom-dataset domain-generalization task without degradation
+(local checkpoint re-evaluation reproduces the training-time numbers
+exactly: 82.61% / 100% / 82.77%, with normal-condition probes at 95.45%
+and clothing probes at 70.83% Rank-1 -- see
+`runs/skeleton_silhouette_partset_v7/clopgait_domain_split_001/post_training_analysis/`).
 
 `clopgait_domain_split_001` was trained before a preprocessing bug was
 found and fixed (see "What was actually broken" below): the skeleton
@@ -195,13 +236,20 @@ runs/skeleton_silhouette_lstm_v1/lstm_baseline_001/post_training_analysis/      
 runs/skeleton_silhouette_tcn_v1/tcn_baseline_001/post_training_analysis/            (training curves only)
 runs/skeleton_silhouette_transformer_v1/transformer_baseline_001/post_training_analysis/ (training curves only)
 runs/fusion_rank1_002/post_training_analysis/                                       (full report, pre-existing)
+runs/skeleton_silhouette_partset_v7/partset_rank1_001/post_training_analysis/       (full report: CMC/ROC/PCA + condition breakdown)
+runs/skeleton_silhouette_partset_v7/clopgait_domain_split_001/post_training_analysis/ (full report, CLoP-Gait domain split)
 ```
 
 ## Bottom line
 
-Across every model actually trained and evaluated so far — V1 through V6,
+Across every model actually trained and evaluated so far — V1 through V7,
 plus the LSTM/TCN/Transformer baselines added for architecture comparison —
-**V6 has the best Rank-1, Rank-5, verification AUC, and distance gap of any
-of them**, including under the harder, identical, 3-gallery protocol shared
-with the three new baselines. That's a genuine result from real training
-runs, which is what makes it usable in the thesis and the paper.
+**Part-Set V7 has the best Rank-1, Rank-5, verification AUC, and distance
+gap of any of them**, under the identical 3-gallery protocol, cache, and
+loss recipe shared with V6 and the three baselines. Because everything but
+the architecture was held fixed, the V6 → V7 delta (+5.92 pp Rank-1,
++1.91 pp Rank-5, +0.88 pp AUC, at fewer parameters) is attributable to the
+part-set architecture alone. V6 remains the second-best model and the
+reference for the CLoP-Gait Tier C experiments. These are genuine results
+from real training runs, which is what makes them usable in the thesis and
+the paper.
