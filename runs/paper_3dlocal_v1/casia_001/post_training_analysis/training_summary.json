@@ -1,0 +1,46 @@
+{
+  "epochs_recorded": 70,
+  "best_rank1": {
+    "epoch": 46,
+    "value": 0.45558739255014324
+  },
+  "best_rank5": {
+    "epoch": 45,
+    "value": 0.7650429799426934
+  },
+  "best_verification_auc": {
+    "epoch": 61,
+    "value": 0.859583115351005
+  },
+  "best_verification_accuracy": {
+    "epoch": 61,
+    "value": 0.7809727393968786
+  },
+  "best_distance_gap": {
+    "epoch": 63,
+    "value": 0.5754013359546661
+  },
+  "final_epoch": {
+    "epoch": 69,
+    "generative": 9.371669352054596,
+    "recognition": 69.27913320064545,
+    "generative_steps": 10,
+    "recognition_steps": 45,
+    "steps": 55,
+    "generative_avg": 0.9371669352054596,
+    "recognition_avg": 1.5395362933476766,
+    "learning_rate": 7.38932858946667e-05,
+    "rank1": 0.4040114613180516,
+    "rank5": 0.7554918815663801,
+    "same_distance": 0.36903810501098633,
+    "different_distance": 0.9306493401527405,
+    "distance_gap": 0.5616112351417542,
+    "verification_auc": 0.8549374439265948,
+    "verification_accuracy": 0.7723816914264959,
+    "gallery_per_subject": 3.0,
+    "monitor_metric": "verification_auc",
+    "monitoring_active": true,
+    "best_verification_auc": 0.8588126929799009,
+    "best_rank1": 0.45463228271251194
+  }
+}

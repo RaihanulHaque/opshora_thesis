@@ -1,0 +1,8 @@
+{
+  "status": "early_stopped",
+  "epochs_completed": 70,
+  "monitor_metric": "verification_auc",
+  "best_verification_auc": 0.8588126929799009,
+  "best_rank1": 0.45463228271251194,
+  "output_dir": "/data/experiments/paper_3dlocal_v1/casia_001"
+}

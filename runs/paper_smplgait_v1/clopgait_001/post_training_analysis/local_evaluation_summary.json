@@ -1,0 +1,79 @@
+{
+  "dataset_summary": {
+    "dataset": "clopgait_skeleton_silhouette_fusion",
+    "sequences": 205,
+    "subjects": 5,
+    "height": 64,
+    "width": 64,
+    "sequence_length": 30,
+    "representation": "silhouette+hamilton_skeleton+structure_blur+temporal_motion",
+    "missing_pairs": 0
+  },
+  "checkpoint": "runs/paper_smplgait_v1/clopgait_001/best_rank1_model.pt",
+  "device": "cpu",
+  "test_sequences": 58,
+  "test_subjects": 4,
+  "retrieval": {
+    "gallery_per_subject": 3,
+    "probes": 46,
+    "gallery_subjects": 4,
+    "rank1": 0.782608695652174,
+    "rank3": 1.0,
+    "rank5": 1.0,
+    "rank10": 1.0,
+    "median_rank": 1.0,
+    "mean_rank": 1.2391304347826086,
+    "rank1_clothing": 0.6666666666666666,
+    "rank5_clothing": 1.0,
+    "probes_clothing": 24,
+    "rank1_normal": 0.9090909090909091,
+    "rank5_normal": 1.0,
+    "probes_normal": 22
+  },
+  "verification": {
+    "same_distance": 0.02007223851978779,
+    "different_distance": 0.028701486065983772,
+    "distance_gap": 0.008629247546195984,
+    "verification_auc": 0.6779078800433735,
+    "eer_estimate": 0.35986279920374176,
+    "best_threshold": 0.003861645857493083,
+    "best_threshold_accuracy": 0.6551724137931034,
+    "best_threshold_balanced_accuracy": 0.6465339704478144,
+    "best_threshold_precision": 0.36755952380952384,
+    "best_threshold_recall": 0.6301020408163265,
+    "best_threshold_specificity": 0.6629659000793021,
+    "best_threshold_f1": 0.4642857142857143,
+    "same_pairs": 392,
+    "different_pairs": 1261
+  },
+  "cmc": {
+    "1": 0.782608695652174,
+    "2": 0.9782608695652174,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0,
+    "20": 1.0,
+    "30": 1.0,
+    "50": 1.0
+  },
+  "condition_breakdown": [
+    {
+      "condition_family": "clothing",
+      "probes": 24,
+      "rank1": 0.6666666666666666,
+      "rank3": 1.0,
+      "rank5": 1.0,
+      "rank10": 1.0,
+      "median_rank": 1.0
+    },
+    {
+      "condition_family": "normal",
+      "probes": 22,
+      "rank1": 0.9090909090909091,
+      "rank3": 1.0,
+      "rank5": 1.0,
+      "rank10": 1.0,
+      "median_rank": 1.0
+    }
+  ]
+}

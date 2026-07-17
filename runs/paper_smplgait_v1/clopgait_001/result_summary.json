@@ -1,0 +1,8 @@
+{
+  "status": "early_stopped",
+  "epochs_completed": 84,
+  "monitor_metric": "verification_auc",
+  "best_verification_auc": 0.825830649468352,
+  "best_rank1": 0.782608695652174,
+  "output_dir": "/data/experiments/paper_smplgait_v1/clopgait_001"
+}

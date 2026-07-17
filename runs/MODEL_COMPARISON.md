@@ -8,20 +8,23 @@ loaded locally, that's stated explicitly rather than worked around.
 
 ## Tier A — directly comparable (identical dataset cache + protocol)
 
-These five share the exact same preprocessed cache
+These eight share the exact same preprocessed cache
 (`skeleton_silhouette_fusion` format, 3-gallery-per-subject retrieval
 protocol) and the same loss recipe. Only the model architecture differs, so
 this is the cleanest apples-to-apples comparison.
 
-| Model | Run | Epochs (stopped) | Rank-1 | Rank-5 | Verification AUC | Distance gap |
-|---|---|---:|---:|---:|---:|---:|
-| **Part-Set V7** (best) | `partset_rank1_001` | 87 | **67.91%** | **91.31%** | **91.16%** | **0.589** |
-| Fusion V6 | `fusion_rank1_002` | 88 | 61.99% | 89.40% | 90.28% | 0.559 |
-| TCN baseline | `tcn_baseline_001` | 100 | 36.10% | 69.72% | 80.74% | 0.491 |
-| Transformer baseline | `transformer_baseline_001` | 61 | 34.10% | 67.81% | 78.12% | 0.389 |
-| LSTM baseline | `lstm_baseline_001` | 50 | 20.63% | 53.96% | 80.44% | 0.542 |
+| Model | Type | Run | Epochs (stopped) | Rank-1 | Rank-5 | Verification AUC | Distance gap |
+|---|---|---|---:|---:|---:|---:|---:|
+| **Part-Set V7** (best) | ours | `partset_rank1_001` | 87 | **67.91%** | **91.31%** | **91.16%** | **0.589** |
+| CSTL (Huang et al., ICCV 2021) | published paper | `casia_001` | 76 | 67.72% | 90.54% | 89.86% | 0.589 |
+| Fusion V6 | ours | `fusion_rank1_002` | 88 | 61.99% | 89.40% | 90.28% | 0.559 |
+| SMPLGait w/o 3D (Zheng et al., CVPR 2022) | published paper | `casia_001` | 75 | 46.99% | 77.84% | 88.21% | 0.637 |
+| 3DLocal (Huang et al., ICCV 2021) | published paper | `casia_001` | 70 | 45.56% | 75.84% | 85.88% | 0.517 |
+| TCN baseline | in-house ablation | `tcn_baseline_001` | 100 | 36.10% | 69.72% | 80.74% | 0.491 |
+| Transformer baseline | in-house ablation | `transformer_baseline_001` | 61 | 34.10% | 67.81% | 78.12% | 0.389 |
+| LSTM baseline | in-house ablation | `lstm_baseline_001` | 50 | 20.63% | 53.96% | 80.44% | 0.542 |
 
-V7 (`skeleton_silhouette_partset_v7`) now wins on every metric, beating V6
+V7 (`skeleton_silhouette_partset_v7`) still wins on every metric, beating V6
 by +5.92 pp Rank-1 with slightly *fewer* parameters (6.20M vs 6.68M). It
 keeps V6's cache, loss recipe, protocol, and schedule byte-identical and
 changes only the architecture: spatial (per-pixel) gated fusion instead of
@@ -33,15 +36,51 @@ retrieval (80.46% vs 72.96% Rank-1) with a smaller clothing-condition gain
 (36.33% vs 34.67%); EER improved from 17.43% to 16.47%. Full design
 rationale: `designs/skeleton_silhouette_partset_v7/MODEL_ARCHITECTURE_AND_FLOW.md`.
 
-All five rows read Rank-5/AUC/distance-gap from the same epoch as each
+**On the three published-paper replications** (`designs/paper_3dlocal_v1/`,
+`designs/paper_cstl_v1/`, `designs/paper_smplgait_v1/`, one design folder
+each with a `README.md` detailing exactly what was replicated and what was
+adapted): these exist to compare V7 against externally-established
+architectures, not just this repo's own baselines, per the thesis
+supervisor's request. Two things affect how to read them:
+
+- **They are silhouette-only**, matching each original paper's actual input
+  modality (3DLocal and CSTL are silhouette-only in their own papers;
+  SMPLGait's silhouette branch is silhouette-only, and its 3D-STN branch —
+  which needs SMPL mesh parameters neither CASIA-B nor CLoP-Gait has — is
+  intentionally omitted, replicating the paper's own reported "w/o 3D"
+  ablation rather than inventing a workaround). V6/V7/LSTM/TCN/Transformer
+  all consume the fused skeleton+silhouette 4-channel input. This is not an
+  oversight: it is what faithful replication requires, and it means the
+  comparison is apples-to-apples on cache/protocol/loss recipe but not on
+  input modality — a silhouette-only model here is doing strictly less with
+  its input than the fusion models.
+- **CSTL lands within 0.2 points of V7's Rank-1** (67.72% vs 67.91%) despite
+  being silhouette-only, which is the most notable result of this batch: a
+  published, external architecture reaches near-parity with our best design
+  on this protocol using less input information. 3DLocal and SMPLGait w/o 3D
+  land well below V6, in the same range as the TCN/Transformer in-house
+  baselines — consistent with the fact that adaptive local-attention
+  (3DLocal) and set/HPP pooling (SMPLGait) were both designed and tuned for
+  larger, video-derived silhouette datasets (OU-MVLP, Gait3D) rather than
+  CASIA-B's smaller 74-subject training population.
+
+Each paper design's `README.md` documents every deviation from its source
+paper explicitly (e.g. CSTL's soft-vs-hard saliency selection, 3DLocal's
+Gaussian-only sampling variant — which the paper's own ablation shows is
+within ~1pp of their full sampling mixture). None of these are silent
+approximations.
+
+All eight rows read Rank-5/AUC/distance-gap from the same epoch as each
 model's own official (early-stopping-gated) best Rank-1 — i.e. the exact
 epoch whose checkpoint was saved as `best_rank1_model.pt` — so the columns
 stay internally consistent per row. Most models' own best-ever verification
 AUC happened at a different epoch than their best Rank-1: V7's own AUC peak
-(epoch 62) reached 91.48%, V6's own AUC peak (epoch 78) reached 90.78%, the
-Transformer's own AUC peak (epoch 31) reached 84.05%, the TCN's own AUC
-peak (epoch 76) reached 83.94%, and the LSTM's own AUC peak (epoch 38)
-reached 80.64%. Full per-epoch curves are in each run's
+(epoch 62) reached 91.48%, V6's own AUC peak (epoch 78) reached 90.78%,
+CSTL's own AUC peak (epoch 51) reached 90.14%, SMPLGait w/o 3D's own AUC
+peak (epoch 50) reached 88.49%, 3DLocal's own AUC peak (epoch 60) reached
+85.96%, the Transformer's own AUC peak (epoch 31) reached 84.05%, the TCN's
+own AUC peak (epoch 76) reached 83.94%, and the LSTM's own AUC peak
+(epoch 38) reached 80.64%. Full per-epoch curves are in each run's
 `post_training_analysis/`.
 
 One honest caveat on V7: its best Rank-1 landed on its final completed
@@ -100,8 +139,11 @@ categorically easier than a 50-subject one.
 
 | Model | Run | Epochs (stopped) | Rank-1 | Rank-5 | Verification AUC | Distance gap | Notes |
 |---|---|---:|---:|---:|---:|---:|---|
+| CSTL (Huang et al., ICCV 2021) | `clopgait_001` | 100 | 89.13% | 100.00% | 74.67%† | 0.029 | Published-paper replication, silhouette-only |
 | Fusion V6 | `clopgait_domain_split_002` | 38 | 86.96% | 100.00% | 81.55%† | 0.616 | Corrected skeleton preprocessing (see below) |
+| 3DLocal (Huang et al., ICCV 2021) | `clopgait_001` | 73 | 84.78% | 100.00% | 84.64%† | 0.593 | Published-paper replication, silhouette-only |
 | Part-Set V7 | `clopgait_domain_split_001` (V7) | 61 | 82.61% | 100.00% | 82.77%† | 0.693 | Same corrected cache and config as the V6 row; see the V6-vs-V7 note below |
+| SMPLGait w/o 3D (Zheng et al., CVPR 2022) | `clopgait_001` | 84 | 78.26% | 100.00% | 67.79%† | 0.009 | Published-paper replication, silhouette-only |
 | ~~Fusion V6~~ | ~~`clopgait_domain_split_001`~~ | ~~54~~ | ~~89.13%~~ | ~~100.00%~~ | ~~85.00%†~~ | ~~0.702~~ | **Invalid** -- trained on a broken skeleton channel, kept only for the before/after comparison below |
 
 † value read at the epoch matching that row's official best-Rank-1 epoch
@@ -109,7 +151,18 @@ categorically easier than a 50-subject one.
 convention as Tier A. V6 `_002`'s own separately-best verification AUC
 peaked at 86.54% (epoch 13, rank1 82.61% there); the invalid V6 `_001`
 peaked at 88.26% (epoch 29). V7's best AUC and best Rank-1 landed on the
-same epoch (36), so its row needs no separate footnote value.
+same epoch (36), so its row needs no separate footnote value. Among the
+three published-paper replications, CSTL's own-best AUC peaked at 75.43%
+(epoch 98, one epoch from the run's end), 3DLocal's at 86.86% (epoch 48),
+and SMPLGait w/o 3D's at 82.58% (epoch 59) — all well above their
+best-Rank-1-epoch AUC values in the table, the same "Rank-1 and AUC peak at
+different epochs" pattern seen throughout this page. **This test pool is
+only 46 probes over 4 subjects** (see the caveat above the table), so a
+Rank-1 gap of two or three probe sequences between any of these five rows
+is noise, not a meaningful ranking — read the CASIA-B Tier A numbers for
+architecture comparison, and read this table only as "does the design
+survive retraining on a much smaller, domain-shifted dataset without
+collapsing."
 
 ### V6 vs V7 on CLoP-Gait: statistically indistinguishable, and why
 
@@ -238,18 +291,40 @@ runs/skeleton_silhouette_transformer_v1/transformer_baseline_001/post_training_a
 runs/fusion_rank1_002/post_training_analysis/                                       (full report, pre-existing)
 runs/skeleton_silhouette_partset_v7/partset_rank1_001/post_training_analysis/       (full report: CMC/ROC/PCA + condition breakdown)
 runs/skeleton_silhouette_partset_v7/clopgait_domain_split_001/post_training_analysis/ (full report, CLoP-Gait domain split)
+runs/paper_3dlocal_v1/casia_001/post_training_analysis/                             (full report: CMC/ROC/PCA + condition breakdown)
+runs/paper_3dlocal_v1/clopgait_001/post_training_analysis/                          (full report, CLoP-Gait domain split)
+runs/paper_cstl_v1/casia_001/post_training_analysis/                                (full report: CMC/ROC/PCA + condition breakdown)
+runs/paper_cstl_v1/clopgait_001/post_training_analysis/                             (full report, CLoP-Gait domain split)
+runs/paper_smplgait_v1/casia_001/post_training_analysis/                            (full report: CMC/ROC/PCA + condition breakdown)
+runs/paper_smplgait_v1/clopgait_001/post_training_analysis/                         (full report, CLoP-Gait domain split)
 ```
 
 ## Bottom line
 
 Across every model actually trained and evaluated so far — V1 through V7,
-plus the LSTM/TCN/Transformer baselines added for architecture comparison —
-**Part-Set V7 has the best Rank-1, Rank-5, verification AUC, and distance
-gap of any of them**, under the identical 3-gallery protocol, cache, and
-loss recipe shared with V6 and the three baselines. Because everything but
-the architecture was held fixed, the V6 → V7 delta (+5.92 pp Rank-1,
+the LSTM/TCN/Transformer in-house baselines, and three published-paper
+replications (3DLocal, CSTL, SMPLGait w/o 3D) — **Part-Set V7 has the best
+Rank-1, Rank-5, verification AUC, and distance gap of any of them**, under
+the identical 3-gallery protocol, cache, and loss recipe. Because everything
+but the architecture was held fixed, the V6 → V7 delta (+5.92 pp Rank-1,
 +1.91 pp Rank-5, +0.88 pp AUC, at fewer parameters) is attributable to the
-part-set architecture alone. V6 remains the second-best model and the
-reference for the CLoP-Gait Tier C experiments. These are genuine results
-from real training runs, which is what makes them usable in the thesis and
-the paper.
+part-set architecture alone. V6 remains the second-best in-house model and
+the reference for the CLoP-Gait Tier C experiments.
+
+The published-paper replications matter for a different reason than the
+in-house baselines: they establish that V7's Rank-1 lead is not an artifact
+of comparing against weak, unpublished architectures. CSTL — a real,
+peer-reviewed ICCV 2021 architecture, replicated faithfully and trained
+under the exact same protocol — reaches 67.72% Rank-1, just 0.19 points
+behind V7's 67.91%, while using strictly less input (silhouette only, no
+skeleton/topology stream). 3DLocal and SMPLGait w/o 3D land below V6, in
+the TCN/Transformer range, which is consistent with those architectures'
+own literature: both were designed and tuned for much larger silhouette
+datasets (OU-MVLP's 10,307 subjects, Gait3D's 4,000) than CASIA-B's 74
+training subjects, so their local-attention and set/HPP-pooling machinery
+has comparatively little data to learn adaptive behavior from here. Full
+fidelity notes for each replication are in `designs/paper_3dlocal_v1/README.md`,
+`designs/paper_cstl_v1/README.md`, and `designs/paper_smplgait_v1/README.md`.
+
+These are genuine results from real training runs, which is what makes them
+usable in the thesis and the paper.

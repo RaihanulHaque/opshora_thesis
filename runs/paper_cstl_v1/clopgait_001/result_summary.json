@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "epochs_completed": 100,
+  "monitor_metric": "verification_auc",
+  "best_verification_auc": 0.7542098917283012,
+  "best_rank1": 0.8913043478260869,
+  "output_dir": "/data/experiments/paper_cstl_v1/clopgait_001"
+}

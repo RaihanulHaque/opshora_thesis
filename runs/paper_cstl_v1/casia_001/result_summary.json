@@ -1,0 +1,8 @@
+{
+  "status": "early_stopped",
+  "epochs_completed": 76,
+  "monitor_metric": "verification_auc",
+  "best_verification_auc": 0.9014372837168657,
+  "best_rank1": 0.6771728748806113,
+  "output_dir": "/data/experiments/paper_cstl_v1/casia_001"
+}
