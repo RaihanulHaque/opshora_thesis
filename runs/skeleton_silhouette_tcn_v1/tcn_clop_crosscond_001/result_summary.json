@@ -1,0 +1,8 @@
+{
+  "status": "early_stopped",
+  "epochs_completed": 61,
+  "monitor_metric": "verification_auc",
+  "best_verification_auc": 0.6263597513597513,
+  "best_rank1": 0.6153846153846154,
+  "output_dir": "/data/experiments/skeleton_silhouette_tcn_v1/tcn_clop_crosscond_001"
+}

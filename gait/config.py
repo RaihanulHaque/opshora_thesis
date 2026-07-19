@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass, fields
+from dataclasses import asdict, dataclass, field, fields
 from pathlib import Path
 from typing import Any
 
@@ -24,8 +24,22 @@ class ExperimentConfig:
     min_component_ratio: float = 0.015
 
     train_subjects: int = 100
+    # Carve the LAST validation_subjects of the train_subjects pool into a true
+    # validation split (subject-disjoint from both train and test), used for
+    # early-stopping/model-selection instead of the test split. 0 = old
+    # behavior (test split doubles as the early-stopping monitor). Only
+    # supported for split_mode == "subject"; see gait/dataset.py.
+    validation_subjects: int = 0
     split_mode: str = "subject"
     test_domain_suffix: str = "od"
+    # split_mode == "condition": filter by condition-family prefix (e.g. "nm", "cl")
+    # and, if a record's condition encodes a domain suffix (CLoP-Gait's "-id"/"-od"/"-on"),
+    # by that domain too. Empty list = no filtering on that axis. CASIA-B conditions have
+    # no domain suffix, so the domain lists are simply left empty for CASIA-B configs.
+    train_condition_prefixes: list[str] = field(default_factory=list)
+    test_condition_prefixes: list[str] = field(default_factory=list)
+    train_domain_suffixes: list[str] = field(default_factory=list)
+    test_domain_suffixes: list[str] = field(default_factory=list)
     identities_per_batch: int = 8
     sequences_per_identity: int = 4
     num_workers: int = 2

@@ -1,0 +1,8 @@
+{
+  "status": "early_stopped",
+  "epochs_completed": 75,
+  "monitor_metric": "verification_auc",
+  "best_verification_auc": 0.9042029173419773,
+  "best_rank1": 0.7756756756756756,
+  "output_dir": "/data/experiments/skeleton_silhouette_partset_v7/partset_casia_crosscond_001"
+}

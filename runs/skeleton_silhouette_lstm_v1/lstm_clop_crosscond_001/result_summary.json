@@ -1,0 +1,8 @@
+{
+  "status": "early_stopped",
+  "epochs_completed": 99,
+  "monitor_metric": "verification_auc",
+  "best_verification_auc": 0.7594211344211345,
+  "best_rank1": 0.8461538461538461,
+  "output_dir": "/data/experiments/skeleton_silhouette_lstm_v1/lstm_clop_crosscond_001"
+}

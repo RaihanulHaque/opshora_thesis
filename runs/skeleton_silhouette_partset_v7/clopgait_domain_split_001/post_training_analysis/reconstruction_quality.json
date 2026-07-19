@@ -1,0 +1,43 @@
+{
+  "design_name": "skeleton_silhouette_partset_v7",
+  "checkpoint": "runs/skeleton_silhouette_partset_v7/clopgait_domain_split_001/best_rank1_model.pt",
+  "test_cache_dir": "runs/clopgait_local_processed_cache",
+  "split_mode": "domain",
+  "mask_ratio_used": 0.3,
+  "sequences_evaluated": 58,
+  "frames_total": 1740,
+  "frames_masked": 522,
+  "masked_frame_fraction": 0.3,
+  "masked_frames": {
+    "skeleton": {
+      "dice": 0.39015062184757193,
+      "iou": 0.24235225179596315,
+      "precision": 0.25222248223077887,
+      "recall": 0.8609766331009553,
+      "pixel_accuracy": 0.8439805772569444,
+      "bce": 0.2901679575443268
+    },
+    "motion": {
+      "mse": 0.024235617369413376,
+      "mae": 0.08524473756551743,
+      "psnr_db": 16.155459127386433,
+      "ssim": 0.3818023204803467
+    }
+  },
+  "all_frames": {
+    "skeleton": {
+      "dice": 0.21408701742401212,
+      "iou": 0.11987539119359251,
+      "precision": 0.12087184871640168,
+      "recall": 0.9356543726143298,
+      "pixel_accuracy": 0.6035488786368535,
+      "bce": 0.5692887306213379
+    },
+    "motion": {
+      "mse": 0.12767675518989563,
+      "mae": 0.2989751100540161,
+      "psnr_db": 8.938881631254723,
+      "ssim": 0.12116880714893341
+    }
+  }
+}

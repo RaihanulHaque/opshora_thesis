@@ -1,0 +1,8 @@
+{
+  "status": "early_stopped",
+  "epochs_completed": 83,
+  "monitor_metric": "verification_auc",
+  "best_verification_auc": 0.6741452991452992,
+  "best_rank1": 0.7692307692307693,
+  "output_dir": "/data/experiments/skeleton_silhouette_transformer_v1/transformer_clop_crosscond_001"
+}

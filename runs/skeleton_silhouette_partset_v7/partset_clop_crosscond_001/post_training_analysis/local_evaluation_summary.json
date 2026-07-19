@@ -1,0 +1,67 @@
+{
+  "dataset_summary": {
+    "dataset": "clopgait_skeleton_silhouette_fusion",
+    "sequences": 205,
+    "subjects": 5,
+    "height": 64,
+    "width": 64,
+    "sequence_length": 30,
+    "representation": "silhouette+hamilton_skeleton+structure_blur+temporal_motion",
+    "missing_pairs": 0
+  },
+  "checkpoint": "runs/skeleton_silhouette_partset_v7/partset_clop_crosscond_001/best_rank1_model.pt",
+  "device": "cpu",
+  "test_sequences": 28,
+  "test_subjects": 5,
+  "retrieval": {
+    "gallery_per_subject": 3,
+    "probes": 13,
+    "gallery_subjects": 5,
+    "rank1": 0.46153846153846156,
+    "rank3": 1.0,
+    "rank5": 1.0,
+    "rank10": 1.0,
+    "median_rank": 2.0,
+    "mean_rank": 1.7692307692307692,
+    "rank1_clothing": 0.46153846153846156,
+    "rank5_clothing": 1.0,
+    "probes_clothing": 13
+  },
+  "verification": {
+    "same_distance": 0.011476864106953144,
+    "different_distance": 0.014004034921526909,
+    "distance_gap": 0.002527170814573765,
+    "verification_auc": 0.599504662004662,
+    "eer_estimate": 0.4392482517482518,
+    "best_threshold": 0.017546117305755615,
+    "best_threshold_accuracy": 0.3888888888888889,
+    "best_threshold_balanced_accuracy": 0.587995337995338,
+    "best_threshold_precision": 0.20848056537102475,
+    "best_threshold_recall": 0.8939393939393939,
+    "best_threshold_specificity": 0.28205128205128205,
+    "best_threshold_f1": 0.33810888252148996,
+    "same_pairs": 66,
+    "different_pairs": 312
+  },
+  "cmc": {
+    "1": 0.46153846153846156,
+    "2": 0.7692307692307693,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0,
+    "20": 1.0,
+    "30": 1.0,
+    "50": 1.0
+  },
+  "condition_breakdown": [
+    {
+      "condition_family": "clothing",
+      "probes": 13,
+      "rank1": 0.46153846153846156,
+      "rank3": 1.0,
+      "rank5": 1.0,
+      "rank10": 1.0,
+      "median_rank": 2.0
+    }
+  ]
+}

@@ -217,11 +217,47 @@ def train_experiment(
     print(f"Prepared dataset: {summary}", flush=True)
 
     train_data = GaitSequenceDataset(
-        config.cache_dir, "train", config.train_subjects, config.split_mode, config.test_domain_suffix
+        config.cache_dir,
+        "train",
+        config.train_subjects,
+        config.split_mode,
+        config.test_domain_suffix,
+        config.train_condition_prefixes,
+        config.test_condition_prefixes,
+        config.train_domain_suffixes,
+        config.test_domain_suffixes,
+        config.validation_subjects,
     )
     test_data = GaitSequenceDataset(
-        config.cache_dir, "test", config.train_subjects, config.split_mode, config.test_domain_suffix
+        config.cache_dir,
+        "test",
+        config.train_subjects,
+        config.split_mode,
+        config.test_domain_suffix,
+        config.train_condition_prefixes,
+        config.test_condition_prefixes,
+        config.train_domain_suffixes,
+        config.test_domain_suffixes,
+        config.validation_subjects,
     )
+    validation_data = None
+    if config.validation_subjects > 0:
+        if config.split_mode != "subject":
+            raise ValueError(
+                f"config.validation_subjects > 0 is only supported for split_mode='subject', got {config.split_mode!r}"
+            )
+        validation_data = GaitSequenceDataset(
+            config.cache_dir,
+            "validation",
+            config.train_subjects,
+            config.split_mode,
+            config.test_domain_suffix,
+            config.train_condition_prefixes,
+            config.test_condition_prefixes,
+            config.train_domain_suffixes,
+            config.test_domain_suffixes,
+            config.validation_subjects,
+        )
     sampler = PKBatchSampler(
         train_data,
         config.identities_per_batch,
@@ -237,6 +273,11 @@ def train_experiment(
         persistent_workers=config.num_workers > 0,
     )
     test_loader = DataLoader(test_data, batch_size=config.batch_size, num_workers=config.num_workers, pin_memory=True)
+    validation_loader = None
+    if validation_data is not None:
+        validation_loader = DataLoader(
+            validation_data, batch_size=config.batch_size, num_workers=config.num_workers, pin_memory=True
+        )
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     design_module = importlib.import_module(f"designs.{config.design_name}.model")
@@ -355,14 +396,22 @@ def train_experiment(
             running["steps"] += 1
 
         evaluation = evaluate(model, test_loader, device, config.eval_gallery_per_subject)
+        validation_evaluation = None
+        if validation_loader is not None:
+            validation_evaluation = evaluate(model, validation_loader, device, config.eval_gallery_per_subject)
         if scheduler is not None:
             scheduler.step()
-        if monitor_metric not in evaluation:
+        # Model-selection metrics: monitor the validation split when one exists
+        # (subject-disjoint from both train and test) so early stopping never
+        # looks at the test split; otherwise fall back to the pre-existing
+        # behavior of monitoring the test split directly.
+        monitor_source = validation_evaluation if validation_evaluation is not None else evaluation
+        if monitor_metric not in monitor_source:
             raise KeyError(
-                f"early_stopping_metric={monitor_metric!r} is not in evaluation metrics: {sorted(evaluation)}"
+                f"early_stopping_metric={monitor_metric!r} is not in evaluation metrics: {sorted(monitor_source)}"
             )
-        current_metric = float(evaluation[monitor_metric])
-        current_rank1 = float(evaluation["rank1"])
+        current_metric = float(monitor_source[monitor_metric])
+        current_rank1 = float(monitor_source["rank1"])
         monitoring_active = epoch >= config.early_stopping_start_epoch
         rank1_improved = monitoring_active and current_rank1 > best_rank1 + config.early_stopping_min_delta
         if rank1_improved:
@@ -382,7 +431,9 @@ def train_experiment(
             "recognition_avg": running["recognition"] / max(running["recognition_steps"], 1),
             "learning_rate": optimizer.param_groups[0]["lr"],
             **evaluation,
+            **({f"val_{key}": value for key, value in validation_evaluation.items()} if validation_evaluation else {}),
             "monitor_metric": monitor_metric,
+            "monitor_split": "validation" if validation_evaluation is not None else "test",
             "monitoring_active": monitoring_active,
             f"best_{monitor_metric}": best_metric,
             "best_rank1": best_rank1,

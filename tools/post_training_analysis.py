@@ -571,10 +571,28 @@ def run_model_evaluation(run_dir: Path, args: argparse.Namespace, output_dir: Pa
     summary = prepare_dataset(config, force=args.force_preprocess)
     try:
         train_data = GaitSequenceDataset(
-            config.cache_dir, "train", config.train_subjects, config.split_mode, config.test_domain_suffix
+            config.cache_dir,
+            "train",
+            config.train_subjects,
+            config.split_mode,
+            config.test_domain_suffix,
+            config.train_condition_prefixes,
+            config.test_condition_prefixes,
+            config.train_domain_suffixes,
+            config.test_domain_suffixes,
+            config.validation_subjects,
         )
         test_data = GaitSequenceDataset(
-            config.cache_dir, "test", config.train_subjects, config.split_mode, config.test_domain_suffix
+            config.cache_dir,
+            "test",
+            config.train_subjects,
+            config.split_mode,
+            config.test_domain_suffix,
+            config.train_condition_prefixes,
+            config.test_condition_prefixes,
+            config.train_domain_suffixes,
+            config.test_domain_suffixes,
+            config.validation_subjects,
         )
     except ValueError as error:
         raise ValueError(

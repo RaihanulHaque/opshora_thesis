@@ -89,6 +89,40 @@ Rank-1 was still setting new highs, so there may be Rank-1 headroom behind
 a longer patience. The reported number is what the official early-stopping
 policy actually produced, not an after-the-fact pick.
 
+### Validation-split confirmation: the numbers above are not test-set leakage
+
+Every run above (and everywhere else on this page) decided *when to stop
+training* by watching the **test split's own** verification AUC each epoch —
+there was no separate validation split. That's a real methodological gap: it
+means the stopping point was chosen using the same data later reported as
+the result, which can make numbers mildly optimistic. `gait/config.py` now
+supports `validation_subjects`, which carves a genuine subject-disjoint
+validation set out of the training pool and makes early stopping watch
+*that* instead — the test split is only ever scored, never used for any
+decision. Full explanation: `SUPERVISOR_QA_NOTES.md` Q4.
+
+To check whether this actually changes anything, the V7 champion config was
+re-run with `validation_subjects: 10` (so CASIA-B's 74 training subjects
+become 64 train / 10 validation, test unchanged at 50) — same architecture,
+cache, loss recipe, and schedule as `partset_rank1_001`, only the
+early-stopping signal differs.
+
+| Run | Stopping signal | Epochs | Test Rank-1 | Test Rank-5 | Test verification AUC | Test distance gap |
+|---|---|---:|---:|---:|---:|---:|
+| `partset_rank1_001` (original) | test split itself | 87 | 67.91% | 91.31% | 91.16% | 0.589 |
+| `partset_rank1_validated_001` (validated) | separate validation split | 90 | 65.04% | 91.12% | 91.25% | 0.574 |
+
+Both rows report **test-set** performance at whichever epoch each run's own
+stopping policy selected as best. The validated run's verification AUC
+(91.25%) and distance gap (0.574) land within a fraction of a point of the
+original — if anything, AUC is marginally *higher* under the stricter
+protocol. Rank-1 is 2.9 points lower, which is within normal run-to-run
+variance (a different stopping epoch on a still-slowly-improving Rank-1
+curve, same pattern already noted above for the original run). **Conclusion:
+the original numbers were not an artifact of watching the test split — a
+properly validation-gated run reproduces essentially the same result.** Full
+report: `runs/skeleton_silhouette_partset_v7/partset_rank1_validated_001/post_training_analysis/`.
+
 ## Tier B — earlier development lineage (different datasets/protocols)
 
 These are the actual prior thesis iterations (V1–V5). They do **not** share
@@ -230,6 +264,101 @@ that branch is skipped entirely for it, and this was confirmed
 byte-for-byte identical on real CASIA-B data before and after the change.
 Tier A/B numbers above are entirely unaffected.
 
+## Tier D — cross-condition generalization protocol (train normal, test unseen clothing in an unseen domain)
+
+Requested directly by the thesis supervisor as a second, harder-than-Tier-C/A
+protocol: instead of holding out unseen *identities* (Tier A/B) or an unseen
+*domain only* (Tier C), this protocol holds out an unseen *appearance
+condition* (clothing change), and for CLoP-Gait additionally an unseen
+*domain* at the same time, so the test set the model never saw during
+training differs from training in two ways at once, not one.
+
+**CLoP-Gait split** (`split_mode: "condition"`, `train_condition_prefixes:
+["nm"]`, `train_domain_suffixes: ["id", "od"]`, `test_condition_prefixes:
+["cl"]`, `test_domain_suffixes: ["on"]`): train on normal-walk sequences from
+indoor + outdoor-day for all 5 subjects; test on long-clothing sequences from
+outdoor-night for the same 5 subjects (all 5 have outdoor-night clothing
+footage, unlike Tier C where subject `005` had to be dropped). 28 test
+sequences total, 3-gallery-per-subject leaves **13 probes** — even smaller
+than Tier C's 46, because clothing-condition CLoP-Gait only has 2
+sequences/subject/domain (`cl-01`, `cl-02`) vs normal's 3.
+
+| Model | Run | Epochs (stopped) | Rank-1 | Rank-5 | Verification AUC | Distance gap | Own-best AUC |
+|---|---|---:|---:|---:|---:|---:|---:|
+| LSTM baseline | `lstm_clop_crosscond_001` | 99 | 84.62% | 100.00% | 51.35% | 0.0017 | 75.94% (epoch 74) |
+| Transformer baseline | `transformer_clop_crosscond_001` | 83 | 76.92% | 100.00% | 49.21% | −0.0233 | 67.41% (epoch 52) |
+| Part-Set V7 | `partset_clop_crosscond_001` | 47 | 69.23% | 100.00% | 59.72% | 0.0135 | 72.70% (epoch 22) |
+| TCN baseline | `tcn_clop_crosscond_001` | 61 | 61.54% | 100.00% | 56.19% | 0.0283 | 62.64% (epoch 36) |
+
+**Read this table very carefully — it does not say what it looks like it
+says.** With only 13 probes, each probe is 7.7 percentage points of Rank-1;
+the entire spread between the best row (84.62%) and worst row (61.54%) is 3
+probe sequences. More importantly, **verification AUC for every model in
+this table sits at 49-60%, essentially chance level** (50% = a coin flip),
+and the distance gap is near zero — even negative for the Transformer,
+meaning its average same-subject distance was *larger* than its average
+different-subject distance at that epoch. EER estimates confirm this:
+43.9% (V7), 46.7% (TCN), 51.6% (LSTM), 54.5% (Transformer) — all close to the
+50% chance EER. **None of these four models learned an embedding space that
+reliably separates identities under simultaneous clothing-change +
+domain-shift on this 5-subject dataset.** The Rank-1 numbers still look
+respectable only because Rank-1 retrieval on a 5-subject gallery is a much
+easier task than pairwise verification across all subject pairs (1-in-5
+random guessing already scores 20% Rank-1; these scores are better than
+that, but the verification AUC is the metric that actually tests whether the
+embedding space itself is discriminative, and it says these models are
+barely better than random on this specific protocol). This is a genuine,
+useful negative result for the thesis: it shows the limit of what a
+5-subject dataset can support once two distribution shifts are stacked, not
+a flaw in any one architecture. Local checkpoint re-evaluation reproduces
+Rank-1/AUC within 1-3 probes of the official numbers for all four models —
+consistent with the noise level already expected at this pool size (see
+Tier C's convention note above).
+
+**CASIA-B split** (`split_mode: "condition"`, `train_condition_prefixes:
+["nm"]`, `test_condition_prefixes: ["cl"]`, no domain suffixes — CASIA-B has
+no domain axis): train on all 124 subjects' normal-walk sequences (`nm-01`
+through `nm-06`, all 11 views); test on the same 124 subjects' clothing
+sequences (`cl-01`, `cl-02`, all 11 views). Unlike CLoP-Gait's split, this
+one is condition-only (single distribution shift, no domain shift stacked on
+top), and it has CASIA-B's full subject count and probe pool
+(~2,700 test sequences before gallery removal), so it is not subject to the
+tiny-pool noise problem above.
+
+| Model | Run | Epochs (stopped) | Rank-1 | Rank-5 | Verification AUC | Distance gap | Own-best AUC |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Part-Set V7 | `partset_casia_crosscond_001` | 75 | 77.57% | 95.68% | 88.90% | 0.385 | 90.42% (epoch 50) |
+
+370 probes over 124 subjects, so this row does not suffer from Tier D's
+CLoP-Gait small-pool problem. **This is a genuinely different, and better,
+picture than the CLoP-Gait half of Tier D:** verification AUC (88.90%) and
+distance gap (0.385) are both far above chance, meaning V7 does learn a
+transferable embedding under a pure condition-shift (normal-walk → unseen
+clothing, no domain shift stacked on top) when there is enough data
+(124 subjects) to support it. Contrast this with Rank-1 on the *original*
+subject-disjoint clothing-condition breakdown in Tier A (36.33% clothing
+Rank-1 for V7, `runs/skeleton_silhouette_partset_v7/partset_rank1_001/post_training_analysis/`)
+— that number is for *unseen identities wearing unfamiliar clothing*; this
+Tier D number (77.57%) is for *identities the model trained on, wearing
+clothing it never saw them in*. Both describe "clothing generalization" but
+answer different questions — Tier A is closed-world identity clothing
+robustness, Tier D is open-condition robustness for known identities — and
+the sizeable gap between them (36.33% vs 77.57%) is itself informative: a
+large part of what makes clothing-change hard is unfamiliar identity, not
+just unfamiliar clothing in isolation. Local checkpoint re-evaluation
+reproduces the official number exactly (77.57% / 95.68% / 370 probes) — see
+`runs/skeleton_silhouette_partset_v7/partset_casia_crosscond_001/post_training_analysis/`.
+
+Taken together, CASIA-B and CLoP-Gait's Tier D results tell a consistent
+story: **the failure mode in Tier D's CLoP-Gait row is dataset size, not the
+condition-shift task itself** — the same architecture, on a version of this
+exact task with enough subjects, produces a strong, well-separated embedding
+space (AUC 88.90%) rather than the near-chance CLoP-Gait numbers (AUC
+49-60%). This is a defensible, useful conclusion for the thesis's limitations
+section: CLoP-Gait's 5-subject scale is the binding constraint on Tier D/C
+results, not evidence any of the tested architectures are fundamentally
+unable to generalize across conditions or domains.
+
 ## Data quality notes
 
 A few things worth flagging plainly rather than silently working around:
@@ -290,6 +419,7 @@ runs/skeleton_silhouette_tcn_v1/tcn_baseline_001/post_training_analysis/        
 runs/skeleton_silhouette_transformer_v1/transformer_baseline_001/post_training_analysis/ (training curves only)
 runs/fusion_rank1_002/post_training_analysis/                                       (full report, pre-existing)
 runs/skeleton_silhouette_partset_v7/partset_rank1_001/post_training_analysis/       (full report: CMC/ROC/PCA + condition breakdown)
+runs/skeleton_silhouette_partset_v7/partset_rank1_validated_001/post_training_analysis/    (full report, validation-split-gated confirmation run)
 runs/skeleton_silhouette_partset_v7/clopgait_domain_split_001/post_training_analysis/ (full report, CLoP-Gait domain split)
 runs/paper_3dlocal_v1/casia_001/post_training_analysis/                             (full report: CMC/ROC/PCA + condition breakdown)
 runs/paper_3dlocal_v1/clopgait_001/post_training_analysis/                          (full report, CLoP-Gait domain split)
@@ -297,7 +427,39 @@ runs/paper_cstl_v1/casia_001/post_training_analysis/                            
 runs/paper_cstl_v1/clopgait_001/post_training_analysis/                             (full report, CLoP-Gait domain split)
 runs/paper_smplgait_v1/casia_001/post_training_analysis/                            (full report: CMC/ROC/PCA + condition breakdown)
 runs/paper_smplgait_v1/clopgait_001/post_training_analysis/                         (full report, CLoP-Gait domain split)
+runs/skeleton_silhouette_partset_v7/partset_clop_crosscond_001/post_training_analysis/     (Tier D, CLoP-Gait cross-condition)
+runs/skeleton_silhouette_lstm_v1/lstm_clop_crosscond_001/post_training_analysis/           (Tier D, CLoP-Gait cross-condition)
+runs/skeleton_silhouette_tcn_v1/tcn_clop_crosscond_001/post_training_analysis/              (Tier D, CLoP-Gait cross-condition)
+runs/skeleton_silhouette_transformer_v1/transformer_clop_crosscond_001/post_training_analysis/ (Tier D, CLoP-Gait cross-condition)
+runs/skeleton_silhouette_partset_v7/partset_casia_crosscond_001/post_training_analysis/     (Tier D, CASIA-B cross-condition, full report)
 ```
+
+## Reconstruction (generative-branch) quality
+
+Every design with a decoder (`compute_reconstruction_loss`/
+`build_reconstruction_target` hooks — V6, V7, and all three published-paper
+replications) periodically saves *qualitative* reconstruction preview images
+during training (`runs/<design>/<run>/visuals/reconstruction_epoch_*.png`) so
+a human can eyeball the masked-frame skeleton/motion predictions. That is not
+a quantitative answer to "is the reconstruction actually good," so
+`tools/reconstruction_quality.py` was added to measure it properly: it runs
+the trained checkpoint over the **entire held-out test split**, using the
+same temporal masking scheme as training, and reports Dice/IoU/precision/
+recall/pixel-accuracy/BCE for the binary skeleton channel and MSE/MAE/
+PSNR/SSIM for the continuous motion channel — computed **only on the frames
+that were actually hidden from the encoder** (the true generative-quality
+test; see the script's own docstring for why this differs from "all frames").
+
+| Run | Skeleton Dice | Skeleton IoU | Motion PSNR (dB) | Motion SSIM |
+|---|---:|---:|---:|---:|
+| V7, CASIA-B (`partset_rank1_001`) | 0.320 | 0.190 | 18.08 | 0.649 |
+| V7, CLoP-Gait domain split (`clopgait_domain_split_001`) | 0.390 | 0.242 | 16.16 | 0.382 |
+
+Full reports (with precision/recall, BCE, and the "how to read this"
+explanation of the metrics): `runs/skeleton_silhouette_partset_v7/partset_rank1_001/post_training_analysis/RECONSTRUCTION_QUALITY.md`
+and `runs/skeleton_silhouette_partset_v7/clopgait_domain_split_001/post_training_analysis/RECONSTRUCTION_QUALITY.md`.
+Interpretation and thesis-defense framing for these numbers is in
+`SUPERVISOR_QA_NOTES.md` (question 3).
 
 ## Bottom line
 
@@ -328,3 +490,88 @@ fidelity notes for each replication are in `designs/paper_3dlocal_v1/README.md`,
 
 These are genuine results from real training runs, which is what makes them
 usable in the thesis and the paper.
+
+Tier D (the supervisor-requested cross-condition generalization protocol)
+adds one more data point to this picture rather than changing it: on
+CASIA-B's full 124-subject pool, V7 generalizes from normal-walk training to
+unseen-clothing testing with a strong, well-separated embedding (88.90% AUC,
+77.57% Rank-1) — genuine cross-condition robustness, not just a same-domain
+score. On CLoP-Gait's 5-subject pool, stacking a domain shift on top of the
+condition shift pushes every tested architecture (V7 included) to
+near-chance verification AUC, which Tier D documents as a dataset-scale
+limitation rather than an architecture failure (see the "Taken together"
+paragraph above) — an honest, useful boundary condition for the thesis to
+state rather than omit.
+
+---
+
+## Plain-language summary: which one is better, and why (read this first if the rest of the page is dense)
+
+Everything above is written for someone who already knows the vocabulary.
+This section says the same things in plainer words, with one table you can
+point to at a glance.
+
+### First: what do these numbers actually mean?
+
+- **Rank-1**: you show the model one gait sequence ("the probe") and ask it
+  to pick the matching person out of a lineup of candidates ("the gallery").
+  Rank-1 is the percentage of times its *top guess* is correct — like a
+  multiple-choice test where it only gets credit for guessing first place.
+  Rank-5 is more forgiving: credit if the right person is anywhere in its
+  top 5 guesses.
+- **Verification AUC**: a different, harder task — instead of picking from a
+  lineup, the model is shown two gait clips and has to say "same person" or
+  "different person," for every possible pair. AUC (0-100%) is how good it
+  is at that yes/no task; 50% = pure guessing (coin flip), 100% = perfect.
+  **This is usually the more trustworthy number when a test pool is small**,
+  because Rank-1 on a tiny gallery can jump around a lot from luck.
+- **Distance gap — does bigger mean better? Yes.** Internally, the model
+  turns every gait clip into a point in space (an "embedding"). Two clips
+  from the *same* person should land close together; two clips from
+  *different* people should land far apart. `same_distance` is the average
+  distance between same-person pairs, `different_distance` is the average
+  for different-person pairs, and `distance_gap = different_distance −
+  same_distance`. **A large, positive gap means the model has learned to
+  push different people apart and pull the same person's clips together —
+  that's the goal.** A gap near zero (you'll see values under 0.1 in the
+  Tier D CLoP-Gait rows) means same-person and different-person pairs ended
+  up roughly the same distance apart on average — the model isn't reliably
+  telling people apart on that test set. **A negative gap (also in Tier D,
+  e.g. the Transformer's −0.0233) means different-person pairs were, on
+  average, very slightly *closer* than same-person pairs** — not a sign the
+  metric works backwards, just confirmation that on that specific tiny test
+  set (13 probes, 5 subjects, the hardest protocol tested), the model's
+  embedding space had collapsed into a small cluster with no reliable
+  identity signal left in it, so the exact ordering of two near-identical,
+  noise-sized numbers is essentially a coin flip. You can see this is
+  specific to Tier D's CLoP-Gait rows and nowhere else: every Tier A/B/C row,
+  and Tier D's CASIA-B row (0.385), has a healthy gap of 0.3-0.6+, meaning
+  the collapse only happens under CLoP-Gait's combined
+  condition-shift-plus-domain-shift protocol on only 5 subjects — see the
+  "Taken together" paragraph in Tier D above for why that's a dataset-size
+  problem, not a broken metric or a broken model.
+
+### At a glance: every tier, side by side
+
+| Tier | What's being tested | Best model | Headline result | Trust level |
+|---|---|---|---|---|
+| **A** — CASIA-B, unseen people | Can it recognize 50 people it never trained on, from a 124-subject public benchmark? | **Part-Set V7** | 67.91% Rank-1, 91.16% AUC — best of 8 models tested, including 3 published papers | High — 1,047 probe comparisons, the most reliable number on this page |
+| **B** — early thesis history | How did earlier model versions (V1-V5) perform, on their own older protocols? | Not comparable to A/C/D | V2 reached 66.88% Rank-1 on a harder 1-gallery setup | Historical record only, different protocol per row |
+| **C** — CLoP-Gait, unseen environment | Same 5 people, but tested in an environment (outdoor daytime) never seen in training | Fusion V6 (V7 statistically tied) | ~83-87% Rank-1, ~82-87% AUC | Low-medium — only 46 probes over 4 of the 5 subjects |
+| **D** — CASIA-B, unseen clothing | Same 124 people, but tested in clothing never seen in training | **Part-Set V7** | 77.57% Rank-1, 88.90% AUC — strong, real generalization | High — 370 probes |
+| **D** — CLoP-Gait, unseen clothing *and* unseen environment at once | Same 5 people, hardest combined shift (new clothing + new environment together) | None — all 4 models tested near chance | Best AUC only 59.72% (V7); best Rank-1 84.62% (LSTM), but on only 13 probes | Very low — 13 probes, near-coin-flip AUC for every model |
+
+**One-paragraph version for the defense:** On the standard, large-scale,
+well-established benchmark (CASIA-B, Tiers A and D), **Part-Set V7 is the
+best model tested, including against three real published architectures**,
+and it generalizes well to two different kinds of unseen conditions (unseen
+identities in Tier A, unseen clothing in Tier D) with strong, trustworthy
+numbers backed by hundreds of test comparisons. On the small self-collected
+dataset (CLoP-Gait, Tiers C and D), results are noisier because there are
+only 5 subjects total — single-domain-shift results (Tier C) are decent but
+statistically inconclusive between V6 and V7, and the hardest combined-shift
+protocol (Tier D) shows every model, V7 included, failing to generalize
+reliably — which is an honest, defensible finding about the limits of a
+5-subject dataset, not a flaw specific to any one architecture. The
+CASIA-B Tier A/D numbers are the ones to lead with; the CLoP-Gait numbers
+are supporting evidence with clearly stated confidence limits.

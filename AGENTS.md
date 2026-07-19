@@ -51,6 +51,29 @@ python submit_modal.py run --design skeleton_silhouette_fusion_v6 --run fusion_r
 
 Run local post-training analysis with the ML conda Python shown in `README.md` when evaluating checkpoints.
 
+Quantitatively evaluate the masked-reconstruction ("generative") branch of any design that has decoder hooks (Dice/IoU/precision/recall/BCE for the skeleton channel, MSE/MAE/PSNR/SSIM for the motion channel, computed on the held-out test split with the same masking used in training):
+
+```bash
+python tools/reconstruction_quality.py --run-dir runs/<design>/<run> \
+  --skeleton-dataset <path> --silhouette-dataset <path> --cache-dir <path>
+```
+
+`gait/dataset.py`/`gait/config.py` support two extra split modes beyond the
+original subject-disjoint split, plus an optional true validation split:
+- `split_mode: "domain"` — CLoP-Gait domain-generalization (train
+  indoor+outdoor-night, test outdoor-day), via `test_domain_suffix`.
+- `split_mode: "condition"` — cross-condition generalization (train one
+  condition family, e.g. `nm`, test another, e.g. `cl`), via
+  `train_condition_prefixes`/`test_condition_prefixes` and optionally
+  `train_domain_suffixes`/`test_domain_suffixes` (CLoP-Gait conditions encode
+  a domain suffix; CASIA-B's don't, so leave those empty for CASIA-B).
+- `validation_subjects: N` (only with `split_mode: "subject"`) carves the
+  last `N` subjects out of `train_subjects` into a true validation split;
+  early stopping then monitors validation instead of test (`gait/train.py`
+  logs test metrics unprefixed as before and validation metrics under
+  `val_*` keys). Defaults to `0`, which reproduces the old test-as-monitor
+  behavior exactly — see `SUPERVISOR_QA_NOTES.md` Q4 for the full rationale.
+
 Build/inspect the CLoP-Gait custom dataset (raw videos live in `datasets/CLoP-Gait/`, organized as `INDOOR|OUTDOOR/Outdoor_Day|OUTDOOR/Outdoor_Night`):
 
 ```bash

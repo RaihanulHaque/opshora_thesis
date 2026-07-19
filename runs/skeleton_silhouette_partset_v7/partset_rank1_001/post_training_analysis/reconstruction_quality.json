@@ -1,0 +1,43 @@
+{
+  "design_name": "skeleton_silhouette_partset_v7",
+  "checkpoint": "runs/skeleton_silhouette_partset_v7/partset_rank1_001/best_rank1_model.pt",
+  "test_cache_dir": "runs/fusion_rank1_002/local_processed_cache_full",
+  "split_mode": "subject",
+  "mask_ratio_used": 0.3,
+  "sequences_evaluated": 1197,
+  "frames_total": 35910,
+  "frames_masked": 10773,
+  "masked_frame_fraction": 0.3,
+  "masked_frames": {
+    "skeleton": {
+      "dice": 0.31990734423274597,
+      "iou": 0.19041053666570118,
+      "precision": 0.20183217923960534,
+      "recall": 0.7708918115353554,
+      "pixel_accuracy": 0.8677390316430544,
+      "bce": 0.21334369480609894
+    },
+    "motion": {
+      "mse": 0.015560075640678406,
+      "mae": 0.05856693536043167,
+      "psnr_db": 18.07988296147783,
+      "ssim": 0.6485951542854309
+    }
+  },
+  "all_frames": {
+    "skeleton": {
+      "dice": 0.19536777830540594,
+      "iou": 0.10825905464657545,
+      "precision": 0.1112517586139898,
+      "recall": 0.8009735417561673,
+      "pixel_accuracy": 0.733853983102287,
+      "bce": 0.4124038517475128
+    },
+    "motion": {
+      "mse": 0.0734415128827095,
+      "mae": 0.20903566479682922,
+      "psnr_db": 11.34058385321996,
+      "ssim": 0.23400363326072693
+    }
+  }
+}

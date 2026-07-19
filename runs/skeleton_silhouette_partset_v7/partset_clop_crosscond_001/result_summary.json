@@ -1,0 +1,8 @@
+{
+  "status": "early_stopped",
+  "epochs_completed": 47,
+  "monitor_metric": "verification_auc",
+  "best_verification_auc": 0.7270299145299145,
+  "best_rank1": 0.6923076923076923,
+  "output_dir": "/data/experiments/skeleton_silhouette_partset_v7/partset_clop_crosscond_001"
+}
